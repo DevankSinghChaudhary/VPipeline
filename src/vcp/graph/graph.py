@@ -3,27 +3,29 @@ import time
 from langgraph.graph import StateGraph, START, END
 
 from .user import user_topic
-from vcp.nodes import researcher
 from vcp.state import GlobalState
 
+from vcp.nodes import researcher, writer
 
 
 def graph(state: GlobalState):
 
-    graph = StateGraph(state)
+    builder = StateGraph(state)
 
-    graph.add_node("Researcher", researcher)
+    builder.add_node("Researcher", researcher)
+    builder.add_node("Writer", writer)
 
+    builder.add_edge(START, "Researcher")
+    builder.add_edge("Researcher", "Writer")
+    builder.add_edge("Writer", END)
 
-    graph.add_edge(START, "Researcher")
+    graph = builder.compile()
 
-    graph.add_edge("Researcher", END)
-
-    graph.compile()
-
-    graph = graph.compile()
-
-    return graph.invoke({
+    result = graph.invoke({
         "topic": user_topic(),
-        "information": {}
+        "information": {},
+        "script": []
     })
+
+
+    return result

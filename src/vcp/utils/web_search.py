@@ -296,7 +296,7 @@ def web_search(
     max_results: int = 20,
 ):
 
-    print(f'[web_search] Tool Called')
+    print(f'[TOOL] web_search Called')
     st = time.time()
     result = asyncio.run(
         search_multi_async(
@@ -304,7 +304,7 @@ def web_search(
             max_results,
         )
     )
-    print(f'[web_search] {time.time()-st}')
-    print(f'[web_search] Call Finished')
+    print(f'[TOOL] web_search {time.time()-st}')
+    print(f'[TOOL] web_search Finished')
     
     return result

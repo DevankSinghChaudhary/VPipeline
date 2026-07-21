@@ -5,7 +5,8 @@ from itertools import cycle
 
 from dotenv import load_dotenv
 
-from langchain_openai import ChatOpenAI
+from vcp.classopenai import ChatOpenAI
+
 from langchain.agents import create_agent
 
 from vcp.utils import web_search
@@ -31,7 +32,7 @@ system_prompt = getprompt("research")
 def researcher(state: GlobalState):
     
     model = ChatOpenAI(
-        model = "mistral-large-2512",
+        model = "ministral-14b-2512",
         base_url = os.getenv("MISTRAL_URL"),
         api_key = next(apikey)
     )

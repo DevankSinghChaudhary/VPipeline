@@ -4,14 +4,14 @@ from vcp.graph import graph
 from vcp.state import GlobalState
 
 
-def main():
+def main(state: GlobalState):
    
     start = time.time()
 
-    result = graph(GlobalState)
+    result = graph(state)
     
     print(f"[Graph] Time: {time.time() - start}")
     print(result)
 
 if __name__ == "__main__":
-    main()
+    main(GlobalState)
