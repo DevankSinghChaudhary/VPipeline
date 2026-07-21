@@ -2,7 +2,7 @@ import os
 import time
 from dotenv import load_dotenv
 
-from vcp.classopenai import ChatOpenAI
+from vcp.classvpipeline import ChatVPipeline
 from langchain.agents import create_agent
 
 from vcp.utils import web_search
@@ -13,7 +13,7 @@ from vcp.schemas import ScriptResponse
 
 load_dotenv()
 
-model = ChatOpenAI(
+model = ChatVPipeline(
     model = "mistral-large-2512",
     base_url = os.getenv("MISTRAL_URL"),
     api_key = os.getenv("MISTRAL_API_KEY")

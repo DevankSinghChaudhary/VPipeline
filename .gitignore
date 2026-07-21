@@ -10,4 +10,4 @@ wheels/
 .venv
 .env
 
-prompt.json
+system_prompt.json

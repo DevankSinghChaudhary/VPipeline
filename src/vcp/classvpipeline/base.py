@@ -2611,7 +2611,7 @@ class BaseChatOpenAI(BaseChatModel):
         )
 
 
-class ChatOpenAI(BaseChatOpenAI):  # type: ignore[override]
+class ChatVPipeline(BaseChatOpenAI):  # type: ignore[override]
     r"""Interface to OpenAI chat model APIs.
 
     !!! warning "API scope"

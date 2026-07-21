@@ -5,7 +5,7 @@ from itertools import cycle
 
 from dotenv import load_dotenv
 
-from vcp.classopenai import ChatOpenAI
+from vcp.classvpipeline import ChatVPipeline
 
 from langchain.agents import create_agent
 
@@ -31,7 +31,7 @@ system_prompt = getprompt("research")
 
 def researcher(state: GlobalState):
     
-    model = ChatOpenAI(
+    model = ChatVPipeline(
         model = "ministral-14b-2512",
         base_url = os.getenv("MISTRAL_URL"),
         api_key = next(apikey)
