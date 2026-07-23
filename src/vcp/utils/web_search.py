@@ -113,7 +113,7 @@ def normalize_queries(raw_queries) -> list[str]:
 
 async def get_urls_async(
     query: str,
-    max_results: int = 3,
+    max_results: int = 20,
 ):
 
     def search():
@@ -203,7 +203,7 @@ async def fetch_page(
 
 async def search_multi_async(
     queries,
-    max_results: int = 3,
+    max_results: int = 20,
 ):
 
     queries = normalize_queries(

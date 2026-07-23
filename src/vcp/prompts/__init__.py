@@ -1,1 +1,1 @@
-from .prompt import getprompt
+from .prompt import SystemPrompt

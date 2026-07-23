@@ -2,11 +2,11 @@ import os
 import time
 from dotenv import load_dotenv
 
-from vcp.classvpipeline import ChatVPipeline
+from vcp.chat import ChatVPipeline
 from langchain.agents import create_agent
 
 from vcp.utils import web_search
-from vcp.prompts import getprompt
+from vcp.prompts import SystemPrompt
 
 from vcp.state import GlobalState
 from vcp.schemas import ScriptResponse
@@ -18,8 +18,6 @@ model = ChatVPipeline(
     base_url = os.getenv("MISTRAL_URL"),
     api_key = os.getenv("MISTRAL_API_KEY")
 )
-
-system_prompt = getprompt("script")
 
 
 def writer(state: GlobalState):
@@ -101,7 +99,7 @@ def writer(state: GlobalState):
 
     agent = create_agent(
         model = model,
-        system_prompt = system_prompt,
+        system_prompt = SystemPrompt.load("script"),
         response_format = ScriptResponse
     )
     

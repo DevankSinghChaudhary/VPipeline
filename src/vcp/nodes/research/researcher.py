@@ -5,12 +5,12 @@ from itertools import cycle
 
 from dotenv import load_dotenv
 
-from vcp.classvpipeline import ChatVPipeline
+from vcp.chat import ChatVPipeline
 
 from langchain.agents import create_agent
 
 from vcp.utils import web_search
-from vcp.prompts import getprompt
+from vcp.prompts import SystemPrompt
 
 from vcp.state import GlobalState
 from vcp.schemas import ResearchResponse
@@ -26,11 +26,8 @@ apikey = cycle(
     ]
 )
 
-system_prompt = getprompt("research")
-
-
 def researcher(state: GlobalState):
-    
+
     model = ChatVPipeline(
         model = "ministral-14b-2512",
         base_url = os.getenv("MISTRAL_URL"),
@@ -88,23 +85,6 @@ def researcher(state: GlobalState):
 
         5. Avoid collecting unnecessary background unless directly useful.
 
-        [TOOL POLICY]
-
-        Intent Agent:
-        Use first.
-        Purpose:
-        Determine topic type, primary intent, and secondary intents.
-
-        Context Agent:
-        Use after Intent Agent.
-        Purpose:
-        Understand surrounding systems, environment, and external conditions.
-
-        Cause And Effect Agent:
-        Use when the topic involves incidents, collapses, decisions, conflicts, disasters, historical shifts, or major outcomes.
-        Purpose:
-        Extract causal chains and consequences.
-
         Web Search:
         Use after internal agents.
         Purpose:
@@ -112,7 +92,7 @@ def researcher(state: GlobalState):
 
         Only call tools when necessary.
         Do not call tools redundantly.
-        But call websearch 4-5 times/topic
+        *ONE web_search can take upto 20 queries, be sure to utilize them effeciently, use atleast half of it in one call with meaningful queries related to topic*
 
         [OUTPUT GOAL]
 
@@ -124,7 +104,7 @@ def researcher(state: GlobalState):
     agent = create_agent(
         model = model,
         response_format = ResearchResponse,
-        system_prompt = system_prompt,
+        system_prompt = SystemPrompt.load("research"),
         tools = [web_search]
     )
     
