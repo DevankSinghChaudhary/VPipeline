@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 from vcp.chat import ChatVPipeline
 from langchain.agents import create_agent
 
-from vcp.utils import web_search
 from vcp.prompts import SystemPrompt
 
 from vcp.state import GlobalState
@@ -22,7 +21,7 @@ model = ChatVPipeline(
 
 def writer(state: GlobalState):
 
-    print(f"[Writer] Started Processing")
+    print(f"[AGENT] Writer | Started Processing")
     st = time.time()
 
     topic = state["topic"]
@@ -111,8 +110,8 @@ def writer(state: GlobalState):
     })
     result = result["structured_response"]
     
-    print(f"[Writer] Finished Successfully")
-    print(f"[Writer] {time.time()-st}")
+    print(f"[AGENT] Writer | {time.time()-st}")
+    print(f"[AGENT] Writer | Finished Successfully")
     
     return {
         "script": result

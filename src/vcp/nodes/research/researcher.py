@@ -1,5 +1,6 @@
 import os
 import time
+import asyncio
 from textwrap import dedent
 from itertools import cycle
 
@@ -26,15 +27,15 @@ apikey = cycle(
     ]
 )
 
-def researcher(state: GlobalState):
+model = ChatVPipeline(
+    model = "ministral-14b-2512",
+    base_url = os.getenv("MISTRAL_URL"),
+    api_key = next(apikey)
+)
 
-    model = ChatVPipeline(
-        model = "ministral-14b-2512",
-        base_url = os.getenv("MISTRAL_URL"),
-        api_key = next(apikey)
-    )
+async def researcher(state: GlobalState):
 
-    print(f"[Researcher] Started Researching")
+    print(f"[AGENT] Researcher | Started Researching")
     st = time.time()
 
     topic = state["topic"]
@@ -108,7 +109,7 @@ def researcher(state: GlobalState):
         tools = [web_search]
     )
     
-    result = agent.invoke({
+    result = await agent.ainvoke({
         "messages":[{
             "role": "user",
             "content": prompt
@@ -116,7 +117,7 @@ def researcher(state: GlobalState):
     })
     result = result["structured_response"]
 
-    print(f"[Researcher] Finished Successfully")
-    print(f"[Researcher] {time.time()-st}")
+    print(f"[AGENT] Researcher | Finished Successfully")
+    print(f"[AGENT] Researcher | {time.time()-st}")
 
     return {"information": result}
