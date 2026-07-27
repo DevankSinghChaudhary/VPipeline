@@ -1,5 +1,6 @@
 import os
 import time
+import shutil
 from pathlib import Path
 
 import soundfile as sf
@@ -38,6 +39,9 @@ AUDIO_PATH = Path(
     )
 )
 
+if AUDIO_PATH.exists():
+    shutil.rmtree(AUDIO_PATH)
+
 if not AUDIO_PATH.is_absolute():
     AUDIO_PATH = PROJECT_ROOT / AUDIO_PATH
 
@@ -45,7 +49,6 @@ AUDIO_PATH.mkdir(
     parents=True,
     exist_ok=True
 )
-
 
 # --------------------------------------------------
 # CONFIGURATION

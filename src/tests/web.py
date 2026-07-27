@@ -1,10 +1,13 @@
+import os
+from dotenv import load_dotenv
 from tinyfish import TinyFish
 import time
 
+load_dotenv()
 
 start = time.time()
 client = TinyFish(
-    api_key = "sk-tinyfish-anEN4vKIHTvPBWwLTIewlNn9mLFegnE2"
+    api_key = os.getenv("TINYFISH_API")
 )
 
 response = client.search.query(

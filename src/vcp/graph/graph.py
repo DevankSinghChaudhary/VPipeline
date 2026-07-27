@@ -13,10 +13,13 @@ from vcp.nodes import (
 )
 from vcp.service import (
     fanout_tts,
-    kokoro_service
+    kokoro_service,
+    clear_audio
 )
 
 async def graph(state: GlobalState):
+
+    clear_audio()
 
     builder = StateGraph(state)
 
