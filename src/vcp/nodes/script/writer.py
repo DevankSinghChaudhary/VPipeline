@@ -110,7 +110,7 @@ def writer(state: GlobalState):
     })
     result = result["structured_response"]
     
-    print(f"[AGENT] Writer | {time.time()-st}")
+    print(f"[AGENT] Writer | {time.time()-st:.2f}s")
     print(f"[AGENT] Writer | Finished Successfully")
     
     return {

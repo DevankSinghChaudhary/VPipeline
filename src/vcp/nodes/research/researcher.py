@@ -22,7 +22,7 @@ load_dotenv()
 apikey = cycle(
     [
         os.getenv("MISTRAL_API_KEY"),
-        os.getenv("MISTRAL_API_KEY2"),
+        os.getenv("MISTRAL_API_KEY2"),       # <- THIS IS SHIT I KNOW, THATS WHY BUILDING ChatOpenAI to ChatVPipeline with native API ROTATION (DON'T KNOW IF API ROTATION ACTUALLY BENEFIT NUMBER OF TOTAL CALLS LIMIT)
         os.getenv("MISTRAL_API_KEY3")
     ]
 )
@@ -93,7 +93,7 @@ async def researcher(state: GlobalState):
 
         Only call tools when necessary.
         Do not call tools redundantly.
-        *ONE web_search can take upto 20 queries, be sure to utilize them effeciently, use atleast half of it in one call with meaningful queries related to topic*
+        *ONE web_search can take upto 10 queries at max, be sure to utilize them effeciently, use atleast half of it in one call with meaningful queries related to topic. Make parallel web_search (CAN MAKE UNLIMITED PARALLEL REQUEST WITH 10 Query/REQUEST. USE IT)*
 
         [OUTPUT GOAL]
 
@@ -118,6 +118,6 @@ async def researcher(state: GlobalState):
     result = result["structured_response"]
 
     print(f"[AGENT] Researcher | Finished Successfully")
-    print(f"[AGENT] Researcher | {time.time()-st}")
+    print(f"[AGENT] Researcher | {time.time()-st:.2f}s")
 
     return {"information": result}

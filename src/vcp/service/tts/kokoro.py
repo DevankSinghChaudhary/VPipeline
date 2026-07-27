@@ -97,7 +97,6 @@ def fanout_tts(state: GlobalState):
 def kokoro_service(script: GlobalState):
     start = time.time()
 
-    print(script)
     script_id = script["script_for_kokoro"].id
     text = script["script_for_kokoro"].script
 
