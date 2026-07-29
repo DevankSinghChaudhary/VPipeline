@@ -9,7 +9,8 @@ from vcp.state import GlobalState
 from vcp.nodes import (
     researcher,
     writer,
-    formatter
+    formatter,
+    merger
 )
 from vcp.service import (
     fanout_tts,
@@ -27,12 +28,14 @@ async def graph(state: GlobalState):
     builder.add_node("Writer", writer)
     builder.add_node("Formatter", formatter)
     builder.add_node("Kokoro", kokoro_service)
+    builder.add_node("Merger", merger)
 
     builder.add_edge(START, "Researcher")
     builder.add_edge("Researcher", "Writer")
     builder.add_edge("Writer", "Formatter")
     builder.add_conditional_edges("Formatter", fanout_tts)
-    builder.add_edge("Kokoro", END)
+    builder.add_edge("Kokoro", "Merger")
+    builder.add_edge("Merger", END)
 
     graph = builder.compile()
 

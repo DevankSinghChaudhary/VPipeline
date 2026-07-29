@@ -71,7 +71,8 @@ SAMPLE_RATE = 24000
 # --------------------------------------------------
 
 pipeline = KPipeline(
-    lang_code="a"
+    lang_code="a",
+    repo_id="hexgrad/Kokoro-82M"
 )
 
 
