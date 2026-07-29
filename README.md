@@ -6,7 +6,7 @@
 ---
 Working of VPipeline:
 ```mermaid
-graph TD;
+  graph TD;
     START-->RESEARCHER;
     RESEARCHER-->WRITER;
     WRITER-->FORMATTER;
@@ -21,8 +21,9 @@ graph TD;
     MERGER-->working_on
 ```
 ```
+```
 
-
+---
 ## Stack
 - Python
 - Langchain
