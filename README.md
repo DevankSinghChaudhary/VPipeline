@@ -3,7 +3,7 @@
 
 [![Mistral AI](https://img.shields.io/badge/Built%20with-Mistral%20AI-9B59B6?logo=mistralai&logoColor=orange)](https://mistral.ai/)
 
-
+---
 Working of VPipeline:
 ```mermaid
 graph TD;
@@ -21,3 +21,10 @@ graph TD;
     MERGER-->working_on
 ```
 ```
+
+
+## Stack
+- Python
+- Langchain
+- Langgraph
+- Kokoro
