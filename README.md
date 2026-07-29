@@ -15,3 +15,33 @@ VPipeline is an AI-powered video creation pipeline that transforms a single topi
 Traditional video creation requires researching, writing, recording, editing, sourcing visuals, synchronizing narration, and rendering everything together. 
 
 Pipeline aims to automate that entire workflow through specialized AI agents.
+
+---
+
+## Planned Features 
+
+- AI-generated visuals 
+- Dynamic typography 
+- Animated diagrams 
+- Geographic maps 
+- Point-cloud visualizations 
+- Timeline animations 
+- Procedural graphics 
+- Automatic video editing 
+- MP4 rendering 
+- Multiple TTS providers 
+- Multiple LLM providers
+
+> [!IMPORTANT]
+> Already reached till `.mp4` in [previous version](https://github.com/DevankSinghChaudhary/video-creation-pipeline/).
+
+
+## Project Status 
+VPipeline is under active development. 
+
+The audio generation pipeline is operational. Visual generation, animation, and final video rendering are currently being developed. 
+
+---
+## License 
+
+MIT
