@@ -10,7 +10,11 @@ from vcp.chat import ChatVPipeline
 
 from langchain.agents import create_agent
 
-from vcp.utils import web_search
+from vcp.utils import (
+    web_search,
+    root,
+    read
+)
 from vcp.prompts import SystemPrompt
 
 from vcp.state import GlobalState
@@ -32,6 +36,14 @@ model = ChatVPipeline(
     base_url = os.getenv("MISTRAL_URL"),
     api_key = next(apikey)
 )
+
+# SKILL
+BASE_DIR = root.find()
+SKILL_PATH = BASE_DIR / "src" / "vcp" / "skills"
+RESEARCH_SKILL = read(SKILL_PATH / "research.md")
+
+SYSTEM_PROMPT = SystemPrompt.load("research") + "\n\n" + "\n\n" + RESEARCH_SKILL
+
 
 async def researcher(state: GlobalState):
 

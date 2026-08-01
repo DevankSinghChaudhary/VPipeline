@@ -40,6 +40,9 @@ Available topics:
 - sentence_rhythm
 - abbreviations
 - proper_nouns
+- important
+
+  *NOTE* The important file, you must call it before you output the script. (EVERYTIME, DON'T LEAVE IT, JUST CALL IT ON EACH RUN)
 
 Only request topics that are necessary for the current task.
 Do not call this tool if you already have sufficient information.
@@ -47,10 +50,11 @@ Do not call this tool if you already have sufficient information.
 )
 def read_knowledge(
     topic: Literal[
+            "important",
             "abbreviations",
             "dates",
             "numbers",
-            "pauses"
+            "pauses",
             "products",
             "pronunciation-normalization",
             "proper-nouns",
