@@ -149,8 +149,7 @@ extracted/
 
 > The extraction process only needs to be performed once unless the Natural Earth dataset is updated.
 
----
 
 ## License 
 
-MIT
+[MIT](#LICENSE)
