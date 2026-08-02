@@ -41,40 +41,116 @@ VPipeline is under active development.
 
 The audio generation pipeline is operational. Visual generation, animation, and final video rendering are currently being developed. 
 
---- 
+---
 
-## CLONE & RUN 
+## Clone & Run
 
-### Clone: 
-```
-```
-git clone https://github.com/DevankSinghChaudhary/VPipeline.git 
+### 1. Clone the repository
 
-cd VPipeline 
-```
-```
- 
-
-
-### Necessary data: 
-go to [Natural Earth](https://www.naturalearthdata.com/downloads/) and download [GeoPackage](https://naciscdn.org/naturalearth/packages/natural_earth_vector.gpkg.zip)
- 
-```
-```
-cd VPipeline/src/vcp/globe/  
-
-mkdir packages  
-(extract that .gpkg.zip in packages)  
-
-mkdir extracted  
-
-mkdir 10m 50m 110m  
-
-uv run main.py  
-```
+```bash
+git clone https://github.com/DevankSinghChaudhary/VPipeline.git
+cd VPipeline
 ```
 
---- 
+---
+
+### 2. Download the required dataset
+
+VPipeline uses the **Natural Earth GeoPackage** as its base world dataset.
+
+Download the latest GeoPackage:
+
+* https://www.naturalearthdata.com/downloads/
+* Direct download: https://naciscdn.org/naturalearth/packages/natural_earth_vector.gpkg.zip
+
+Extract the downloaded archive and obtain:
+
+```text
+natural_earth_vector.gpkg
+```
+
+---
+
+### 3. Place the dataset
+
+Move the GeoPackage into:
+
+```text
+src/vcp/globe/packages/
+```
+
+Your structure should look like:
+
+```text
+src/
+└── vcp/
+    └── globe/
+        ├── packages/
+        │   └── natural_earth_vector.gpkg
+        └── extracted/
+```
+
+---
+
+### 4. Create extraction folders
+
+```bash
+cd src/vcp/globe
+
+mkdir -p extracted/10m
+mkdir -p extracted/50m
+mkdir -p extracted/110m
+```
+
+Result:
+
+```text
+globe/
+├── packages/
+│   └── natural_earth_vector.gpkg
+└── extracted/
+    ├── 10m/
+    ├── 50m/
+    └── 110m/
+```
+
+---
+
+### 5. Extract Natural Earth layers
+
+Run:
+
+```bash
+uv run main.py
+```
+
+The extractor automatically:
+
+* Reads every layer from the Natural Earth GeoPackage.
+* Categorizes each layer into **10m**, **50m**, or **110m** datasets.
+* Converts every layer into an individual GeoJSON file.
+* Places the generated files inside the corresponding `extracted/` directory.
+
+Example:
+
+```text
+extracted/
+├── 10m/
+│   ├── ne_10m_land.geojson
+│   ├── ne_10m_coastline.geojson
+│   ├── ...
+├── 50m/
+│   ├── ne_50m_land.geojson
+│   ├── ...
+└── 110m/
+    ├── ne_110m_land.geojson
+    └── ...
+```
+
+> The extraction process only needs to be performed once unless the Natural Earth dataset is updated.
+
+---
+
 ## License 
 
 MIT
