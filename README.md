@@ -25,7 +25,7 @@ Pipeline aims to automate that entire workflow through specialized AI agents.
 - Animated diagrams 
 - Geographic maps 
 - Point-cloud visualizations 
-- Timeline animations 
+- Timeline animation
 - Procedural graphics 
 - Automatic video editing 
 - MP4 rendering 
@@ -40,6 +40,25 @@ Pipeline aims to automate that entire workflow through specialized AI agents.
 VPipeline is under active development. 
 
 The audio generation pipeline is operational. Visual generation, animation, and final video rendering are currently being developed. 
+
+---
+
+## CLONE & RUN
+
+### Clone:
+git clone https://github.com/DevankSinghChaudhary/VPipeline.git
+cd VPipeline
+
+### Necessary data:
+go to [Natural Earth](https://www.naturalearthdata.com/downloads/) and download [GeoPackage](https://naciscdn.org/naturalearth/packages/natural_earth_vector.gpkg.zip)
+
+cd VPipeline/src/vcp/globe/
+mkdir packages
+(extract that .gpkg.zip in packages)
+mkdir extracted
+mkdir 10m 50m 110m
+
+uv run main.py
 
 ---
 ## License 
