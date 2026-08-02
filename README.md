@@ -46,19 +46,33 @@ The audio generation pipeline is operational. Visual generation, animation, and 
 ## CLONE & RUN 
 
 ### Clone: 
+```
+```
 git clone https://github.com/DevankSinghChaudhary/VPipeline.git 
+
 cd VPipeline 
+```
+```
  
+
+
 ### Necessary data: 
 go to [Natural Earth](https://www.naturalearthdata.com/downloads/) and download [GeoPackage](https://naciscdn.org/naturalearth/packages/natural_earth_vector.gpkg.zip)
+ 
+```
+```
+cd VPipeline/src/vcp/globe/  
 
-cd VPipeline/src/vcp/globe/ 
-mkdir packages 
-(extract that .gpkg.zip in packages) 
-mkdir extracted 
-mkdir 10m 50m 110m 
+mkdir packages  
+(extract that .gpkg.zip in packages)  
 
-uv run main.py 
+mkdir extracted  
+
+mkdir 10m 50m 110m  
+
+uv run main.py  
+```
+```
 
 --- 
 ## License 
