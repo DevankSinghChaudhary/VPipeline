@@ -13,7 +13,8 @@ wheels/
 system_prompt.json
 
 output/
-
 packages/
+extracted/
 
 *.gpkg
+*.geojson

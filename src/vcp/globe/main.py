@@ -1,21 +1,28 @@
 import geopandas as gpd
+from pathlib import Path
 from vcp.utils import root
 
 DATASET = root.find() / "src" / "vcp" / "globe" / "packages" / "natural_earth_vector.gpkg"
 EXTRACTED = root.find() / "src" / "vcp" / "globe" / "extracted"
 
 layers = gpd.list_layers(DATASET)
+
 for layer in layers["name"]:
-    print(layer)
+    geo = gpd.read_file(
+        DATASET,
+        layer=layer,
+    )
 
-input = input("Enter File to Extract: ")
+    if "_10m_" in layer:
+        out = EXTRACTED / "10m"
+    elif "_50m_" in layer:
+        out = EXTRACTED / "50m"
+    else:
+        out = EXTRACTED / "110m"
 
-land = gpd.read_file(
-    DATASET,
-    layer=input
-)
+    out.mkdir(parents=True, exist_ok=True)
 
-land.to_file(
-        f"{EXTRACTED}/{input}.geojson",
-        driver="GeoJSON"
-)
+    geo.to_file(
+        out / f"{layer}.geojson",
+        driver="GeoJSON",
+    )
