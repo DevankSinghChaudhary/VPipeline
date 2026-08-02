@@ -41,26 +41,26 @@ VPipeline is under active development.
 
 The audio generation pipeline is operational. Visual generation, animation, and final video rendering are currently being developed. 
 
----
+--- 
 
-## CLONE & RUN
+## CLONE & RUN 
 
-### Clone:
-git clone https://github.com/DevankSinghChaudhary/VPipeline.git
-cd VPipeline
-
-### Necessary data:
+### Clone: 
+git clone https://github.com/DevankSinghChaudhary/VPipeline.git 
+cd VPipeline 
+ 
+### Necessary data: 
 go to [Natural Earth](https://www.naturalearthdata.com/downloads/) and download [GeoPackage](https://naciscdn.org/naturalearth/packages/natural_earth_vector.gpkg.zip)
 
-cd VPipeline/src/vcp/globe/
-mkdir packages
-(extract that .gpkg.zip in packages)
-mkdir extracted
-mkdir 10m 50m 110m
+cd VPipeline/src/vcp/globe/ 
+mkdir packages 
+(extract that .gpkg.zip in packages) 
+mkdir extracted 
+mkdir 10m 50m 110m 
 
-uv run main.py
+uv run main.py 
 
----
+--- 
 ## License 
 
 MIT
