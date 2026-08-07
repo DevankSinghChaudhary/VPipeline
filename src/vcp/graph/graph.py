@@ -14,12 +14,14 @@ from vcp.nodes import (
 )
 from vcp.service import (
     fanout_tts,
-    kokoro_service,
+    omni,
+    tts_batch_complete,
     clear_audio
 )
 
 async def graph(state: GlobalState):
 
+    start = time.time()
     clear_audio()
 
     builder = StateGraph(state)
@@ -27,14 +29,16 @@ async def graph(state: GlobalState):
     builder.add_node("Researcher", researcher)
     builder.add_node("Writer", writer)
     builder.add_node("Formatter", formatter)
-    builder.add_node("Kokoro", kokoro_service)
+    builder.add_node("TTSBatchComplete", tts_batch_complete)
+    builder.add_node("Omni", omni)
     builder.add_node("Merger", merger)
 
     builder.add_edge(START, "Researcher")
     builder.add_edge("Researcher", "Writer")
     builder.add_edge("Writer", "Formatter")
     builder.add_conditional_edges("Formatter", fanout_tts)
-    builder.add_edge("Kokoro", "Merger")
+    builder.add_edge("Omni", "TTSBatchComplete")
+    builder.add_conditional_edges("TTSBatchComplete",fanout_tts)
     builder.add_edge("Merger", END)
 
     graph = builder.compile()
@@ -44,8 +48,9 @@ async def graph(state: GlobalState):
         "information": {},
         "script": [],
         "formatted": [],
-        "audio": []
+        "audio": [],
+        "tts_index": 0
     })
 
-
+    print(f"[GRAPH] Finished | {time.time()-start:.2f}s")
     return result

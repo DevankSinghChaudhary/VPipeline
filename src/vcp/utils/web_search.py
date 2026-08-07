@@ -106,7 +106,7 @@ async def web_search(queries: list[str]) -> list[dict]:
     for source, page in zip(sources, fetch_response.results):
         source["content"] = page.text
 
-    print(f"[TOOL] web_search | {time.time()-start}")
+    print(f"[TOOL] web_search | {time.time()-start:.2f}s")
     print(f"[TOOL] web_search | Finished Fetching")
 
     return sources

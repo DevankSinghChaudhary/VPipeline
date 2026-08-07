@@ -20,7 +20,9 @@ PROJECT_ROOT = find_project_root()
 
 AUDIO_PATH = PROJECT_ROOT / os.getenv("AUDIO_PATH")
 
-print(AUDIO_PATH)
+print(
+    f"Cleaning {AUDIO_PATH}"
+)
 
 def clear_audio():
     if AUDIO_PATH.exists():

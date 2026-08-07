@@ -1,0 +1,23 @@
+{
+  "name": "Terracotta",
+
+  "land": "#F5EDE4",
+  "ocean": "#04A1BF",
+
+  "country_fill": "#F5EDE4",
+  "country_border": "#D4A373",
+
+  "state_border": "#C68642",
+
+  "highway": "#A0522D",
+  "road": "#8B4513",
+
+  "river": "#3DB8D3",
+  "lake": "#4BC6E0",
+
+  "city": "#3E2723",
+  "label": "#2C2C2C",
+
+  "route": "#FF6B35",
+  "highlight": "#FFD166"
+}

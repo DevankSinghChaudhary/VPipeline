@@ -18,3 +18,7 @@ extracted/
 
 *.gpkg
 *.geojson
+
+
+# Node_Modules
+node_modules/

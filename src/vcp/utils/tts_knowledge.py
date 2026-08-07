@@ -69,5 +69,4 @@ def read_knowledge(
     file = KNOWLEDGE_DIR / f"{topic}.md"
     output = file.read_text(encoding="utf-8")
     print(f"[TOOL] tts_knowledge | {topic}.md fetched")
-    print(f"[TOOL] tts_knowledge | Finished Fetching")
     return output

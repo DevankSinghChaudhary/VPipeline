@@ -1,1 +1,1 @@
-from .kokoro import fanout_tts, kokoro_service
+from .omni import fanout_tts, omni, tts_batch_complete
