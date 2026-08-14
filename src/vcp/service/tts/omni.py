@@ -9,7 +9,7 @@ import time
 from langgraph.types import Send
 
 
-MAX_CONCURRENCY = 4 #MAX BATCHED TTS INPUT
+MAX_CONCURRENCY = 8 #MAX BATCHED TTS INPUT
 
 BASE = root.find()
 

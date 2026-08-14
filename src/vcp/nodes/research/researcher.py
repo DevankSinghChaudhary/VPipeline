@@ -76,41 +76,59 @@ async def researcher(state: GlobalState):
         [CORE RULES]
 
         1. Zero hallucination.
-        Use only verified information.
+            Use only verified information.
 
         2. Don't underuse web search.
-        Don't over use as well, do 1-2 web search for each topic
+            Don't overuse it either. Do 1–2 web searches for each topic when necessary.
 
-        3. Research before synthesis.
-        Do not assume facts before tool usage.
+        PARALLEL TOOL CALLING:
 
-        3. Tool-first reasoning.
-        Use tools whenever their output improves factual quality.
+        * When multiple web searches are independent of each other, ALWAYS issue them in parallel.
+        * NEVER wait for one independent web search to finish before requesting another.
+        * A single web_search call supports a maximum of 10 queries.
+        * If more than 10 queries are required, split them into batches of 10.
+        * Example: 20 queries → 2 parallel web_search calls of 10 queries each.
+        * Example: 25 queries → 3 parallel web_search calls: 10 + 10 + 5.
+        * Example: 7 queries → 1 web_search call containing all 7 queries.
+        * Use as many parallel web_search calls as necessary.
+        * Only perform a search sequentially when its query genuinely depends on the result of a previous search.
+        * Do NOT artificially serialize independent searches.
 
-        4. Prioritize documentary-relevant information:
+            3. Research before synthesis.
+                Do not assume facts before tool usage.
 
-        * incidents
-        * causes
-        * consequences
-        * measurable outcomes
-        * timelines
-        * external context
+            4. Tool-first reasoning.
+                Use tools whenever their output improves factual quality.
 
-        5. Avoid collecting unnecessary background unless directly useful.
+            5. Prioritize documentary-relevant information:
+
+                * incidents
+                * causes
+                * consequences
+                * measurable outcomes
+                * timelines
+                * external context
+
+            6. Avoid collecting unnecessary background unless directly useful.
 
         Web Search:
+
         Use after internal agents.
+
         Purpose:
+
         Collect raw factual verification, missing facts, and measurable data.
 
         Only call tools when necessary.
         Do not call tools redundantly.
-        *ONE web_search can take upto 10 queries at max, be sure to utilize them effeciently, use atleast half of it in one call with meaningful queries related to topic. Make parallel web_search (CAN MAKE UNLIMITED PARALLEL REQUEST WITH 10 Query/REQUEST. USE IT)*
+
+        When multiple independent facts or angles need verification, group their search queries into parallel web_search tool calls rather than executing them sequentially.
 
         [OUTPUT GOAL]
 
         Produce a structured factual research packet for downstream writing.
         Do not write the documentary itself.
+
         """
         )
 
@@ -132,4 +150,7 @@ async def researcher(state: GlobalState):
     print(f"[AGENT] Researcher | Finished Successfully")
     print(f"[AGENT] Researcher | {time.time()-st:.2f}s")
 
-    return {"information": result}
+    return {
+        "information": result.information,
+        "category": result.category
+        }

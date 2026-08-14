@@ -85,6 +85,9 @@ AI
 GPU
 → G P U
 
+GPUs
+→ GPUs
+
 NASA
 → NASA
 
