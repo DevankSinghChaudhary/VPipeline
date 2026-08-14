@@ -48,6 +48,7 @@ async def graph(state: GlobalState):
 
     result = await graph.ainvoke({
         "topic": user_topic(),
+        "category": str
         "information": {},
         "script": [],
         "formatted": [],
