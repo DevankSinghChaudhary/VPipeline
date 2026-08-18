@@ -54,8 +54,7 @@ def visualizer(state: GlobalState) -> dict:
     })
     result=result["structured_response"]
 
-    print(
-        f"[AGENT] Visualizer | Finished"
-        f"[AGENT] Visualizer | {time.time()-start:.2f}s"
-    )
+    print(f"[AGENT] Visualizer | Finished")
+    print(f"[AGENT] Visualizer | {time.time()-start:.2f}s")
+
     return {"visual": result}

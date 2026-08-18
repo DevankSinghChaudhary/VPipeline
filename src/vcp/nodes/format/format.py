@@ -119,7 +119,7 @@ def formatter(state: GlobalState) -> dict:
 
     result = result["structured_response"]
 
-    print(f"[AGENT] Formatter | {time.time()-start}")
+    print(f"[AGENT] Formatter | {time.time()-start:.2f}s")
     print(f"[AGENT] Formatter | Finished Formatting")
 
     return {

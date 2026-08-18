@@ -151,6 +151,6 @@ async def researcher(state: GlobalState):
     print(f"[AGENT] Researcher | {time.time()-st:.2f}s")
 
     return {
+        "category": result.category,
         "information": result.information,
-        "category": result.category
         }

@@ -1,0 +1,10 @@
+{
+    "node": {
+        "research": {"system_prompt": "Add system prompt here"}
+      },
+      {
+        "script": {"system_prompt": "Add system prompt here"}
+        }
+  }
+
+I KNOW THERE IS system_prompt.json in github but still I'm making this .example, "JUST IN CASE"

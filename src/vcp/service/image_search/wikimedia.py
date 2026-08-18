@@ -6,7 +6,7 @@ from vcp.schemas import WikimediaAsset
 API_URL = "https://commons.wikimedia.org/w/api.php"
 
 HEADERS = {
-    "User-Agent": "VPipeline/0.1 (your-contact-info)"
+    "User-Agent": "VPipeline/0.1 (example@gmail.com)"
 }
 
 ALLOWED_MIME = {
@@ -85,7 +85,8 @@ def parse_page(page):
 
 
 if __name__ == "__main__":
-    data = search_images("Exoplanets")
+    data=input("Enter: ")
+    data = search_images(data)
 
     pages = data.get("query", {}).get("pages", {})
 

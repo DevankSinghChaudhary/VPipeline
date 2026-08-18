@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-
+#Output response for the /VPipeline/src/vcp/service/image_search/wikimedia.py
 class WikimediaAsset(BaseModel):
     title: str
     url: str
