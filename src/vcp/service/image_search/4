@@ -2,12 +2,11 @@ import re
 from html import unescape
 
 import requests
-from langgraph.types import Send
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 from vcp.schemas import WikimediaAsset
-from vcp.state import GlobalState
+
 
 API_URL = "https://commons.wikimedia.org/w/api.php"
 
@@ -61,6 +60,7 @@ class WikimediaImageSearch:
             "prop": "imageinfo",
             "iiprop": "url|size|mime|extmetadata",
             "iiextmetadatafilter": "ImageDescription|Artist|Credit|LicenseShortName|UsageTerms|LicenseUrl",
+            "iiurlwidth": 1920,
             "format": "json",
             "formatversion": 2,
         }
@@ -113,27 +113,40 @@ class WikimediaImageSearch:
         if mime not in ALLOWED_MIME:
             return None
 
-        url = info.get("url")
-
-        if not url:
-            return None
-
         metadata = info.get("extmetadata", {})
 
         return WikimediaAsset(
             title=page.get("title", ""),
-            url=url,
+            url=info.get("url", ""),
             thumburl=info.get("thumburl"),
             descriptionurl=info.get("descriptionurl"),
             width=info.get("width", 0),
             height=info.get("height", 0),
             mime=mime,
-            description=self._metadata_value(metadata, "ImageDescription"),
-            license=self._metadata_value(metadata, "LicenseShortName"),
-            artist=self._metadata_value(metadata, "Artist"),
-            credit=self._metadata_value(metadata, "Credit"),
-            usage_terms=self._metadata_value(metadata, "UsageTerms"),
-            license_url=self._metadata_value(metadata, "LicenseUrl"),
+            description=self._metadata_value(
+                metadata,
+                "ImageDescription",
+            ),
+            license=self._metadata_value(
+                metadata,
+                "LicenseShortName",
+            ),
+            artist=self._metadata_value(
+                metadata,
+                "Artist",
+            ),
+            credit=self._metadata_value(
+                metadata,
+                "Credit",
+            ),
+            usage_terms=self._metadata_value(
+                metadata,
+                "UsageTerms",
+            ),
+            license_url=self._metadata_value(
+                metadata,
+                "LicenseUrl",
+            ),
         )
 
     @staticmethod
@@ -150,22 +163,8 @@ class WikimediaImageSearch:
         return value.strip()
 
 
-def fanout_image(state: GlobalState):
-    visual_response = state["visual"]
-
-    return [
-        Send("Image", {"query": query})
-        for visual in visual_response.visual
-        for segment in visual.segments
-        for query in segment.classification.queries
-    ]
-
-
-def search_images(state, limit: int = 20):
-    query = state["query"]
-
-    print(f"    [TOOL] Wikimedia Searched for {query}")
-
-    images = WikimediaImageSearch().search(query, limit)
-
-    return {"images": [{image.title: image.description} for image in images]}
+def search_images(queries: list, limit: int = 20) -> list[WikimediaAsset]:
+    for query in queries:
+        print(f"[TOOL] Wikimedia Searched for {query}")
+        image = WikimediaImageSearch().search(query, limit)
+        return {"images": [{image["title"]:image["descriptionurl"]}]}

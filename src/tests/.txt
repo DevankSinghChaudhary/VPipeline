@@ -1,0 +1,26 @@
+.
+├── dict.py
+├── fanout.py
+├── media
+│   ├── images
+│   │   └── test_scene
+│   ├── Tex
+│   │   └── 713151ed93a8b1f5.tex
+│   ├── texts
+│   │   └── 46a46b6c1926bcfa.svg
+│   └── videos
+│       └── test_scene
+│           └── 1080p60
+│               └── partial_movie_files
+│                   └── UpdatersExample
+├── prompt.json
+├── prompt_loader.py
+├── provider.py
+├── __pycache__
+│   ├── manim.cpython-312.pyc
+│   └── test_scene.cpython-312.pyc
+├── test_scene.py
+├── text.txt
+└── web.py
+
+12 directories, 12 files

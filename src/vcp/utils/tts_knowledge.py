@@ -1,5 +1,3 @@
-import time
-
 from pathlib import Path
 from typing import Literal
 
@@ -8,7 +6,6 @@ from langchain.tools import tool
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 KNOWLEDGE_DIR = BASE_DIR / "knowledge" / "tts"
-
 
 
 @tool(
@@ -46,27 +43,27 @@ Available topics:
 
 Only request topics that are necessary for the current task.
 Do not call this tool if you already have sufficient information.
-"""
+""",
 )
 def read_knowledge(
     topic: Literal[
-            "important",
-            "abbreviations",
-            "dates",
-            "numbers",
-            "pauses",
-            "products",
-            "pronunciation-normalization",
-            "proper-nouns",
-            "punctuation",
-            "sentence-rhythm",
-            "technical-terms"
-        ]
+        "important",
+        "abbreviations",
+        "dates",
+        "numbers",
+        "pauses",
+        "products",
+        "pronunciation-normalization",
+        "proper-nouns",
+        "punctuation",
+        "sentence-rhythm",
+        "technical-terms",
+    ],
 ) -> str:
     """Read multiple TTS formatting topics."""
-    print(f"[TOOL] tts_knowledge | Called")
+    print("    [TOOL] tts_knowledge | Called")
 
     file = KNOWLEDGE_DIR / f"{topic}.md"
     output = file.read_text(encoding="utf-8")
-    print(f"[TOOL] tts_knowledge | {topic}.md fetched")
+    print(f"    [TOOL] tts_knowledge | {topic}.md fetched")
     return output

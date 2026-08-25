@@ -4,12 +4,14 @@ from pydantic import BaseModel
 class WikimediaAsset(BaseModel):
     title: str
     url: str
-    thumbnail_url: str | None = None
-    page_url: str
-    description: str | None = None
-    artist: str | None = None
-    license: str | None = None
-    license_url: str | None = None
+    thumburl: str | None = None
+    descriptionurl: str | None = None
+    width: int
+    height: int
     mime: str
-    width: int | None = None
-    height: int | None = None
+    description: str = ""
+    license: str = ""
+    artist: str = ""
+    credit: str = ""
+    usage_terms: str = ""
+    license_url: str = ""

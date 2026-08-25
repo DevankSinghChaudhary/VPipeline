@@ -1,40 +1,31 @@
 import os
 import time
-import asyncio
-from textwrap import dedent
 from itertools import cycle
+from textwrap import dedent
 
 from dotenv import load_dotenv
-
-from vcp.chat import ChatVPipeline
-
 from langchain.agents import create_agent
 
-from vcp.utils import (
-    web_search,
-    root,
-    read
-)
+from vcp.chat import ChatVPipeline
 from vcp.prompts import SystemPrompt
-
-from vcp.state import GlobalState
 from vcp.schemas import ResearchResponse
-
+from vcp.state import GlobalState
+from vcp.utils import read, root, web_search
 
 load_dotenv()
 
 apikey = cycle(
     [
         os.getenv("MISTRAL_API_KEY"),
-        os.getenv("MISTRAL_API_KEY2"),       # <- THIS IS SHIT I KNOW, THATS WHY BUILDING ChatOpenAI to ChatVPipeline with native API ROTATION (DON'T KNOW IF API ROTATION ACTUALLY BENEFIT NUMBER OF TOTAL CALLS LIMIT)
-        os.getenv("MISTRAL_API_KEY3")
+        os.getenv(
+            "MISTRAL_API_KEY2"
+        ),  # <- THIS IS SHIT I KNOW, THATS WHY BUILDING ChatOpenAI to ChatVPipeline with native API ROTATION (DON'T KNOW IF API ROTATION ACTUALLY BENEFIT NUMBER OF TOTAL CALLS LIMIT)
+        os.getenv("MISTRAL_API_KEY3"),
     ]
 )
 
 model = ChatVPipeline(
-    model = "ministral-14b-2512",
-    base_url = os.getenv("MISTRAL_URL"),
-    api_key = next(apikey)
+    model="ministral-14b-2512", base_url=os.getenv("MISTRAL_URL"), api_key=next(apikey)
 )
 
 # SKILL
@@ -42,12 +33,10 @@ BASE_DIR = root.find()
 SKILL_PATH = BASE_DIR / "src" / "vcp" / "skills"
 RESEARCH_SKILL = read(SKILL_PATH / "research.md")
 
-SYSTEM_PROMPT = SystemPrompt.load("research") + "\n\n" + "\n\n" + RESEARCH_SKILL
-
 
 async def researcher(state: GlobalState):
 
-    print(f"[AGENT] Researcher | Started Researching")
+    print("[AGENT] Researcher | Started Researching")
     st = time.time()
 
     topic = state["topic"]
@@ -130,27 +119,22 @@ async def researcher(state: GlobalState):
         Do not write the documentary itself.
 
         """
-        )
+    )
 
     agent = create_agent(
-        model = model,
-        response_format = ResearchResponse,
-        system_prompt = SystemPrompt.load("research"),
-        tools = [web_search]
+        model=model,
+        response_format=ResearchResponse,
+        system_prompt=SystemPrompt.load("research"),
+        tools=[web_search],
     )
-    
-    result = await agent.ainvoke({
-        "messages":[{
-            "role": "user",
-            "content": prompt
-        }]
-    })
+
+    result = await agent.ainvoke({"messages": {"role": "user", "content": prompt}})
     result = result["structured_response"]
 
-    print(f"[AGENT] Researcher | Finished Successfully")
-    print(f"[AGENT] Researcher | {time.time()-st:.2f}s")
+    print("[AGENT] Researcher | Finished Successfully")
+    print(f"[AGENT] Researcher | {time.time() - st:.2f}s")
 
     return {
         "category": result.category,
         "information": result.information,
-        }
+    }

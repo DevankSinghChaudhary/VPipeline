@@ -4,3 +4,5 @@ from .format import FormatResponse, FormatSingle
 from .audio import AudioSegment
 from .visual import VisualResponse
 from .wikimedia import WikimediaAsset
+from .sort import SortResponse
+from .decomposition import DecompostionResponse

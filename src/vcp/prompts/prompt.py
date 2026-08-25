@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
-#Function for retrieving the system prompt from the system_prompt.json file
+
+
+# Function for retrieving the system prompt from the system_prompt.json file
 class SystemPrompt:
     def load(node) -> str:
         current_dir = Path(__file__).parent
@@ -8,4 +10,4 @@ class SystemPrompt:
         config_path = config_path.resolve()
         with open(config_path, "r", encoding="utf-8") as file:
             config = json.load(file)
-            return config['node'][node]['system_prompt']
+            return config["node"][node]["system_prompt"]
