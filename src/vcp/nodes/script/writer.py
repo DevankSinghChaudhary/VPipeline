@@ -1,32 +1,31 @@
 import os
 import time
-from dotenv import load_dotenv
 
-from vcp.chat import ChatVPipeline
+from dotenv import load_dotenv
 from langchain.agents import create_agent
 
+from vcp.chat import ChatVPipeline
 from vcp.prompts import SystemPrompt
-
-from vcp.state import GlobalState
 from vcp.schemas import ScriptResponse
+from vcp.state import GlobalState
 
 load_dotenv()
 
 model = ChatVPipeline(
-    model = "mistral-large-2512",
-    base_url = os.getenv("MISTRAL_URL"),
-    api_key = os.getenv("MISTRAL_API_KEY")
+    model="mistral-large-2512",
+    base_url=os.environ["MISTRAL_URL"],
+    api_key=os.environ["MISTRAL_API_KEY"],
 )
 
 
 def writer(state: GlobalState):
 
-    print(f"[AGENT] Writer | Started Processing")
+    print("[AGENT] Writer | Started Processing")
     st = time.time()
 
     topic = state["topic"]
     information = state["information"]
-    
+
     prompt = f"""
     ROLE:
     Documentary narration writer.
@@ -97,22 +96,15 @@ def writer(state: GlobalState):
     """
 
     agent = create_agent(
-        model = model,
-        system_prompt = SystemPrompt.load("script"),
-        response_format = ScriptResponse
+        model=model,
+        system_prompt=SystemPrompt.load("script"),
+        response_format=ScriptResponse,
     )
-    
-    result = agent.invoke({
-        "messages":{
-            "role":"user",
-            "content": prompt
-        }
-    })
+
+    result = agent.invoke({"messages": {"role": "user", "content": prompt}})
     result = result["structured_response"]
-    
-    print(f"[AGENT] Writer | {time.time()-st:.2f}s")
-    print(f"[AGENT] Writer | Finished Successfully")
-    
-    return {
-        "script": result
-    }
+
+    print(f"[AGENT] Writer | {time.time() - st:.2f}s")
+    print("[AGENT] Writer | Finished Successfully")
+
+    return {"script": result}

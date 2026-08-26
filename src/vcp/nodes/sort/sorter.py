@@ -1,32 +1,28 @@
 import os
 import time
-from dotenv import load_dotenv
 
-from vcp.chat import ChatVPipeline
+from dotenv import load_dotenv
 from langchain.agents import create_agent
 
+from vcp.chat import ChatVPipeline
 from vcp.prompts import SystemPrompt
-
-from vcp.state import GlobalState
 from vcp.schemas import SortResponse
+from vcp.state import GlobalState
 
 load_dotenv()
 
 model = ChatVPipeline(
-    model = "mistral-large-2512",
-    base_url = os.getenv("MISTRAL_URL"),
-    api_key = os.getenv("MISTRAL_API_KEY")
+    model="mistral-large-2512",
+    base_url=os.environ["MISTRAL_URL"],
+    api_key=os.environ["MISTRAL_API_KEY"],
 )
 
 
 def sorter(state: GlobalState):
-
-    print(f"[AGENT] Sorter | Started Processing")
+    print("[AGENT] Sorter | Started Processing")
     st = time.time()
-
     script = state["script"]
     img = state["images"]
-    
     prompt = f"""
     ROLE:
     Documentary Asset Selection Agent.
@@ -113,22 +109,11 @@ def sorter(state: GlobalState):
     {img}
     """
     agent = create_agent(
-        model = model,
-        system_prompt = SystemPrompt.load("sort"),
-        response_format = SortResponse
+        model=model,
+        system_prompt=SystemPrompt.load("sort"),
+        response_format=SortResponse,
     )
-    
-    result = agent.invoke({
-        "messages":{
-            "role":"user",
-            "content": prompt
-        }
-    })
-    result = result["structured_response"]
-    
-    print(f"[AGENT] Sorter | {time.time()-st:.2f}s")
-    print(f"[AGENT] Sorter | Finished Successfully")
-
-    return {
-        "sorted": result
-    }
+    result = agent.invoke({"messages": {"role": "user", "content": prompt}})
+    print(f"[AGENT] Sorter | {time.time() - st:.2f}s")
+    print("[AGENT] Sorter | Finished Successfully")
+    return {"sorted": result["structured_response"]}

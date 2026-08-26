@@ -3,30 +3,27 @@ import time
 from textwrap import dedent
 
 from dotenv import load_dotenv
-
-from vcp.chat import ChatVPipeline
 from langchain.agents import create_agent
 
+from vcp.chat import ChatVPipeline
 from vcp.prompts import SystemPrompt
 from vcp.schemas import FormatResponse
 from vcp.state import GlobalState
-
 from vcp.utils import read_knowledge
-
 
 load_dotenv()
 
 
 model = ChatVPipeline(
-    model = "mistral-large-2512",
-    base_url = os.getenv("MISTRAL_URL"),
-    api_key = os.getenv("MISTRAL_API_KEY2")
+    model="mistral-large-2512",
+    base_url=os.environ["MISTRAL_URL"],
+    api_key=os.environ["MISTRAL_API_KEY2"],
 )
 
 
 def formatter(state: GlobalState) -> dict:
-    
-    print(f"[AGENT] Formatter | Started Formatting...")
+
+    print("[AGENT] Formatter | Started Formatting...")
 
     start = time.time()
     script = state["script"]
@@ -104,24 +101,17 @@ def formatter(state: GlobalState) -> dict:
     )
 
     agent = create_agent(
-        model = model,
-        response_format = FormatResponse,
-        system_prompt = SystemPrompt.load("format"),
-        tools = [read_knowledge]
+        model=model,
+        response_format=FormatResponse,
+        system_prompt=SystemPrompt.load("format"),
+        tools=[read_knowledge],
     )
 
-    result = agent.invoke({
-        "messages": {
-            "role": "user",
-            "content": user_prompt
-        }
-    })
+    result = agent.invoke({"messages": {"role": "user", "content": user_prompt}})
 
     result = result["structured_response"]
 
-    print(f"[AGENT] Formatter | {time.time()-start:.2f}s")
-    print(f"[AGENT] Formatter | Finished Formatting")
+    print(f"[AGENT] Formatter | {time.time() - start:.2f}s")
+    print("[AGENT] Formatter | Finished Formatting")
 
-    return {
-        "script": result
-    }
+    return {"script": result}

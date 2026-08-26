@@ -16,11 +16,11 @@ load_dotenv()
 
 apikey = cycle(
     [
-        os.getenv("MISTRAL_API_KEY"),
-        os.getenv(
+        os.environ["MISTRAL_API_KEY"],
+        os.environ[
             "MISTRAL_API_KEY2"
-        ),  # <- THIS IS SHIT I KNOW, THATS WHY BUILDING ChatOpenAI to ChatVPipeline with native API ROTATION (DON'T KNOW IF API ROTATION ACTUALLY BENEFIT NUMBER OF TOTAL CALLS LIMIT)
-        os.getenv("MISTRAL_API_KEY3"),
+        ],  # <- THIS IS SHIT I KNOW, THATS WHY BUILDING ChatOpenAI to ChatVPipeline with native API ROTATION (DON'T KNOW IF API ROTATION ACTUALLY BENEFIT NUMBER OF TOTAL CALLS LIMIT)
+        os.environ["MISTRAL_API_KEY3"],
     ]
 )
 
@@ -35,12 +35,9 @@ RESEARCH_SKILL = read(SKILL_PATH / "research.md")
 
 
 async def researcher(state: GlobalState):
-
     print("[AGENT] Researcher | Started Researching")
     st = time.time()
-
     topic = state["topic"]
-
     prompt = dedent(
         f"""
         [TOPIC]
