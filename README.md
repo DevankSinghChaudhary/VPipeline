@@ -55,102 +55,26 @@ cd VPipeline
 
 ---
 
-### 2. Download the required dataset
-
-VPipeline uses the **Natural Earth GeoPackage** as its base world dataset.
-
-Download the latest GeoPackage:
-
-* https://www.naturalearthdata.com/downloads/
-* Direct download: https://naciscdn.org/naturalearth/packages/natural_earth_vector.gpkg.zip
-
-Extract the downloaded archive and obtain:
-
-```text
-natural_earth_vector.gpkg
-```
-
----
-
-### 3. Place the dataset
-
-Move the GeoPackage into:
-
-```text
-src/vcp/globe/packages/
-```
-
-Your structure should look like:
-
-```text
-src/
-└── vcp/
-    └── globe/
-        ├── packages/
-        │   └── natural_earth_vector.gpkg
-        └── extracted/
-```
-
----
-
-### 4. Create extraction folders
+### 2. Install necessary requirements
 
 ```bash
-cd src/vcp/globe
-
-mkdir -p extracted/10m
-mkdir -p extracted/50m
-mkdir -p extracted/110m
+uv sync
 ```
 
-Result:
+> [!NOTE]
+> To install uv refer to this docs: [Doc](https://docs.astral.sh/uv/getting-started/installation/)
 
-```text
-globe/
-├── packages/
-│   └── natural_earth_vector.gpkg
-└── extracted/
-    ├── 10m/
-    ├── 50m/
-    └── 110m/
-```
-
----
-
-### 5. Extract Natural Earth layers
-
-Run:
+### 3. Run the pipeline
 
 ```bash
+cd VPipeline/src/vcp  
 uv run main.py
 ```
-
-The extractor automatically:
-
-* Reads every layer from the Natural Earth GeoPackage.
-* Categorizes each layer into **10m**, **50m**, or **110m** datasets.
-* Converts every layer into an individual GeoJSON file.
-* Places the generated files inside the corresponding `extracted/` directory.
-
-Example:
-
-```text
-extracted/
-├── 10m/
-│   ├── ne_10m_land.geojson
-│   ├── ne_10m_coastline.geojson
-│   ├── ...
-├── 50m/
-│   ├── ne_50m_land.geojson
-│   ├── ...
-└── 110m/
-    ├── ne_110m_land.geojson
-    └── ...
 ```
 
-> The extraction process only needs to be performed once unless the Natural Earth dataset is updated.
-
-
+```
+```
+```
 ## License 
 
 [MIT](https://github.com/DevankSinghChaudhary/VPipeline/tree/main?tab=MIT-1-ov-file)
