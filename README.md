@@ -38,7 +38,7 @@ Pipeline aims to automate that entire workflow through specialized AI agents.
 
 ## Structure of VPipeline
 
-[Structure of VPipeline](.github/images/vpipeline-structure.png)  
+![Structure of VPipeline](.github/images/vpipeline-structure.png)  
 
 ## Project Status 
 VPipeline is under active development. 
