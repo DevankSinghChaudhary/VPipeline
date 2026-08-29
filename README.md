@@ -36,6 +36,9 @@ Pipeline aims to automate that entire workflow through specialized AI agents.
 > [!IMPORTANT]
 > Already reached till `.mp4` in [previous version](https://github.com/DevankSinghChaudhary/video-creation-pipeline/).
 
+## Structure of VPipeline
+
+[Structure of VPipeline](.github/images/vpipeline-structure.png)  
 
 ## Project Status 
 VPipeline is under active development. 
