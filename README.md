@@ -62,7 +62,7 @@ uv sync
 ```
 
 > [!NOTE]
-> To install uv refer to this docs: [Doc](https://docs.astral.sh/uv/getting-started/installation/)
+> To install uv, refer to this [doc](https://docs.astral.sh/uv/getting-started/installation/)
 
 ### 3. Run the pipeline
 
@@ -70,11 +70,8 @@ uv sync
 cd VPipeline/src/vcp  
 uv run main.py
 ```
-```
 
-```
-```
-```
+
 ## License 
 
 [MIT](https://github.com/DevankSinghChaudhary/VPipeline/tree/main?tab=MIT-1-ov-file)
