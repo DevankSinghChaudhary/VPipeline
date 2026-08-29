@@ -1,6 +1,5 @@
 import os
 import time
-from itertools import cycle
 from textwrap import dedent
 
 from dotenv import load_dotenv
@@ -14,18 +13,10 @@ from vcp.utils import read, root, web_search
 
 load_dotenv()
 
-apikey = cycle(
-    [
-        os.environ["MISTRAL_API_KEY"],
-        os.environ[
-            "MISTRAL_API_KEY2"
-        ],  # <- THIS IS SHIT I KNOW, THATS WHY BUILDING ChatOpenAI to ChatVPipeline with native API ROTATION (DON'T KNOW IF API ROTATION ACTUALLY BENEFIT NUMBER OF TOTAL CALLS LIMIT)
-        os.environ["MISTRAL_API_KEY3"],
-    ]
-)
-
 model = ChatVPipeline(
-    model="ministral-14b-2512", base_url=os.getenv("MISTRAL_URL"), api_key=next(apikey)
+    model="ministral-14b-2512",
+    base_url=os.environ["MISTRAL_URL"],
+    api_key=os.environ["MISTRAL_API_KEY3"],
 )
 
 # SKILL

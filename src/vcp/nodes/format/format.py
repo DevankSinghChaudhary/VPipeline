@@ -15,7 +15,7 @@ load_dotenv()
 
 
 model = ChatVPipeline(
-    model="mistral-large-2512",
+    model="ministral-14b-2512",
     base_url=os.environ["MISTRAL_URL"],
     api_key=os.environ["MISTRAL_API_KEY2"],
 )

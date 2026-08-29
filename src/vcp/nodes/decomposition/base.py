@@ -2,6 +2,7 @@ import os
 import time
 from textwrap import dedent
 
+from dotenv import load_dotenv
 from langchain.agents import create_agent
 
 from vcp.chat import ChatVPipeline
@@ -9,8 +10,10 @@ from vcp.prompts import SystemPrompt
 from vcp.schemas import DecompostionResponse
 from vcp.state import GlobalState
 
+load_dotenv()
+
 model = ChatVPipeline(
-    model="mistral-large-2512",
+    model="ministral-14b-2512",
     base_url=os.environ["MISTRAL_URL"],
     api_key=os.environ["MISTRAL_API_KEY3"],
 )

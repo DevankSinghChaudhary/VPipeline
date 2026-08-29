@@ -56,7 +56,7 @@ async def graph(state: GlobalState):
     builder.add_edge("Formatter", "Visualizer")
     builder.add_conditional_edges("Visualizer", fanout_image)
     builder.add_conditional_edges("TTSBatchComplete", fanout_tts)
-    builder.add_edge("Visualizer", "Sorter")
+    builder.add_edge("Merger", "Sorter")
     builder.add_edge("Merger", "Decompositioner")
     builder.add_edge("Decompositioner", END)
     graph = builder.compile()
@@ -67,7 +67,6 @@ async def graph(state: GlobalState):
             "category": str,
             "information": {},
             "script": [],
-            "formatted": [],
             "audio": [],
             "tts_index": 0,
             "visual": [],
