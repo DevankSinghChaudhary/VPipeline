@@ -19,6 +19,13 @@ model = ChatVPipeline(
     api_key=os.environ["MISTRAL_API_KEY3"],
 )
 
+# model = ChatVPipeline(
+# model="minimax-m3-free",
+# api_key=os.environ["KIRA_AI"],
+# base_url=os.environ["KIRA_AI_BASE"],
+# )
+
+
 # SKILL
 BASE_DIR = root.find()
 SKILL_PATH = BASE_DIR / "src" / "vcp" / "skills"

@@ -1,5 +1,4 @@
 import os
-import time
 
 from dotenv import load_dotenv
 from langchain.agents import create_agent
@@ -8,6 +7,7 @@ from vcp.chat import ChatVPipeline
 from vcp.prompts import SystemPrompt
 from vcp.schemas import ScriptResponse
 from vcp.state import GlobalState
+from vcp.utils import timed
 
 load_dotenv()
 
@@ -17,12 +17,15 @@ model = ChatVPipeline(
     api_key=os.environ["MISTRAL_API_KEY"],
 )
 
+# model = ChatVPipeline(
+#   model="minimax-m3-free",
+#   api_key=os.environ["KIRA_AI"],
+#   base_url=os.environ["KIRA_AI_BASE"],
+# )
 
+
+@timed
 def writer(state: GlobalState):
-
-    print("[AGENT] Writer | Started Processing")
-    st = time.time()
-
     topic = state["topic"]
     information = state["information"]
 
@@ -100,11 +103,6 @@ def writer(state: GlobalState):
         system_prompt=SystemPrompt.load("script"),
         response_format=ScriptResponse,
     )
-
     result = agent.invoke({"messages": {"role": "user", "content": prompt}})
     result = result["structured_response"]
-
-    print(f"[AGENT] Writer | {time.time() - st:.2f}s")
-    print("[AGENT] Writer | Finished Successfully")
-
     return {"script": result}

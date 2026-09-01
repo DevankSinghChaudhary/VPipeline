@@ -10,7 +10,7 @@ from tinyfish import TinyFish
 load_dotenv()
 
 
-client = TinyFish(api_key=os.getenv("TINYFISH_API"))
+client = TinyFish(api_key=os.environ["TINYFISH_API"])
 
 
 class RateLimiter:

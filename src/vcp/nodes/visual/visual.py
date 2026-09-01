@@ -1,5 +1,4 @@
 import os
-import time
 from textwrap import dedent
 
 from langchain.agents import create_agent
@@ -8,6 +7,7 @@ from vcp.chat import ChatVPipeline
 from vcp.prompts import SystemPrompt
 from vcp.schemas import VisualResponse
 from vcp.state import GlobalState
+from vcp.utils import timed
 
 model = ChatVPipeline(
     model="ministral-14b-2512",
@@ -15,10 +15,15 @@ model = ChatVPipeline(
     api_key=os.environ["MISTRAL_API_KEY3"],
 )
 
+# model = ChatVPipeline(
+#   model="minimax-m3-free",
+#   api_key=os.environ["KIRA_AI"],
+#   base_url=os.environ["KIRA_AI_BASE"],
+# )
 
+
+@timed
 def visualizer(state: GlobalState) -> dict:
-    print("[AGENT] Visualizer | Started ...")
-    start = time.time()
     script = state["script"]
     prompt = dedent(
         f"""
@@ -40,8 +45,4 @@ def visualizer(state: GlobalState) -> dict:
     )
     result = agent.invoke({"messages": {"role": "user", "content": prompt}})
     result = result["structured_response"]
-
-    print("[AGENT] Visualizer | Finished")
-    print(f"[AGENT] Visualizer | {time.time() - start:.2f}s")
-
     return {"visual": result}

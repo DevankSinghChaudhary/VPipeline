@@ -1,5 +1,4 @@
 import os
-import time
 
 from dotenv import load_dotenv
 from langchain.agents import create_agent
@@ -8,6 +7,7 @@ from vcp.chat import ChatVPipeline
 from vcp.prompts import SystemPrompt
 from vcp.schemas import SortResponse
 from vcp.state import GlobalState
+from vcp.utils import timed
 
 load_dotenv()
 
@@ -18,9 +18,8 @@ model = ChatVPipeline(
 )
 
 
+@timed
 def sorter(state: GlobalState):
-    print("[AGENT] Sorter | Started Processing")
-    st = time.time()
     script = state["script"]
     img = state["images"]
     prompt = f"""
@@ -114,6 +113,4 @@ def sorter(state: GlobalState):
         response_format=SortResponse,
     )
     result = agent.invoke({"messages": {"role": "user", "content": prompt}})
-    print(f"[AGENT] Sorter | {time.time() - st:.2f}s")
-    print("[AGENT] Sorter | Finished Successfully")
     return {"sorted": result["structured_response"]}

@@ -1,5 +1,4 @@
 import os
-import time
 from textwrap import dedent
 
 from dotenv import load_dotenv
@@ -9,7 +8,7 @@ from vcp.chat import ChatVPipeline
 from vcp.prompts import SystemPrompt
 from vcp.schemas import FormatResponse
 from vcp.state import GlobalState
-from vcp.utils import read_knowledge
+from vcp.utils import read_knowledge, timed
 
 load_dotenv()
 
@@ -20,12 +19,15 @@ model = ChatVPipeline(
     api_key=os.environ["MISTRAL_API_KEY2"],
 )
 
+# model = ChatVPipeline(
+# model="minimax-m3-free",
+# api_key=os.environ["KIRA_AI"],
+# base_url=os.environ["KIRA_AI_BASE"],
+# )
 
+
+@timed
 def formatter(state: GlobalState) -> dict:
-
-    print("[AGENT] Formatter | Started Formatting...")
-
-    start = time.time()
     script = state["script"]
 
     user_prompt = dedent(
@@ -106,12 +108,5 @@ def formatter(state: GlobalState) -> dict:
         system_prompt=SystemPrompt.load("format"),
         tools=[read_knowledge],
     )
-
     result = agent.invoke({"messages": {"role": "user", "content": user_prompt}})
-
-    result = result["structured_response"]
-
-    print(f"[AGENT] Formatter | {time.time() - start:.2f}s")
-    print("[AGENT] Formatter | Finished Formatting")
-
-    return {"script": result}
+    return {"script": result["structured_response"]}
