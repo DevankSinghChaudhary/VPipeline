@@ -1,0 +1,204 @@
+{
+    "scene_id": 8,
+    "audio": {
+        "path": "/home/devank/Projects/VPipeline/renderer/public/audio/8.wav",
+        "result": {
+            "segments": [
+                {
+                    "start": 0.313,
+                    "end": 6.566,
+                    "text": " SETI projects like Breakthrough Listen continue scanning for technosignatures, though no definitive evidence has emerged.",
+                    "words": [
+                        {
+                            "word": "SETI",
+                            "start": 0.313,
+                            "end": 0.594,
+                            "score": 0.796
+                        },
+                        {
+                            "word": "projects",
+                            "start": 0.634,
+                            "end": 1.057,
+                            "score": 0.863
+                        },
+                        {
+                            "word": "like",
+                            "start": 1.097,
+                            "end": 1.258,
+                            "score": 0.752
+                        },
+                        {
+                            "word": "Breakthrough",
+                            "start": 1.298,
+                            "end": 1.76,
+                            "score": 0.81
+                        },
+                        {
+                            "word": "Listen",
+                            "start": 1.801,
+                            "end": 2.122,
+                            "score": 0.864
+                        },
+                        {
+                            "word": "continue",
+                            "start": 2.303,
+                            "end": 2.746,
+                            "score": 0.893
+                        },
+                        {
+                            "word": "scanning",
+                            "start": 2.786,
+                            "end": 3.108,
+                            "score": 0.965
+                        },
+                        {
+                            "word": "for",
+                            "start": 3.148,
+                            "end": 3.269,
+                            "score": 0.96
+                        },
+                        {
+                            "word": "technosignatures,",
+                            "start": 3.329,
+                            "end": 4.234,
+                            "score": 0.864
+                        },
+                        {
+                            "word": "though",
+                            "start": 4.556,
+                            "end": 4.716,
+                            "score": 0.914
+                        },
+                        {
+                            "word": "no",
+                            "start": 4.757,
+                            "end": 4.897,
+                            "score": 0.878
+                        },
+                        {
+                            "word": "definitive",
+                            "start": 4.938,
+                            "end": 5.42,
+                            "score": 0.953
+                        },
+                        {
+                            "word": "evidence",
+                            "start": 5.521,
+                            "end": 5.863,
+                            "score": 0.895
+                        },
+                        {
+                            "word": "has",
+                            "start": 5.903,
+                            "end": 6.044,
+                            "score": 0.85
+                        },
+                        {
+                            "word": "emerged.",
+                            "start": 6.124,
+                            "end": 6.566,
+                            "score": 0.879
+                        }
+                    ],
+                    "avg_logprob": -0.063904771891733
+                }
+            ],
+            "word_segments": [
+                {
+                    "word": "SETI",
+                    "start": 0.313,
+                    "end": 0.594,
+                    "score": 0.796
+                },
+                {
+                    "word": "projects",
+                    "start": 0.634,
+                    "end": 1.057,
+                    "score": 0.863
+                },
+                {
+                    "word": "like",
+                    "start": 1.097,
+                    "end": 1.258,
+                    "score": 0.752
+                },
+                {
+                    "word": "Breakthrough",
+                    "start": 1.298,
+                    "end": 1.76,
+                    "score": 0.81
+                },
+                {
+                    "word": "Listen",
+                    "start": 1.801,
+                    "end": 2.122,
+                    "score": 0.864
+                },
+                {
+                    "word": "continue",
+                    "start": 2.303,
+                    "end": 2.746,
+                    "score": 0.893
+                },
+                {
+                    "word": "scanning",
+                    "start": 2.786,
+                    "end": 3.108,
+                    "score": 0.965
+                },
+                {
+                    "word": "for",
+                    "start": 3.148,
+                    "end": 3.269,
+                    "score": 0.96
+                },
+                {
+                    "word": "technosignatures,",
+                    "start": 3.329,
+                    "end": 4.234,
+                    "score": 0.864
+                },
+                {
+                    "word": "though",
+                    "start": 4.556,
+                    "end": 4.716,
+                    "score": 0.914
+                },
+                {
+                    "word": "no",
+                    "start": 4.757,
+                    "end": 4.897,
+                    "score": 0.878
+                },
+                {
+                    "word": "definitive",
+                    "start": 4.938,
+                    "end": 5.42,
+                    "score": 0.953
+                },
+                {
+                    "word": "evidence",
+                    "start": 5.521,
+                    "end": 5.863,
+                    "score": 0.895
+                },
+                {
+                    "word": "has",
+                    "start": 5.903,
+                    "end": 6.044,
+                    "score": 0.85
+                },
+                {
+                    "word": "emerged.",
+                    "start": 6.124,
+                    "end": 6.566,
+                    "score": 0.879
+                }
+            ]
+        }
+    },
+    "type": "IMAGE",
+    "Image": [
+        "Green Bank Telescope"
+    ]
+}

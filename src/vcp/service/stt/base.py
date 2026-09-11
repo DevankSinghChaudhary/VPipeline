@@ -54,7 +54,7 @@ class WhisperX:
         if self.align_model is None or self.align_metadata is None:
             raise RuntimeError("Alignment model is not loaded.")
 
-        return whisperx.align(
+        result = whisperx.align(
             segments,
             self.align_model,
             self.align_metadata,
@@ -63,16 +63,15 @@ class WhisperX:
             return_char_alignments=False,
         )
 
+        return self._normalize_result(result)
+
     def transcribe_and_align(self, audio_path: str):
         """
-        Transcribe one audio file and produce word-level timestamps.
+        Transcribe one audio file and produce normalized word-level timestamps.
 
         Returns:
             audio: decoded audio array
-            result: WhisperX aligned result containing:
-                - segments
-                - word_segments
-                - language
+            result: normalized WhisperX aligned result
         """
         audio, result = self.transcribe(audio_path)
 
@@ -82,6 +81,41 @@ class WhisperX:
         )
 
         return audio, aligned
+
+    @staticmethod
+    def _normalize_result(result):
+        """
+        Convert NumPy scalar values returned by WhisperX into
+        native Python types so the result is cleanly serializable.
+        """
+        for segment in result.get("segments", []):
+            if "start" in segment:
+                segment["start"] = float(segment["start"])
+
+            if "end" in segment:
+                segment["end"] = float(segment["end"])
+
+            for word in segment.get("words", []):
+                WhisperX._normalize_word(word)
+
+        for word in result.get("word_segments", []):
+            WhisperX._normalize_word(word)
+
+        return result
+
+    @staticmethod
+    def _normalize_word(word):
+        if "start" in word:
+            word["start"] = float(word["start"])
+
+        if "end" in word:
+            word["end"] = float(word["end"])
+
+        if "score" in word:
+            word["score"] = float(word["score"])
+
+        if "word" in word:
+            word["word"] = str(word["word"]).strip()
 
     def unload_asr(self):
         self.asr_model = None

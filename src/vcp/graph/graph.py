@@ -2,7 +2,7 @@ import time
 
 from langgraph.graph import END, START, StateGraph
 
-from vcp.link import link
+from vcp.manifest import manifest
 from vcp.nodes import (
     decompositioner,
     formatter,
@@ -45,13 +45,13 @@ async def graph(state: GlobalState):
     builder.add_node("Merger", merger)
     builder.add_node("Decompositioner", decompositioner)
     builder.add_node("Whisper", whisperx_engine, defer=True)
-    builder.add_node("LINK", link)
+    builder.add_node("RendererManifest", manifest)
 
     # Adding edges to the nodes
     # Basically, Sketching lines from node to node
-    # Researcher ---> Writer ---> Formatter ---> Omni ---> For batching ---> Omni ---> Merger
+    # Researcher ---> Writer ---> Formatter ---> Omni ---> For batching ---> Omni ---> END
     #                               |
-    #                               `--> Visualizer ---> {Future Nodes for Visual Section of PIPELINE, i.e., Texts, Images, Videos etc means media/assets}
+    #                               `--> Visualizer ---> Sorter(No use as of right now) ---> Decompositioner ---> RendererManifest ---> Whisper (Absolute end of pipeline) ---> END
     builder.add_edge(START, "Researcher")
     builder.add_edge("Researcher", "Writer")
     builder.add_edge("Writer", "Formatter")
@@ -62,9 +62,9 @@ async def graph(state: GlobalState):
     builder.add_conditional_edges("TTSBatchComplete", fanout_tts)
     builder.add_edge("Visualizer", "Sorter")
     builder.add_edge("Sorter", "Decompositioner")
-    builder.add_edge("Decompositioner", "LINK")
-    builder.add_edge("LINK", "Whisper")
-    builder.add_edge("Whisper", END)
+    builder.add_edge("Omni", "Whisper")
+    builder.add_edge("Whisper", "RendererManifest")
+    builder.add_edge("RendererManifest", END)
     # builder.add_edge("LINK", "Whisper")
     # builder.add_edge("Whisper", END)
     graph = builder.compile()

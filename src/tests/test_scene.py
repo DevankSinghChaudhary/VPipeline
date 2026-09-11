@@ -1,5 +1,6 @@
 from manim import *
 
+
 class UpdatersExample(Scene):
     def construct(self):
         square = Square()
@@ -17,7 +18,7 @@ class UpdatersExample(Scene):
                 show_ellipsis=True,
                 num_decimal_places=2,
                 include_sign=True,
-            )
+            ),
         )
         label.arrange(RIGHT)
 
@@ -50,10 +51,7 @@ class UpdatersExample(Scene):
             run_time=3,
         )
         self.wait()
-        self.play(
-            square.animate.set_width(2),
-            run_time=3
-        )
+        self.play(square.animate.set_width(2), run_time=3)
         self.wait()
 
         # In general, you can alway call Mobject.add_updater, and pass in
@@ -62,7 +60,5 @@ class UpdatersExample(Scene):
         # the mobject and the amount of time since the last frame.
         now = self.time
         w0 = square.get_width()
-        square.add_updater(
-            lambda m: m.set_width(w0 * math.cos(self.time - now))
-        )
+        square.add_updater(lambda m: m.set_width(w0 * math.cos(self.time - now)))
         self.wait(4 * PI)

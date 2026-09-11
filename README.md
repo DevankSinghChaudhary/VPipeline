@@ -46,10 +46,20 @@ VPipeline is under active development.
 The audio generation pipeline is operational. Visual generation, animation, and final video rendering are currently being developed. 
 
 ---
+## Requirements
+
+|Hardware     |   Minimum     | Recommended |
+|-------------|:-------------:|:-----------:|
+|GPU          |     6GB       |     8GB     |
+*Example: RTX 3050*
+
+> [!NOTE]
+> As VRAM will be used for tts and stt models.
+
 
 ## Clone & Run
 
-### 1. Clone the repository
+### 1. Clone the repository:
 
 ```bash
 git clone https://github.com/DevankSinghChaudhary/VPipeline.git

@@ -1,0 +1,276 @@
+{
+    "scene_id": 3,
+    "audio": {
+        "path": "/home/devank/Projects/VPipeline/renderer/public/audio/3.wav",
+        "result": {
+            "segments": [
+                {
+                    "start": 0.425,
+                    "end": 9.537,
+                    "text": " NASA's Kepler mission found over 2,600 confirmed exoplanets, with 20 to 50 percent of stars potentially hosting Earth-like planets' inhabitable zones.",
+                    "words": [
+                        {
+                            "word": "NASA's",
+                            "start": 0.425,
+                            "end": 0.786,
+                            "score": 0.624
+                        },
+                        {
+                            "word": "Kepler",
+                            "start": 0.827,
+                            "end": 1.168,
+                            "score": 0.891
+                        },
+                        {
+                            "word": "mission",
+                            "start": 1.188,
+                            "end": 1.509,
+                            "score": 0.813
+                        },
+                        {
+                            "word": "found",
+                            "start": 1.549,
+                            "end": 1.77,
+                            "score": 0.854
+                        },
+                        {
+                            "word": "over",
+                            "start": 1.83,
+                            "end": 2.553,
+                            "score": 0.826
+                        },
+                        {
+                            "word": "2,600",
+                            "start": 2.693,
+                            "end": 3.115,
+                            "score": 0.816
+                        },
+                        {
+                            "word": "confirmed",
+                            "start": 3.175,
+                            "end": 3.616,
+                            "score": 0.772
+                        },
+                        {
+                            "word": "exoplanets,",
+                            "start": 3.697,
+                            "end": 4.359,
+                            "score": 0.906
+                        },
+                        {
+                            "word": "with",
+                            "start": 4.68,
+                            "end": 4.841,
+                            "score": 0.91
+                        },
+                        {
+                            "word": "20",
+                            "start": 5.001,
+                            "end": 5.162,
+                            "score": 0.709
+                        },
+                        {
+                            "word": "to",
+                            "start": 5.202,
+                            "end": 5.282,
+                            "score": 0.767
+                        },
+                        {
+                            "word": "50",
+                            "start": 5.423,
+                            "end": 5.603,
+                            "score": 0.818
+                        },
+                        {
+                            "word": "percent",
+                            "start": 5.663,
+                            "end": 6.025,
+                            "score": 0.831
+                        },
+                        {
+                            "word": "of",
+                            "start": 6.045,
+                            "end": 6.105,
+                            "score": 0.749
+                        },
+                        {
+                            "word": "stars",
+                            "start": 6.165,
+                            "end": 6.486,
+                            "score": 0.678
+                        },
+                        {
+                            "word": "potentially",
+                            "start": 6.547,
+                            "end": 7.109,
+                            "score": 0.95
+                        },
+                        {
+                            "word": "hosting",
+                            "start": 7.169,
+                            "end": 7.57,
+                            "score": 0.839
+                        },
+                        {
+                            "word": "Earth-like",
+                            "start": 7.67,
+                            "end": 8.092,
+                            "score": 0.751
+                        },
+                        {
+                            "word": "planets'",
+                            "start": 8.132,
+                            "end": 8.493,
+                            "score": 0.725
+                        },
+                        {
+                            "word": "inhabitable",
+                            "start": 8.534,
+                            "end": 9.095,
+                            "score": 0.845
+                        },
+                        {
+                            "word": "zones.",
+                            "start": 9.156,
+                            "end": 9.537,
+                            "score": 0.976
+                        }
+                    ],
+                    "avg_logprob": -0.06585300275508095
+                }
+            ],
+            "word_segments": [
+                {
+                    "word": "NASA's",
+                    "start": 0.425,
+                    "end": 0.786,
+                    "score": 0.624
+                },
+                {
+                    "word": "Kepler",
+                    "start": 0.827,
+                    "end": 1.168,
+                    "score": 0.891
+                },
+                {
+                    "word": "mission",
+                    "start": 1.188,
+                    "end": 1.509,
+                    "score": 0.813
+                },
+                {
+                    "word": "found",
+                    "start": 1.549,
+                    "end": 1.77,
+                    "score": 0.854
+                },
+                {
+                    "word": "over",
+                    "start": 1.83,
+                    "end": 2.553,
+                    "score": 0.826
+                },
+                {
+                    "word": "2,600",
+                    "start": 2.693,
+                    "end": 3.115,
+                    "score": 0.816
+                },
+                {
+                    "word": "confirmed",
+                    "start": 3.175,
+                    "end": 3.616,
+                    "score": 0.772
+                },
+                {
+                    "word": "exoplanets,",
+                    "start": 3.697,
+                    "end": 4.359,
+                    "score": 0.906
+                },
+                {
+                    "word": "with",
+                    "start": 4.68,
+                    "end": 4.841,
+                    "score": 0.91
+                },
+                {
+                    "word": "20",
+                    "start": 5.001,
+                    "end": 5.162,
+                    "score": 0.709
+                },
+                {
+                    "word": "to",
+                    "start": 5.202,
+                    "end": 5.282,
+                    "score": 0.767
+                },
+                {
+                    "word": "50",
+                    "start": 5.423,
+                    "end": 5.603,
+                    "score": 0.818
+                },
+                {
+                    "word": "percent",
+                    "start": 5.663,
+                    "end": 6.025,
+                    "score": 0.831
+                },
+                {
+                    "word": "of",
+                    "start": 6.045,
+                    "end": 6.105,
+                    "score": 0.749
+                },
+                {
+                    "word": "stars",
+                    "start": 6.165,
+                    "end": 6.486,
+                    "score": 0.678
+                },
+                {
+                    "word": "potentially",
+                    "start": 6.547,
+                    "end": 7.109,
+                    "score": 0.95
+                },
+                {
+                    "word": "hosting",
+                    "start": 7.169,
+                    "end": 7.57,
+                    "score": 0.839
+                },
+                {
+                    "word": "Earth-like",
+                    "start": 7.67,
+                    "end": 8.092,
+                    "score": 0.751
+                },
+                {
+                    "word": "planets'",
+                    "start": 8.132,
+                    "end": 8.493,
+                    "score": 0.725
+                },
+                {
+                    "word": "inhabitable",
+                    "start": 8.534,
+                    "end": 9.095,
+                    "score": 0.845
+                },
+                {
+                    "word": "zones.",
+                    "start": 9.156,
+                    "end": 9.537,
+                    "score": 0.976
+                }
+            ]
+        }
+    },
+    "type": "IMAGE",
+    "Image": [
+        "Kepler Space Telescope"
+    ]
+}

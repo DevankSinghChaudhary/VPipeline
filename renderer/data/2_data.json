@@ -1,0 +1,180 @@
+{
+    "scene_id": 2,
+    "audio": {
+        "path": "/home/devank/Projects/VPipeline/renderer/public/audio/2.wav",
+        "result": {
+            "segments": [
+                {
+                    "start": 0.374,
+                    "end": 4.77,
+                    "text": " The Milky Way holds 100 to 400 billion stars, messy with planetary systems.",
+                    "words": [
+                        {
+                            "word": "The",
+                            "start": 0.374,
+                            "end": 0.455,
+                            "score": 0.977
+                        },
+                        {
+                            "word": "Milky",
+                            "start": 0.495,
+                            "end": 0.777,
+                            "score": 0.916
+                        },
+                        {
+                            "word": "Way",
+                            "start": 0.818,
+                            "end": 1.019,
+                            "score": 0.92
+                        },
+                        {
+                            "word": "holds",
+                            "start": 1.06,
+                            "end": 1.281,
+                            "score": 0.769
+                        },
+                        {
+                            "word": "100",
+                            "start": 1.523,
+                            "end": 1.765,
+                            "score": 0.431
+                        },
+                        {
+                            "word": "to",
+                            "start": 1.786,
+                            "end": 1.826,
+                            "score": 0.975
+                        },
+                        {
+                            "word": "400",
+                            "start": 2.088,
+                            "end": 2.31,
+                            "score": 0.661
+                        },
+                        {
+                            "word": "billion",
+                            "start": 2.33,
+                            "end": 2.633,
+                            "score": 0.888
+                        },
+                        {
+                            "word": "stars,",
+                            "start": 2.673,
+                            "end": 3.056,
+                            "score": 0.815
+                        },
+                        {
+                            "word": "messy",
+                            "start": 3.197,
+                            "end": 3.48,
+                            "score": 0.955
+                        },
+                        {
+                            "word": "with",
+                            "start": 3.52,
+                            "end": 3.661,
+                            "score": 0.806
+                        },
+                        {
+                            "word": "planetary",
+                            "start": 3.722,
+                            "end": 4.266,
+                            "score": 0.841
+                        },
+                        {
+                            "word": "systems.",
+                            "start": 4.306,
+                            "end": 4.77,
+                            "score": 0.908
+                        }
+                    ],
+                    "avg_logprob": -0.055338075617328286
+                }
+            ],
+            "word_segments": [
+                {
+                    "word": "The",
+                    "start": 0.374,
+                    "end": 0.455,
+                    "score": 0.977
+                },
+                {
+                    "word": "Milky",
+                    "start": 0.495,
+                    "end": 0.777,
+                    "score": 0.916
+                },
+                {
+                    "word": "Way",
+                    "start": 0.818,
+                    "end": 1.019,
+                    "score": 0.92
+                },
+                {
+                    "word": "holds",
+                    "start": 1.06,
+                    "end": 1.281,
+                    "score": 0.769
+                },
+                {
+                    "word": "100",
+                    "start": 1.523,
+                    "end": 1.765,
+                    "score": 0.431
+                },
+                {
+                    "word": "to",
+                    "start": 1.786,
+                    "end": 1.826,
+                    "score": 0.975
+                },
+                {
+                    "word": "400",
+                    "start": 2.088,
+                    "end": 2.31,
+                    "score": 0.661
+                },
+                {
+                    "word": "billion",
+                    "start": 2.33,
+                    "end": 2.633,
+                    "score": 0.888
+                },
+                {
+                    "word": "stars,",
+                    "start": 2.673,
+                    "end": 3.056,
+                    "score": 0.815
+                },
+                {
+                    "word": "messy",
+                    "start": 3.197,
+                    "end": 3.48,
+                    "score": 0.955
+                },
+                {
+                    "word": "with",
+                    "start": 3.52,
+                    "end": 3.661,
+                    "score": 0.806
+                },
+                {
+                    "word": "planetary",
+                    "start": 3.722,
+                    "end": 4.266,
+                    "score": 0.841
+                },
+                {
+                    "word": "systems.",
+                    "start": 4.306,
+                    "end": 4.77,
+                    "score": 0.908
+                }
+            ]
+        }
+    },
+    "type": "IMAGE",
+    "Image": [
+        "Milky Way galaxy"
+    ]
+}

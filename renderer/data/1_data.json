@@ -1,0 +1,213 @@
+{
+    "scene_id": 1,
+    "type": "IMAGE_WITH_TEXT",
+    "audio": {
+        "path": "/home/devank/Projects/VPipeline/renderer/public/audio/1.wav",
+        "result": {
+            "segments": [
+                {
+                    "start": 0.252,
+                    "end": 4.432,
+                    "text": " In 1950, physicist Enrico Fermi posed a simple question at Los Alamos.",
+                    "words": [
+                        {
+                            "word": "In",
+                            "start": 0.252,
+                            "end": 0.312,
+                            "score": 0.962
+                        },
+                        {
+                            "word": "1950,",
+                            "start": 0.373,
+                            "end": 1.136,
+                            "score": 0.659
+                        },
+                        {
+                            "word": "physicist",
+                            "start": 1.217,
+                            "end": 1.699,
+                            "score": 0.956
+                        },
+                        {
+                            "word": "Enrico",
+                            "start": 1.739,
+                            "end": 2.121,
+                            "score": 0.701
+                        },
+                        {
+                            "word": "Fermi",
+                            "start": 2.181,
+                            "end": 2.523,
+                            "score": 0.855
+                        },
+                        {
+                            "word": "posed",
+                            "start": 2.603,
+                            "end": 2.865,
+                            "score": 0.903
+                        },
+                        {
+                            "word": "a",
+                            "start": 2.905,
+                            "end": 2.925,
+                            "score": 1.0
+                        },
+                        {
+                            "word": "simple",
+                            "start": 2.985,
+                            "end": 3.247,
+                            "score": 0.898
+                        },
+                        {
+                            "word": "question",
+                            "start": 3.287,
+                            "end": 3.669,
+                            "score": 0.869
+                        },
+                        {
+                            "word": "at",
+                            "start": 3.689,
+                            "end": 3.749,
+                            "score": 0.852
+                        },
+                        {
+                            "word": "Los",
+                            "start": 3.769,
+                            "end": 3.95,
+                            "score": 0.978
+                        },
+                        {
+                            "word": "Alamos.",
+                            "start": 4.01,
+                            "end": 4.432,
+                            "score": 0.975
+                        }
+                    ],
+                    "avg_logprob": -0.07994884489612146
+                },
+                {
+                    "start": 4.834,
+                    "end": 5.598,
+                    "text": "Where is everybody?",
+                    "words": [
+                        {
+                            "word": "Where",
+                            "start": 4.834,
+                            "end": 4.995,
+                            "score": 0.841
+                        },
+                        {
+                            "word": "is",
+                            "start": 5.035,
+                            "end": 5.116,
+                            "score": 0.731
+                        },
+                        {
+                            "word": "everybody?",
+                            "start": 5.176,
+                            "end": 5.598,
+                            "score": 0.924
+                        }
+                    ],
+                    "avg_logprob": -0.07994884489612146
+                }
+            ],
+            "word_segments": [
+                {
+                    "word": "In",
+                    "start": 0.252,
+                    "end": 0.312,
+                    "score": 0.962
+                },
+                {
+                    "word": "1950,",
+                    "start": 0.373,
+                    "end": 1.136,
+                    "score": 0.659
+                },
+                {
+                    "word": "physicist",
+                    "start": 1.217,
+                    "end": 1.699,
+                    "score": 0.956
+                },
+                {
+                    "word": "Enrico",
+                    "start": 1.739,
+                    "end": 2.121,
+                    "score": 0.701
+                },
+                {
+                    "word": "Fermi",
+                    "start": 2.181,
+                    "end": 2.523,
+                    "score": 0.855
+                },
+                {
+                    "word": "posed",
+                    "start": 2.603,
+                    "end": 2.865,
+                    "score": 0.903
+                },
+                {
+                    "word": "a",
+                    "start": 2.905,
+                    "end": 2.925,
+                    "score": 1.0
+                },
+                {
+                    "word": "simple",
+                    "start": 2.985,
+                    "end": 3.247,
+                    "score": 0.898
+                },
+                {
+                    "word": "question",
+                    "start": 3.287,
+                    "end": 3.669,
+                    "score": 0.869
+                },
+                {
+                    "word": "at",
+                    "start": 3.689,
+                    "end": 3.749,
+                    "score": 0.852
+                },
+                {
+                    "word": "Los",
+                    "start": 3.769,
+                    "end": 3.95,
+                    "score": 0.978
+                },
+                {
+                    "word": "Alamos.",
+                    "start": 4.01,
+                    "end": 4.432,
+                    "score": 0.975
+                },
+                {
+                    "word": "Where",
+                    "start": 4.834,
+                    "end": 4.995,
+                    "score": 0.841
+                },
+                {
+                    "word": "is",
+                    "start": 5.035,
+                    "end": 5.116,
+                    "score": 0.731
+                },
+                {
+                    "word": "everybody?",
+                    "start": 5.176,
+                    "end": 5.598,
+                    "score": 0.924
+                }
+            ]
+        }
+    },
+    "typography": {
+        "type_text": "IMAGE_WITH_TEXT",
+        "text": "Where is everybody?"
+    }
+}

@@ -28,6 +28,7 @@ dependencies = [
     "tinyfish>=0.4.0",
     "trafilatura>=2.1.0",
     "uvicorn>=0.51.0",
+    "whisperx>=3.4.5",
 ]
 
 [build-system]

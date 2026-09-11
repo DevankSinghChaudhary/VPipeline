@@ -1,0 +1,230 @@
+{
+    "scene_id": 9,
+    "audio": {
+        "path": "/home/devank/Projects/VPipeline/renderer/public/audio/9.wav",
+        "result": {
+            "segments": [
+                {
+                    "start": 0.272,
+                    "end": 5.756,
+                    "text": " Scientists from Fermi and Drake to Hawking and Tartar have shaped the debate, leaving the question unresolved.",
+                    "words": [
+                        {
+                            "word": "Scientists",
+                            "start": 0.272,
+                            "end": 0.794,
+                            "score": 0.776
+                        },
+                        {
+                            "word": "from",
+                            "start": 0.814,
+                            "end": 0.955,
+                            "score": 0.824
+                        },
+                        {
+                            "word": "Fermi",
+                            "start": 1.035,
+                            "end": 1.377,
+                            "score": 0.593
+                        },
+                        {
+                            "word": "and",
+                            "start": 1.437,
+                            "end": 1.518,
+                            "score": 0.835
+                        },
+                        {
+                            "word": "Drake",
+                            "start": 1.578,
+                            "end": 1.839,
+                            "score": 0.858
+                        },
+                        {
+                            "word": "to",
+                            "start": 1.859,
+                            "end": 1.939,
+                            "score": 0.837
+                        },
+                        {
+                            "word": "Hawking",
+                            "start": 1.98,
+                            "end": 2.321,
+                            "score": 0.911
+                        },
+                        {
+                            "word": "and",
+                            "start": 2.341,
+                            "end": 2.442,
+                            "score": 0.691
+                        },
+                        {
+                            "word": "Tartar",
+                            "start": 2.462,
+                            "end": 2.803,
+                            "score": 0.829
+                        },
+                        {
+                            "word": "have",
+                            "start": 2.863,
+                            "end": 2.964,
+                            "score": 0.889
+                        },
+                        {
+                            "word": "shaped",
+                            "start": 3.024,
+                            "end": 3.285,
+                            "score": 0.818
+                        },
+                        {
+                            "word": "the",
+                            "start": 3.305,
+                            "end": 3.386,
+                            "score": 0.837
+                        },
+                        {
+                            "word": "debate,",
+                            "start": 3.406,
+                            "end": 3.788,
+                            "score": 0.826
+                        },
+                        {
+                            "word": "leaving",
+                            "start": 4.209,
+                            "end": 4.491,
+                            "score": 0.803
+                        },
+                        {
+                            "word": "the",
+                            "start": 4.531,
+                            "end": 4.611,
+                            "score": 0.834
+                        },
+                        {
+                            "word": "question",
+                            "start": 4.631,
+                            "end": 5.033,
+                            "score": 0.854
+                        },
+                        {
+                            "word": "unresolved.",
+                            "start": 5.133,
+                            "end": 5.756,
+                            "score": 0.939
+                        }
+                    ],
+                    "avg_logprob": -0.0647056489609755
+                }
+            ],
+            "word_segments": [
+                {
+                    "word": "Scientists",
+                    "start": 0.272,
+                    "end": 0.794,
+                    "score": 0.776
+                },
+                {
+                    "word": "from",
+                    "start": 0.814,
+                    "end": 0.955,
+                    "score": 0.824
+                },
+                {
+                    "word": "Fermi",
+                    "start": 1.035,
+                    "end": 1.377,
+                    "score": 0.593
+                },
+                {
+                    "word": "and",
+                    "start": 1.437,
+                    "end": 1.518,
+                    "score": 0.835
+                },
+                {
+                    "word": "Drake",
+                    "start": 1.578,
+                    "end": 1.839,
+                    "score": 0.858
+                },
+                {
+                    "word": "to",
+                    "start": 1.859,
+                    "end": 1.939,
+                    "score": 0.837
+                },
+                {
+                    "word": "Hawking",
+                    "start": 1.98,
+                    "end": 2.321,
+                    "score": 0.911
+                },
+                {
+                    "word": "and",
+                    "start": 2.341,
+                    "end": 2.442,
+                    "score": 0.691
+                },
+                {
+                    "word": "Tartar",
+                    "start": 2.462,
+                    "end": 2.803,
+                    "score": 0.829
+                },
+                {
+                    "word": "have",
+                    "start": 2.863,
+                    "end": 2.964,
+                    "score": 0.889
+                },
+                {
+                    "word": "shaped",
+                    "start": 3.024,
+                    "end": 3.285,
+                    "score": 0.818
+                },
+                {
+                    "word": "the",
+                    "start": 3.305,
+                    "end": 3.386,
+                    "score": 0.837
+                },
+                {
+                    "word": "debate,",
+                    "start": 3.406,
+                    "end": 3.788,
+                    "score": 0.826
+                },
+                {
+                    "word": "leaving",
+                    "start": 4.209,
+                    "end": 4.491,
+                    "score": 0.803
+                },
+                {
+                    "word": "the",
+                    "start": 4.531,
+                    "end": 4.611,
+                    "score": 0.834
+                },
+                {
+                    "word": "question",
+                    "start": 4.631,
+                    "end": 5.033,
+                    "score": 0.854
+                },
+                {
+                    "word": "unresolved.",
+                    "start": 5.133,
+                    "end": 5.756,
+                    "score": 0.939
+                }
+            ]
+        }
+    },
+    "type": "IMAGE",
+    "Image": [
+        "Enrico Fermi portrait",
+        "Frank Drake portrait",
+        "Stephen Hawking portrait"
+    ]
+}

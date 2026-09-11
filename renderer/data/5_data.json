@@ -1,0 +1,85 @@
+{
+    "scene_id": 5,
+    "type": "TYPOGRAPHY",
+    "audio": {
+        "path": "/home/devank/Projects/VPipeline/renderer/public/audio/5.wav",
+        "result": {
+            "segments": [
+                {
+                    "start": 0.189,
+                    "end": 1.835,
+                    "text": " Yet many variables remain unknown.",
+                    "words": [
+                        {
+                            "word": "Yet",
+                            "start": 0.189,
+                            "end": 0.33,
+                            "score": 0.845
+                        },
+                        {
+                            "word": "many",
+                            "start": 0.39,
+                            "end": 0.611,
+                            "score": 0.904
+                        },
+                        {
+                            "word": "variables",
+                            "start": 0.651,
+                            "end": 1.133,
+                            "score": 0.874
+                        },
+                        {
+                            "word": "remain",
+                            "start": 1.193,
+                            "end": 1.474,
+                            "score": 0.79
+                        },
+                        {
+                            "word": "unknown.",
+                            "start": 1.534,
+                            "end": 1.835,
+                            "score": 0.803
+                        }
+                    ],
+                    "avg_logprob": -0.05202221976859229
+                }
+            ],
+            "word_segments": [
+                {
+                    "word": "Yet",
+                    "start": 0.189,
+                    "end": 0.33,
+                    "score": 0.845
+                },
+                {
+                    "word": "many",
+                    "start": 0.39,
+                    "end": 0.611,
+                    "score": 0.904
+                },
+                {
+                    "word": "variables",
+                    "start": 0.651,
+                    "end": 1.133,
+                    "score": 0.874
+                },
+                {
+                    "word": "remain",
+                    "start": 1.193,
+                    "end": 1.474,
+                    "score": 0.79
+                },
+                {
+                    "word": "unknown.",
+                    "start": 1.534,
+                    "end": 1.835,
+                    "score": 0.803
+                }
+            ]
+        }
+    },
+    "typography": {
+        "type": "KEY_LINE",
+        "text": "Yet many variables remain unknown."
+    }
+}
