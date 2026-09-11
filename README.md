@@ -4,6 +4,9 @@
 [![Python](https://img.shields.io/badge/Python-3.12+-blue?logo=python&logoColor=white)](https://www.python.otg)
 [![LangGraph](https://img.shields.io/badge/LangGraph-Multi--Agent-blue?logo=langgraph&logoColor=skyblue)](https://langchain.com/langgraph)
 
+> [!IMPORTANT]
+> Only built for linux. Windows and macOS optimization will come soon.
+
 VPipeline is an AI-powered video creation pipeline that transforms a single topic into a fully narrated documentary workflow. The current implementation generates formatted narration and high-quality audio, with the long-term goal of producing complete cinematic videos automatically. 
 
 > [!NOTE] 
@@ -48,10 +51,11 @@ The audio generation pipeline is operational. Visual generation, animation, and 
 ---
 ## Requirements
 
-|Hardware     |   Minimum     | Recommended |
-|-------------|:-------------:|:-----------:|
-|GPU          |     6GB       |     8GB     |
+|Hardware     | Minimum VRAM  | Recommended VRAM |
+|-------------|:-------------:|:----------------:|
+|GPU          |     6GB       |       8GB        |
 
+*NVIDIA is preferred*
 *Example: RTX 3050*
 
 > [!NOTE]
