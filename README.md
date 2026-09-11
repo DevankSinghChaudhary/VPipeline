@@ -51,6 +51,7 @@ The audio generation pipeline is operational. Visual generation, animation, and 
 |Hardware     |   Minimum     | Recommended |
 |-------------|:-------------:|:-----------:|
 |GPU          |     6GB       |     8GB     |
+
 *Example: RTX 3050*
 
 > [!NOTE]
