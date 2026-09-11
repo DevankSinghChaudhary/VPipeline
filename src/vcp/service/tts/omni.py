@@ -1,21 +1,20 @@
-from vcp.utils import root
-from vcp.state import GlobalState
-
-from omnivoice import OmniVoice
-import soundfile as sf
-import torch
 import time
 
+import soundfile as sf
+import torch
 from langgraph.types import Send
+from omnivoice import OmniVoice
 
+from vcp.state import GlobalState
+from vcp.utils import root
 
-MAX_CONCURRENCY = 8 #MAX BATCHED TTS INPUT
+MAX_CONCURRENCY = 8  # MAX BATCHED TTS INPUT
 
 BASE = root.find()
 
-AUDIO_PATH = BASE / "src" / "vcp" / "output"
+AUDIO_PATH = BASE / "renderer/public/audio"
 
-REF = BASE / "src" / "vcp" / "service" / "tts" / "assets" / "narrator.mp3"
+REF = BASE / "src" / "vcp" / "service" / "tts" / "assets" / "ref.mp3"
 
 REF_AUDIO = str(REF)
 
@@ -24,10 +23,7 @@ def fanout_tts(state: GlobalState):
     scripts = state["script"].script
     start = state["tts_index"]
 
-    batch = scripts[start:start + MAX_CONCURRENCY]
-
-    if not batch:
-        return "Merger"
+    batch = scripts[start : start + MAX_CONCURRENCY]
 
     return [
         Send(
@@ -39,47 +35,36 @@ def fanout_tts(state: GlobalState):
         for script in batch
     ]
 
+
 def tts_batch_complete(state: GlobalState):
-    return {
-        "tts_index": state["tts_index"] + MAX_CONCURRENCY
-    }
+    return {"tts_index": state["tts_index"] + MAX_CONCURRENCY}
 
 
 model = OmniVoice.from_pretrained(
-    "k2-fsa/OmniVoice",
-    device_map="cuda:0",
-    dtype=torch.float16
+    "k2-fsa/OmniVoice", device_map="cuda:0", dtype=torch.float16
 )
 
+
 def omni(state: fanout_tts):
-    
+
     start = time.time()
 
     script = state["script_for_tts"]
     id = script.id
     text = script.script
 
-    print(
-        f"[SERVICE] Omni | "
-        f"Generating {id}..."
-    )
+    print(f"[SERVICE] Omni | Generating {id}...")
 
     audio = model.generate(
         text=text,
         ref_audio=REF_AUDIO,
-        ref_text="Whilst from any new voice talent had great audio reels, the reality was not that great. When I'd give them a job, most had trouble taking direction.",
+        ref_text="The McLaren 720S demonstrates exceptional aerodynamic efficiency with its 4.0-liter twin-turbocharged V8 engine",
     )
 
     output = AUDIO_PATH / f"{id}.wav"
 
     sf.write(output, audio[0], 24000)
 
-    print(
-        f"[SERVICE] Omni | "
-        f"Finished {id} | "
-        f"{time.time()-start:.2f}s"
-    )
+    print(f"[SERVICE] Omni | Finished {id} | {time.time() - start:.2f}s")
 
-    return {
-        "audio": [str(output)]
-    }
+    return {"audio": [str(output)]}

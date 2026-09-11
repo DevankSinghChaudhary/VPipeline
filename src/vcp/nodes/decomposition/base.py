@@ -18,6 +18,12 @@ model = ChatVPipeline(
     api_key=os.environ["MISTRAL_API_KEY3"],
 )
 
+model = ChatVPipeline(
+    model="mercury-2",
+    base_url=os.environ["INCEPTION_URL"],
+    api_key=os.environ["INCEPTION"],
+)
+
 
 # This is decompositioner whose work is to choose between Typography, images and diagrams
 # Which suits the scene/script. Could be either one of them or multiple.

@@ -24,3 +24,7 @@ if __name__ == "__main__":
     print()
 
     print(output["decomposition"])
+    print()
+    print()
+
+    print(output["stt"])

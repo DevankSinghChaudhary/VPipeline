@@ -7,7 +7,7 @@ from vcp.chat import ChatVPipeline
 from vcp.prompts import SystemPrompt
 from vcp.schemas import ScriptResponse
 from vcp.state import GlobalState
-from vcp.utils import timed
+from vcp.utils import read, root, timed
 
 load_dotenv()
 
@@ -18,10 +18,24 @@ model = ChatVPipeline(
 )
 
 # model = ChatVPipeline(
+#   model="mercury-2",
+#   base_url=os.environ["INCEPTION_URL"],
+#   api_key=os.environ["INCEPTION"],
+# )
+
+# model = ChatVPipeline(
 #   model="minimax-m3-free",
 #   api_key=os.environ["KIRA_AI"],
 #   base_url=os.environ["KIRA_AI_BASE"],
 # )
+
+BASE_DIR = root.find()
+SKILL_PATH = BASE_DIR / "src/vcp/skills/humanscope"
+RESEARCH_SKILL = read(SKILL_PATH / "SKILL.md")
+
+SYSTEM_PROMPT = (
+    SystemPrompt.load("script") + "\n\n" + "=" * 20 + "\n\n" + RESEARCH_SKILL
+)
 
 
 @timed
@@ -100,7 +114,7 @@ def writer(state: GlobalState):
 
     agent = create_agent(
         model=model,
-        system_prompt=SystemPrompt.load("script"),
+        system_prompt=SYSTEM_PROMPT,
         response_format=ScriptResponse,
     )
     result = agent.invoke({"messages": {"role": "user", "content": prompt}})

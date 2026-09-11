@@ -20,6 +20,12 @@ model = ChatVPipeline(
 )
 
 # model = ChatVPipeline(
+#   model="mercury-2",
+#   base_url=os.environ["INCEPTION_URL"],
+#   api_key=os.environ["INCEPTION"],
+# )
+
+# model = ChatVPipeline(
 # model="minimax-m3-free",
 # api_key=os.environ["KIRA_AI"],
 # base_url=os.environ["KIRA_AI_BASE"],
@@ -85,7 +91,6 @@ async def researcher(state: GlobalState):
                 Use tools whenever their output improves factual quality.
 
             5. Prioritize documentary-relevant information:
-
                 * incidents
                 * causes
                 * consequences

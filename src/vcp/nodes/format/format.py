@@ -25,6 +25,12 @@ model = ChatVPipeline(
 # base_url=os.environ["KIRA_AI_BASE"],
 # )
 
+model = ChatVPipeline(
+    model="mercury-2",
+    base_url=os.environ["INCEPTION_URL"],
+    api_key=os.environ["INCEPTION"],
+)
+
 
 @timed
 def formatter(state: GlobalState) -> dict:

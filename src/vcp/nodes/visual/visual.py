@@ -15,6 +15,12 @@ model = ChatVPipeline(
     api_key=os.environ["MISTRAL_API_KEY3"],
 )
 
+model = ChatVPipeline(
+    model="mercury-2",
+    base_url=os.environ["INCEPTION_URL"],
+    api_key=os.environ["INCEPTION"],
+)
+
 # model = ChatVPipeline(
 #   model="minimax-m3-free",
 #   api_key=os.environ["KIRA_AI"],

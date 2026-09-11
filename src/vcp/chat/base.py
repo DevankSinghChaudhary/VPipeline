@@ -38,6 +38,7 @@ from typing import (
     TYPE_CHECKING,
     Any,
     Literal,
+    Self,
     TypeAlias,
     TypeVar,
     cast,
@@ -118,18 +119,6 @@ from langchain_core.utils.pydantic import (
     is_basemodel_subclass,
 )
 from langchain_core.utils.utils import _build_model_kwargs, from_env, secret_from_env
-from pydantic import (
-    BaseModel,
-    ConfigDict,
-    Field,
-    SecretStr,
-    ValidationError,
-    field_validator,
-    model_validator,
-)
-from pydantic.v1 import BaseModel as BaseModelV1
-from typing_extensions import Self
-
 from langchain_openai._version import __version__
 from langchain_openai.chat_models._client_utils import (
     _astream_with_chunk_timeout,
@@ -150,6 +139,16 @@ from langchain_openai.chat_models._compat import (
     _convert_to_v03_ai_message,
 )
 from langchain_openai.data._profiles import _PROFILES
+from pydantic import (
+    BaseModel,
+    ConfigDict,
+    Field,
+    SecretStr,
+    ValidationError,
+    field_validator,
+    model_validator,
+)
+from pydantic.v1 import BaseModel as BaseModelV1
 
 if TYPE_CHECKING:
     import httpx
@@ -712,7 +711,7 @@ class BaseChatOpenAI(BaseChatModel):
     `OPENAI_BASE_URL` is also inspected by LangChain only to decide whether to
     default-enable `stream_usage` — when set, the default is left off because many
     non-OpenAI endpoints do not support streaming token usage.
-    """  # noqa: E501
+    """
 
     openai_organization: str | None = Field(default=None, alias="organization")
     """Automatically inferred from env var `OPENAI_ORG_ID` if not provided."""
@@ -1692,8 +1691,6 @@ class BaseChatOpenAI(BaseChatModel):
                 )
             yield generation_chunk
 
-    
-
     def _generate(
         self,
         messages: list[BaseMessage],
@@ -1973,7 +1970,7 @@ class BaseChatOpenAI(BaseChatModel):
         try:
             if "response_format" in payload:
                 payload.pop("stream")
-                raw_response = await self.root_async_client.chat.completions.with_raw_response.parse(  # noqa: E501
+                raw_response = await self.root_async_client.chat.completions.with_raw_response.parse(
                     **payload
                 )
                 response = raw_response.parse()
@@ -2239,7 +2236,7 @@ class BaseChatOpenAI(BaseChatModel):
                 and the model does not call a tool, the model will generate a
                 [structured response](https://platform.openai.com/docs/guides/structured-outputs).
             kwargs: Any additional parameters are passed directly to `bind`.
-        """  # noqa: E501
+        """
         if parallel_tool_calls is not None:
             kwargs["parallel_tool_calls"] = parallel_tool_calls
         # When response_format is provided via the Chat Completions API, OpenAI
@@ -2474,7 +2471,7 @@ class BaseChatOpenAI(BaseChatModel):
                     f"Cannot use method='json_schema' with model {self.model_name} "
                     f"since it doesn't support OpenAI's Structured Output API. You can "
                     f"see supported models here: "
-                    f"https://platform.openai.com/docs/guides/structured-outputs#supported-models. "  # noqa: E501
+                    f"https://platform.openai.com/docs/guides/structured-outputs#supported-models. "
                     "To fix this warning, set `method='function_calling'. "
                     "Overriding to method='function_calling'."
                 )
@@ -3428,7 +3425,7 @@ class ChatVPipeline(BaseChatOpenAI):  # type: ignore[override]
         includes `cache_write_tokens`. On the `"priority"` and `"flex"`
         service tiers these keys are prefixed with the tier name
         (e.g. `"priority_cache_read"`).
-    """  # noqa: E501
+    """
 
     max_tokens: int | None = Field(default=None, alias="max_completion_tokens")
     """Maximum number of tokens to generate."""
@@ -3913,7 +3910,7 @@ class ChatVPipeline(BaseChatOpenAI):  # type: ignore[override]
             }
             ```
 
-        """  # noqa: E501
+        """
         return super().with_structured_output(
             schema,
             method=method,
@@ -4304,8 +4301,8 @@ def _construct_responses_api_payload(
     if tools := payload.pop("tools", None):
         new_tools: list = []
         for tool in tools:
-            # chat api: {"type": "function", "function": {"name": "...", "description": "...", "parameters": {...}, "strict": ...}}  # noqa: E501
-            # responses api: {"type": "function", "name": "...", "description": "...", "parameters": {...}, "strict": ...}  # noqa: E501
+            # chat api: {"type": "function", "function": {"name": "...", "description": "...", "parameters": {...}, "strict": ...}}
+            # responses api: {"type": "function", "name": "...", "description": "...", "parameters": {...}, "strict": ...}
             if tool["type"] == "function" and "function" in tool:
                 extra = {k: v for k, v in tool.items() if k not in ("type", "function")}
                 new_tools.append({"type": "function", **tool["function"], **extra})
@@ -4420,8 +4417,8 @@ def _convert_chat_completions_blocks_to_responses(
             new_block["prompt_cache_breakpoint"] = block["prompt_cache_breakpoint"]
         return new_block
     if block["type"] == "image_url":
-        # chat api: {"type": "image_url", "image_url": {"url": "...", "detail": "..."}}  # noqa: E501
-        # responses api: {"type": "input_image", "image_url": "...", "detail": "..."}  # noqa: E501
+        # chat api: {"type": "image_url", "image_url": {"url": "...", "detail": "..."}}
+        # responses api: {"type": "input_image", "image_url": "...", "detail": "..."}
         new_block = {
             "type": "input_image",
             "image_url": block["image_url"]["url"],

@@ -65,6 +65,10 @@ class ImageVisual(BaseModel):
     type_text: TYPE_TEXT | None = Field(
         default=None, description="Could be None as type: 'Could be only text'."
     )
+    text: str | None = Field(
+        default=None,
+        description="IF type_text is IMAGE_WITH_TEXT then add this field as this is the text with Image that must be shown.",
+    )
     asset: list[str]
 
 

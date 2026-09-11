@@ -54,3 +54,4 @@ class GlobalState(TypedDict):
 
     sorted: SortResponse
     decomposition: DecompostionResponse
+    stt: list[str]

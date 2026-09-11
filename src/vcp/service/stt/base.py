@@ -1,0 +1,107 @@
+import gc
+
+import torch
+import whisperx
+
+
+class WhisperX:
+    LANGUAGE = "en"
+
+    def __init__(
+        self,
+        device: str = "cuda",
+        model_name: str = "medium",
+        compute_type: str = "float16",
+        batch_size: int = 4,
+    ):
+        self.device = device
+        self.model_name = model_name
+        self.compute_type = compute_type
+        self.batch_size = batch_size
+
+        self.asr_model = None
+        self.align_model = None
+        self.align_metadata = None
+
+    def load_asr(self):
+        self.asr_model = whisperx.load_model(
+            self.model_name,
+            self.device,
+            compute_type=self.compute_type,
+        )
+
+    def transcribe(self, audio_path: str):
+        if self.asr_model is None:
+            raise RuntimeError("ASR model is not loaded.")
+
+        audio = whisperx.load_audio(audio_path)
+
+        result = self.asr_model.transcribe(
+            audio,
+            batch_size=self.batch_size,
+            language=self.LANGUAGE,
+        )
+
+        return audio, result
+
+    def load_alignment(self):
+        self.align_model, self.align_metadata = whisperx.load_align_model(
+            language_code=self.LANGUAGE,
+            device=self.device,
+        )
+
+    def align(self, segments, audio):
+        if self.align_model is None or self.align_metadata is None:
+            raise RuntimeError("Alignment model is not loaded.")
+
+        return whisperx.align(
+            segments,
+            self.align_model,
+            self.align_metadata,
+            audio,
+            self.device,
+            return_char_alignments=False,
+        )
+
+    def transcribe_and_align(self, audio_path: str):
+        """
+        Transcribe one audio file and produce word-level timestamps.
+
+        Returns:
+            audio: decoded audio array
+            result: WhisperX aligned result containing:
+                - segments
+                - word_segments
+                - language
+        """
+        audio, result = self.transcribe(audio_path)
+
+        aligned = self.align(
+            result["segments"],
+            audio,
+        )
+
+        return audio, aligned
+
+    def unload_asr(self):
+        self.asr_model = None
+        self._clear_cuda()
+
+    def unload_alignment(self):
+        self.align_model = None
+        self.align_metadata = None
+        self._clear_cuda()
+
+    def unload(self):
+        self.asr_model = None
+        self.align_model = None
+        self.align_metadata = None
+
+        self._clear_cuda()
+
+    def _clear_cuda(self):
+        gc.collect()
+
+        if self.device == "cuda" and torch.cuda.is_available():
+            torch.cuda.empty_cache()
+            torch.cuda.ipc_collect()

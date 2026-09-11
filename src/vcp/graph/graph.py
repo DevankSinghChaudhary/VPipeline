@@ -2,6 +2,7 @@ import time
 
 from langgraph.graph import END, START, StateGraph
 
+from vcp.link import link
 from vcp.nodes import (
     decompositioner,
     formatter,
@@ -18,6 +19,7 @@ from vcp.service import (
     omni,
     search_images,
     tts_batch_complete,
+    whisperx_engine,
 )
 from vcp.state import GlobalState
 
@@ -42,6 +44,8 @@ async def graph(state: GlobalState):
     builder.add_node("Omni", omni)
     builder.add_node("Merger", merger)
     builder.add_node("Decompositioner", decompositioner)
+    builder.add_node("Whisper", whisperx_engine, defer=True)
+    builder.add_node("LINK", link)
 
     # Adding edges to the nodes
     # Basically, Sketching lines from node to node
@@ -56,10 +60,13 @@ async def graph(state: GlobalState):
     builder.add_edge("Formatter", "Visualizer")
     builder.add_conditional_edges("Visualizer", fanout_image)
     builder.add_conditional_edges("TTSBatchComplete", fanout_tts)
-
-    builder.add_edge("Merger", "Sorter")
-    builder.add_edge("Merger", "Decompositioner")
-    builder.add_edge("Decompositioner", END)
+    builder.add_edge("Visualizer", "Sorter")
+    builder.add_edge("Sorter", "Decompositioner")
+    builder.add_edge("Decompositioner", "LINK")
+    builder.add_edge("LINK", "Whisper")
+    builder.add_edge("Whisper", END)
+    # builder.add_edge("LINK", "Whisper")
+    # builder.add_edge("Whisper", END)
     graph = builder.compile()
     # Actual state being passed in the graph
     result = await graph.ainvoke(
@@ -74,6 +81,7 @@ async def graph(state: GlobalState):
             "images": [],
             "sorted": {},
             "decomposition": [],
+            "stt": [],
         }
     )
     print(f"[GRAPH] Finished | {time.time() - start:.2f}s")
