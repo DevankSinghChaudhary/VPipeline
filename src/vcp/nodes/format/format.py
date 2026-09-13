@@ -34,7 +34,7 @@ model = ChatVPipeline(
 
 @timed
 def formatter(state: GlobalState) -> dict:
-    script = state["script"]
+    script = state["original_script"]
 
     user_prompt = dedent(
         f"""

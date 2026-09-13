@@ -1,237 +1,67 @@
 {
     "scene_id": 7,
-    "type": "IMAGE_WITH_TEXT",
+    "type": "TYPOGRAPHY",
     "audio": {
         "path": "/home/devank/Projects/VPipeline/renderer/public/audio/7.wav",
-        "result": {
-            "segments": [
-                {
-                    "start": 0.172,
-                    "end": 0.714,
-                    "text": " The Wow!",
-                    "words": [
-                        {
-                            "word": "The",
-                            "start": 0.172,
-                            "end": 0.272,
-                            "score": 0.997
-                        },
-                        {
-                            "word": "Wow!",
-                            "start": 0.332,
-                            "end": 0.714,
-                            "score": 0.794
-                        }
-                    ],
-                    "avg_logprob": -0.1109271997755224
-                },
-                {
-                    "start": 0.996,
-                    "end": 5.96,
-                    "text": "signal in 1977 was the most intriguing unexplained radio burst but it was never confirmed.",
-                    "words": [
-                        {
-                            "word": "signal",
-                            "start": 0.996,
-                            "end": 1.418,
-                            "score": 0.722
-                        },
-                        {
-                            "word": "in",
-                            "start": 1.538,
-                            "end": 1.82,
-                            "score": 0.459
-                        },
-                        {
-                            "word": "1977",
-                            "start": 1.86,
-                            "end": 2.483,
-                            "score": 0.594
-                        },
-                        {
-                            "word": "was",
-                            "start": 2.543,
-                            "end": 2.664,
-                            "score": 0.766
-                        },
-                        {
-                            "word": "the",
-                            "start": 2.704,
-                            "end": 2.784,
-                            "score": 0.978
-                        },
-                        {
-                            "word": "most",
-                            "start": 2.824,
-                            "end": 3.005,
-                            "score": 0.556
-                        },
-                        {
-                            "word": "intriguing",
-                            "start": 3.066,
-                            "end": 3.548,
-                            "score": 0.826
-                        },
-                        {
-                            "word": "unexplained",
-                            "start": 3.628,
-                            "end": 4.111,
-                            "score": 0.847
-                        },
-                        {
-                            "word": "radio",
-                            "start": 4.151,
-                            "end": 4.452,
-                            "score": 0.94
-                        },
-                        {
-                            "word": "burst",
-                            "start": 4.472,
-                            "end": 4.774,
-                            "score": 0.848
-                        },
-                        {
-                            "word": "but",
-                            "start": 4.834,
-                            "end": 4.935,
-                            "score": 0.98
-                        },
-                        {
-                            "word": "it",
-                            "start": 4.975,
-                            "end": 5.015,
-                            "score": 0.998
-                        },
-                        {
-                            "word": "was",
-                            "start": 5.055,
-                            "end": 5.156,
-                            "score": 0.672
-                        },
-                        {
-                            "word": "never",
-                            "start": 5.196,
-                            "end": 5.417,
-                            "score": 0.734
-                        },
-                        {
-                            "word": "confirmed.",
-                            "start": 5.457,
-                            "end": 5.96,
-                            "score": 0.946
-                        }
-                    ],
-                    "avg_logprob": -0.1109271997755224
-                }
-            ],
-            "word_segments": [
-                {
-                    "word": "The",
-                    "start": 0.172,
-                    "end": 0.272,
-                    "score": 0.997
-                },
-                {
-                    "word": "Wow!",
-                    "start": 0.332,
-                    "end": 0.714,
-                    "score": 0.794
-                },
-                {
-                    "word": "signal",
-                    "start": 0.996,
-                    "end": 1.418,
-                    "score": 0.722
-                },
-                {
-                    "word": "in",
-                    "start": 1.538,
-                    "end": 1.82,
-                    "score": 0.459
-                },
-                {
-                    "word": "1977",
-                    "start": 1.86,
-                    "end": 2.483,
-                    "score": 0.594
-                },
-                {
-                    "word": "was",
-                    "start": 2.543,
-                    "end": 2.664,
-                    "score": 0.766
-                },
-                {
-                    "word": "the",
-                    "start": 2.704,
-                    "end": 2.784,
-                    "score": 0.978
-                },
-                {
-                    "word": "most",
-                    "start": 2.824,
-                    "end": 3.005,
-                    "score": 0.556
-                },
-                {
-                    "word": "intriguing",
-                    "start": 3.066,
-                    "end": 3.548,
-                    "score": 0.826
-                },
-                {
-                    "word": "unexplained",
-                    "start": 3.628,
-                    "end": 4.111,
-                    "score": 0.847
-                },
-                {
-                    "word": "radio",
-                    "start": 4.151,
-                    "end": 4.452,
-                    "score": 0.94
-                },
-                {
-                    "word": "burst",
-                    "start": 4.472,
-                    "end": 4.774,
-                    "score": 0.848
-                },
-                {
-                    "word": "but",
-                    "start": 4.834,
-                    "end": 4.935,
-                    "score": 0.98
-                },
-                {
-                    "word": "it",
-                    "start": 4.975,
-                    "end": 5.015,
-                    "score": 0.998
-                },
-                {
-                    "word": "was",
-                    "start": 5.055,
-                    "end": 5.156,
-                    "score": 0.672
-                },
-                {
-                    "word": "never",
-                    "start": 5.196,
-                    "end": 5.417,
-                    "score": 0.734
-                },
-                {
-                    "word": "confirmed.",
-                    "start": 5.457,
-                    "end": 5.96,
-                    "score": 0.946
-                }
-            ]
-        }
+        "result": [
+            {
+                "word": "Yet",
+                "start": 0.352,
+                "end": 0.513,
+                "score": 0.782
+            },
+            {
+                "word": "no",
+                "start": 0.593,
+                "end": 0.734,
+                "score": 0.985
+            },
+            {
+                "word": "definitive",
+                "start": 0.794,
+                "end": 1.276,
+                "score": 0.924
+            },
+            {
+                "word": "proof",
+                "start": 1.336,
+                "end": 1.577,
+                "score": 0.809
+            },
+            {
+                "word": "of",
+                "start": 1.617,
+                "end": 1.697,
+                "score": 0.666
+            },
+            {
+                "word": "extraterrestrial",
+                "start": 1.838,
+                "end": 2.581,
+                "score": 0.816
+            },
+            {
+                "word": "intelligence",
+                "start": 2.621,
+                "end": 3.183,
+                "score": 0.866
+            },
+            {
+                "word": "has",
+                "start": 3.224,
+                "end": 3.384,
+                "score": 0.812
+            },
+            {
+                "word": "emerged.",
+                "start": 3.445,
+                "end": 3.886,
+                "score": 0.942
+            }
+        ]
     },
     "typography": {
-        "type_text": "IMAGE_WITH_TEXT",
-        "text": "1977"
+        "type": "KEY_LINE",
+        "text": "No definitive proof of extraterrestrial intelligence"
     }
 }

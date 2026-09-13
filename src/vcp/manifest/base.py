@@ -18,6 +18,7 @@ def manifest(state: global_state):
     image_with_text = {}
     image_with_text_audio = {}
     image_typography = {}
+    image = {}
 
     text_scene = {}
     typography = {}
@@ -39,7 +40,7 @@ def manifest(state: global_state):
                     image_scene["scene_id"] = s.scene_id
 
                     image_audio["path"] = audio["path"]
-                    image_audio["result"] = audio["result"]
+                    image_audio["result"] = audio["result"]["word_segments"]
 
                     image_scene["audio"] = image_audio
                     image_scene["type"] = "IMAGE"
@@ -56,11 +57,14 @@ def manifest(state: global_state):
                     image_with_text["type"] = "IMAGE_WITH_TEXT"
 
                     image_with_text_audio["path"] = audio["path"]
-                    image_with_text_audio["result"] = audio["result"]
+                    image_with_text_audio["result"] = audio["result"]["word_segments"]
+
+                    image["image"] = s.image.asset
 
                     image_with_text["audio"] = image_with_text_audio
-                    image_typography["type_text"] = s.image.type
+                    image_typography["type_text"] = s.image.type_text
                     image_typography["text"] = s.image.text
+                    image_typography["image"] = image
                     image_with_text["typography"] = image_typography
                     with open(f"{SCENE_DATA}/{s.scene_id}_data.json", "w") as file:
                         json.dump(image_with_text, file, indent=4)
@@ -74,7 +78,7 @@ def manifest(state: global_state):
                     text_scene["type"] = "TYPOGRAPHY"
 
                     typography_audio["path"] = audio["path"]
-                    typography_audio["result"] = audio["result"]
+                    typography_audio["result"] = audio["result"]["word_segments"]
 
                     text_scene["audio"] = typography_audio
                     typography["type"] = s.typography.type_typography
@@ -90,7 +94,7 @@ def manifest(state: global_state):
                     print(f"Identified {s.scene_id} as None.")
                     none["id"] = s.scene_id
                     none_audio["path"] = audio["path"]
-                    none_audio["result"] = audio["result"]
+                    none_audio["result"] = audio["result"]["word_segments"]
 
                     none["audio"] = none_audio
                     with open(f"{SCENE_DATA}/{s.scene_id}_data.json", "w") as file:

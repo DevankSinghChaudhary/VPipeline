@@ -1,180 +1,85 @@
 {
     "scene_id": 2,
+    "type": "TYPOGRAPHY",
     "audio": {
         "path": "/home/devank/Projects/VPipeline/renderer/public/audio/2.wav",
-        "result": {
-            "segments": [
-                {
-                    "start": 0.374,
-                    "end": 4.77,
-                    "text": " The Milky Way holds 100 to 400 billion stars, messy with planetary systems.",
-                    "words": [
-                        {
-                            "word": "The",
-                            "start": 0.374,
-                            "end": 0.455,
-                            "score": 0.977
-                        },
-                        {
-                            "word": "Milky",
-                            "start": 0.495,
-                            "end": 0.777,
-                            "score": 0.916
-                        },
-                        {
-                            "word": "Way",
-                            "start": 0.818,
-                            "end": 1.019,
-                            "score": 0.92
-                        },
-                        {
-                            "word": "holds",
-                            "start": 1.06,
-                            "end": 1.281,
-                            "score": 0.769
-                        },
-                        {
-                            "word": "100",
-                            "start": 1.523,
-                            "end": 1.765,
-                            "score": 0.431
-                        },
-                        {
-                            "word": "to",
-                            "start": 1.786,
-                            "end": 1.826,
-                            "score": 0.975
-                        },
-                        {
-                            "word": "400",
-                            "start": 2.088,
-                            "end": 2.31,
-                            "score": 0.661
-                        },
-                        {
-                            "word": "billion",
-                            "start": 2.33,
-                            "end": 2.633,
-                            "score": 0.888
-                        },
-                        {
-                            "word": "stars,",
-                            "start": 2.673,
-                            "end": 3.056,
-                            "score": 0.815
-                        },
-                        {
-                            "word": "messy",
-                            "start": 3.197,
-                            "end": 3.48,
-                            "score": 0.955
-                        },
-                        {
-                            "word": "with",
-                            "start": 3.52,
-                            "end": 3.661,
-                            "score": 0.806
-                        },
-                        {
-                            "word": "planetary",
-                            "start": 3.722,
-                            "end": 4.266,
-                            "score": 0.841
-                        },
-                        {
-                            "word": "systems.",
-                            "start": 4.306,
-                            "end": 4.77,
-                            "score": 0.908
-                        }
-                    ],
-                    "avg_logprob": -0.055338075617328286
-                }
-            ],
-            "word_segments": [
-                {
-                    "word": "The",
-                    "start": 0.374,
-                    "end": 0.455,
-                    "score": 0.977
-                },
-                {
-                    "word": "Milky",
-                    "start": 0.495,
-                    "end": 0.777,
-                    "score": 0.916
-                },
-                {
-                    "word": "Way",
-                    "start": 0.818,
-                    "end": 1.019,
-                    "score": 0.92
-                },
-                {
-                    "word": "holds",
-                    "start": 1.06,
-                    "end": 1.281,
-                    "score": 0.769
-                },
-                {
-                    "word": "100",
-                    "start": 1.523,
-                    "end": 1.765,
-                    "score": 0.431
-                },
-                {
-                    "word": "to",
-                    "start": 1.786,
-                    "end": 1.826,
-                    "score": 0.975
-                },
-                {
-                    "word": "400",
-                    "start": 2.088,
-                    "end": 2.31,
-                    "score": 0.661
-                },
-                {
-                    "word": "billion",
-                    "start": 2.33,
-                    "end": 2.633,
-                    "score": 0.888
-                },
-                {
-                    "word": "stars,",
-                    "start": 2.673,
-                    "end": 3.056,
-                    "score": 0.815
-                },
-                {
-                    "word": "messy",
-                    "start": 3.197,
-                    "end": 3.48,
-                    "score": 0.955
-                },
-                {
-                    "word": "with",
-                    "start": 3.52,
-                    "end": 3.661,
-                    "score": 0.806
-                },
-                {
-                    "word": "planetary",
-                    "start": 3.722,
-                    "end": 4.266,
-                    "score": 0.841
-                },
-                {
-                    "word": "systems.",
-                    "start": 4.306,
-                    "end": 4.77,
-                    "score": 0.908
-                }
-            ]
-        }
+        "result": [
+            {
+                "word": "The",
+                "start": 0.132,
+                "end": 0.212,
+                "score": 0.961
+            },
+            {
+                "word": "universe",
+                "start": 0.293,
+                "end": 0.715,
+                "score": 0.76
+            },
+            {
+                "word": "contains",
+                "start": 0.795,
+                "end": 1.218,
+                "score": 0.944
+            },
+            {
+                "word": "billions",
+                "start": 1.318,
+                "end": 1.6,
+                "score": 0.838
+            },
+            {
+                "word": "of",
+                "start": 1.64,
+                "end": 1.701,
+                "score": 0.996
+            },
+            {
+                "word": "stars,",
+                "start": 1.761,
+                "end": 2.204,
+                "score": 0.775
+            },
+            {
+                "word": "many",
+                "start": 2.385,
+                "end": 2.586,
+                "score": 0.88
+            },
+            {
+                "word": "with",
+                "start": 2.606,
+                "end": 2.727,
+                "score": 0.875
+            },
+            {
+                "word": "planets",
+                "start": 2.787,
+                "end": 3.169,
+                "score": 0.848
+            },
+            {
+                "word": "in",
+                "start": 3.229,
+                "end": 3.31,
+                "score": 0.572
+            },
+            {
+                "word": "habitable",
+                "start": 3.35,
+                "end": 3.773,
+                "score": 0.803
+            },
+            {
+                "word": "zones.",
+                "start": 3.833,
+                "end": 4.215,
+                "score": 0.846
+            }
+        ]
     },
-    "type": "IMAGE",
-    "Image": [
-        "Milky Way galaxy"
-    ]
+    "typography": {
+        "type": "KEY_LINE",
+        "text": "Billions of stars, many with habitable planets"
+    }
 }

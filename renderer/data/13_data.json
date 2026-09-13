@@ -1,0 +1,102 @@
+{
+    "scene_id": 13,
+    "type": "IMAGE_WITH_TEXT",
+    "audio": {
+        "path": "/home/devank/Projects/VPipeline/renderer/public/audio/13.wav",
+        "result": [
+            {
+                "word": "Despite",
+                "start": 0.312,
+                "end": 0.694,
+                "score": 0.905
+            },
+            {
+                "word": "ongoing",
+                "start": 0.835,
+                "end": 1.197,
+                "score": 0.805
+            },
+            {
+                "word": "searches,",
+                "start": 1.257,
+                "end": 1.679,
+                "score": 0.794
+            },
+            {
+                "word": "the",
+                "start": 1.84,
+                "end": 1.94,
+                "score": 0.762
+            },
+            {
+                "word": "Fermi",
+                "start": 1.98,
+                "end": 2.262,
+                "score": 0.657
+            },
+            {
+                "word": "Paradox",
+                "start": 2.282,
+                "end": 2.804,
+                "score": 0.926
+            },
+            {
+                "word": "endures",
+                "start": 2.885,
+                "end": 3.206,
+                "score": 0.928
+            },
+            {
+                "word": "as",
+                "start": 3.267,
+                "end": 3.347,
+                "score": 0.55
+            },
+            {
+                "word": "one",
+                "start": 3.427,
+                "end": 3.508,
+                "score": 0.999
+            },
+            {
+                "word": "of",
+                "start": 3.548,
+                "end": 3.608,
+                "score": 0.75
+            },
+            {
+                "word": "science's",
+                "start": 3.649,
+                "end": 4.151,
+                "score": 0.852
+            },
+            {
+                "word": "greatest",
+                "start": 4.231,
+                "end": 4.573,
+                "score": 0.843
+            },
+            {
+                "word": "unsolved",
+                "start": 4.633,
+                "end": 5.035,
+                "score": 0.889
+            },
+            {
+                "word": "questions.",
+                "start": 5.055,
+                "end": 5.538,
+                "score": 0.843
+            }
+        ]
+    },
+    "typography": {
+        "type_text": "KEY_LINE",
+        "text": "Fermi Paradox endures",
+        "image": {
+            "image": [
+                "Enrico Fermi portrait"
+            ]
+        }
+    }
+}

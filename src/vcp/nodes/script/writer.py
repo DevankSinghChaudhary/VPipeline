@@ -119,4 +119,4 @@ def writer(state: GlobalState):
     )
     result = agent.invoke({"messages": {"role": "user", "content": prompt}})
     result = result["structured_response"]
-    return {"script": result}
+    return {"original_script": result}

@@ -1,0 +1,61 @@
+{
+    "scene_id": 10,
+    "type": "TYPOGRAPHY",
+    "audio": {
+        "path": "/home/devank/Projects/VPipeline/renderer/public/audio/10.wav",
+        "result": [
+            {
+                "word": "Some",
+                "start": 0.534,
+                "end": 0.715,
+                "score": 0.818
+            },
+            {
+                "word": "propose",
+                "start": 0.755,
+                "end": 1.137,
+                "score": 0.842
+            },
+            {
+                "word": "civilization",
+                "start": 1.178,
+                "end": 1.922,
+                "score": 0.931
+            },
+            {
+                "word": "self-destruct",
+                "start": 1.982,
+                "end": 2.686,
+                "score": 0.854
+            },
+            {
+                "word": "before",
+                "start": 2.747,
+                "end": 3.028,
+                "score": 0.806
+            },
+            {
+                "word": "achieving",
+                "start": 3.069,
+                "end": 3.451,
+                "score": 0.784
+            },
+            {
+                "word": "interstellar",
+                "start": 3.531,
+                "end": 4.014,
+                "score": 0.882
+            },
+            {
+                "word": "communication.",
+                "start": 4.054,
+                "end": 4.718,
+                "score": 0.945
+            }
+        ]
+    },
+    "typography": {
+        "type": "KEY_LINE",
+        "text": "Some propose civilizations self\u2011destruct before interstellar communication"
+    }
+}

@@ -3,6 +3,7 @@ import time
 from langgraph.graph import END, START, StateGraph
 
 from vcp.manifest import manifest
+from vcp.match import matcher
 from vcp.nodes import (
     decompositioner,
     formatter,
@@ -46,6 +47,7 @@ async def graph(state: GlobalState):
     builder.add_node("Decompositioner", decompositioner)
     builder.add_node("Whisper", whisperx_engine, defer=True)
     builder.add_node("RendererManifest", manifest)
+    builder.add_node("Matcher", matcher)
 
     # Adding edges to the nodes
     # Basically, Sketching lines from node to node
@@ -74,6 +76,7 @@ async def graph(state: GlobalState):
             "topic": topic,
             "category": str,
             "information": {},
+            "original_script": [],
             "script": [],
             "audio": [],
             "tts_index": 0,

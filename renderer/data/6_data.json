@@ -1,325 +1,96 @@
 {
     "scene_id": 6,
-    "type": "TYPOGRAPHY",
     "audio": {
         "path": "/home/devank/Projects/VPipeline/renderer/public/audio/6.wav",
-        "result": {
-            "segments": [
-                {
-                    "start": 0.617,
-                    "end": 9.305,
-                    "text": " Solutions to the paradox range from the great filter blocking intelligent life's rise to the dark forest hypothesis, where civilizations stay silent to avoid destruction.",
-                    "words": [
-                        {
-                            "word": "Solutions",
-                            "start": 0.617,
-                            "end": 1.12,
-                            "score": 0.925
-                        },
-                        {
-                            "word": "to",
-                            "start": 1.201,
-                            "end": 1.301,
-                            "score": 0.84
-                        },
-                        {
-                            "word": "the",
-                            "start": 1.321,
-                            "end": 1.402,
-                            "score": 0.832
-                        },
-                        {
-                            "word": "paradox",
-                            "start": 1.442,
-                            "end": 1.945,
-                            "score": 0.867
-                        },
-                        {
-                            "word": "range",
-                            "start": 2.045,
-                            "end": 2.287,
-                            "score": 0.898
-                        },
-                        {
-                            "word": "from",
-                            "start": 2.327,
-                            "end": 2.468,
-                            "score": 0.788
-                        },
-                        {
-                            "word": "the",
-                            "start": 2.488,
-                            "end": 2.568,
-                            "score": 0.832
-                        },
-                        {
-                            "word": "great",
-                            "start": 2.608,
-                            "end": 2.809,
-                            "score": 0.737
-                        },
-                        {
-                            "word": "filter",
-                            "start": 2.87,
-                            "end": 3.212,
-                            "score": 0.838
-                        },
-                        {
-                            "word": "blocking",
-                            "start": 3.252,
-                            "end": 3.594,
-                            "score": 0.819
-                        },
-                        {
-                            "word": "intelligent",
-                            "start": 3.634,
-                            "end": 4.137,
-                            "score": 0.873
-                        },
-                        {
-                            "word": "life's",
-                            "start": 4.177,
-                            "end": 4.418,
-                            "score": 0.826
-                        },
-                        {
-                            "word": "rise",
-                            "start": 4.499,
-                            "end": 4.74,
-                            "score": 0.843
-                        },
-                        {
-                            "word": "to",
-                            "start": 4.78,
-                            "end": 4.881,
-                            "score": 0.832
-                        },
-                        {
-                            "word": "the",
-                            "start": 4.901,
-                            "end": 4.981,
-                            "score": 0.826
-                        },
-                        {
-                            "word": "dark",
-                            "start": 5.022,
-                            "end": 5.243,
-                            "score": 0.701
-                        },
-                        {
-                            "word": "forest",
-                            "start": 5.283,
-                            "end": 5.605,
-                            "score": 0.885
-                        },
-                        {
-                            "word": "hypothesis,",
-                            "start": 5.625,
-                            "end": 6.309,
-                            "score": 0.843
-                        },
-                        {
-                            "word": "where",
-                            "start": 6.691,
-                            "end": 6.831,
-                            "score": 0.987
-                        },
-                        {
-                            "word": "civilizations",
-                            "start": 6.872,
-                            "end": 7.636,
-                            "score": 0.822
-                        },
-                        {
-                            "word": "stay",
-                            "start": 7.676,
-                            "end": 7.897,
-                            "score": 0.878
-                        },
-                        {
-                            "word": "silent",
-                            "start": 7.938,
-                            "end": 8.3,
-                            "score": 0.875
-                        },
-                        {
-                            "word": "to",
-                            "start": 8.34,
-                            "end": 8.42,
-                            "score": 0.684
-                        },
-                        {
-                            "word": "avoid",
-                            "start": 8.46,
-                            "end": 8.742,
-                            "score": 0.688
-                        },
-                        {
-                            "word": "destruction.",
-                            "start": 8.782,
-                            "end": 9.305,
-                            "score": 0.86
-                        }
-                    ],
-                    "avg_logprob": -0.06134832213664877
-                }
-            ],
-            "word_segments": [
-                {
-                    "word": "Solutions",
-                    "start": 0.617,
-                    "end": 1.12,
-                    "score": 0.925
-                },
-                {
-                    "word": "to",
-                    "start": 1.201,
-                    "end": 1.301,
-                    "score": 0.84
-                },
-                {
-                    "word": "the",
-                    "start": 1.321,
-                    "end": 1.402,
-                    "score": 0.832
-                },
-                {
-                    "word": "paradox",
-                    "start": 1.442,
-                    "end": 1.945,
-                    "score": 0.867
-                },
-                {
-                    "word": "range",
-                    "start": 2.045,
-                    "end": 2.287,
-                    "score": 0.898
-                },
-                {
-                    "word": "from",
-                    "start": 2.327,
-                    "end": 2.468,
-                    "score": 0.788
-                },
-                {
-                    "word": "the",
-                    "start": 2.488,
-                    "end": 2.568,
-                    "score": 0.832
-                },
-                {
-                    "word": "great",
-                    "start": 2.608,
-                    "end": 2.809,
-                    "score": 0.737
-                },
-                {
-                    "word": "filter",
-                    "start": 2.87,
-                    "end": 3.212,
-                    "score": 0.838
-                },
-                {
-                    "word": "blocking",
-                    "start": 3.252,
-                    "end": 3.594,
-                    "score": 0.819
-                },
-                {
-                    "word": "intelligent",
-                    "start": 3.634,
-                    "end": 4.137,
-                    "score": 0.873
-                },
-                {
-                    "word": "life's",
-                    "start": 4.177,
-                    "end": 4.418,
-                    "score": 0.826
-                },
-                {
-                    "word": "rise",
-                    "start": 4.499,
-                    "end": 4.74,
-                    "score": 0.843
-                },
-                {
-                    "word": "to",
-                    "start": 4.78,
-                    "end": 4.881,
-                    "score": 0.832
-                },
-                {
-                    "word": "the",
-                    "start": 4.901,
-                    "end": 4.981,
-                    "score": 0.826
-                },
-                {
-                    "word": "dark",
-                    "start": 5.022,
-                    "end": 5.243,
-                    "score": 0.701
-                },
-                {
-                    "word": "forest",
-                    "start": 5.283,
-                    "end": 5.605,
-                    "score": 0.885
-                },
-                {
-                    "word": "hypothesis,",
-                    "start": 5.625,
-                    "end": 6.309,
-                    "score": 0.843
-                },
-                {
-                    "word": "where",
-                    "start": 6.691,
-                    "end": 6.831,
-                    "score": 0.987
-                },
-                {
-                    "word": "civilizations",
-                    "start": 6.872,
-                    "end": 7.636,
-                    "score": 0.822
-                },
-                {
-                    "word": "stay",
-                    "start": 7.676,
-                    "end": 7.897,
-                    "score": 0.878
-                },
-                {
-                    "word": "silent",
-                    "start": 7.938,
-                    "end": 8.3,
-                    "score": 0.875
-                },
-                {
-                    "word": "to",
-                    "start": 8.34,
-                    "end": 8.42,
-                    "score": 0.684
-                },
-                {
-                    "word": "avoid",
-                    "start": 8.46,
-                    "end": 8.742,
-                    "score": 0.688
-                },
-                {
-                    "word": "destruction.",
-                    "start": 8.782,
-                    "end": 9.305,
-                    "score": 0.86
-                }
-            ]
-        }
+        "result": [
+            {
+                "word": "Projects",
+                "start": 0.212,
+                "end": 0.615,
+                "score": 0.833
+            },
+            {
+                "word": "like",
+                "start": 0.655,
+                "end": 0.816,
+                "score": 0.876
+            },
+            {
+                "word": "Search",
+                "start": 0.876,
+                "end": 1.098,
+                "score": 0.832
+            },
+            {
+                "word": "for",
+                "start": 1.118,
+                "end": 1.238,
+                "score": 0.611
+            },
+            {
+                "word": "Extraterrestrial",
+                "start": 1.319,
+                "end": 2.104,
+                "score": 0.841
+            },
+            {
+                "word": "Intelligence,",
+                "start": 2.164,
+                "end": 2.748,
+                "score": 0.946
+            },
+            {
+                "word": "SETI",
+                "start": 3.11,
+                "end": 3.412,
+                "score": 0.781
+            },
+            {
+                "word": "have",
+                "start": 3.432,
+                "end": 3.573,
+                "score": 0.747
+            },
+            {
+                "word": "scanned",
+                "start": 3.613,
+                "end": 3.915,
+                "score": 0.892
+            },
+            {
+                "word": "the",
+                "start": 3.935,
+                "end": 4.015,
+                "score": 0.836
+            },
+            {
+                "word": "skies",
+                "start": 4.036,
+                "end": 4.398,
+                "score": 0.791
+            },
+            {
+                "word": "for",
+                "start": 4.438,
+                "end": 4.559,
+                "score": 0.791
+            },
+            {
+                "word": "artificial",
+                "start": 4.619,
+                "end": 5.102,
+                "score": 0.874
+            },
+            {
+                "word": "signals.",
+                "start": 5.163,
+                "end": 5.565,
+                "score": 0.929
+            }
+        ]
     },
-    "typography": {
-        "type": "KEY_LINE",
-        "text": "Great Filter, Dark Forest Hypothesis"
-    }
+    "type": "IMAGE",
+    "Image": [
+        "SETI institute logo"
+    ]
 }

@@ -28,3 +28,7 @@ if __name__ == "__main__":
     print()
 
     print(output["stt"])
+    print()
+    print()
+
+    print(output["original_script"])

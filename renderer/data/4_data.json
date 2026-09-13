@@ -1,204 +1,121 @@
 {
     "scene_id": 4,
+    "type": "TYPOGRAPHY",
     "audio": {
         "path": "/home/devank/Projects/VPipeline/renderer/public/audio/4.wav",
-        "result": {
-            "segments": [
-                {
-                    "start": 0.514,
-                    "end": 7.059,
-                    "text": " The Drake equation estimates communicative civilizations by weighing star formation, habitable planets, and life's evolution.",
-                    "words": [
-                        {
-                            "word": "The",
-                            "start": 0.514,
-                            "end": 0.595,
-                            "score": 0.979
-                        },
-                        {
-                            "word": "Drake",
-                            "start": 0.635,
-                            "end": 0.857,
-                            "score": 0.894
-                        },
-                        {
-                            "word": "equation",
-                            "start": 0.897,
-                            "end": 1.32,
-                            "score": 0.906
-                        },
-                        {
-                            "word": "estimates",
-                            "start": 1.38,
-                            "end": 1.763,
-                            "score": 0.747
-                        },
-                        {
-                            "word": "communicative",
-                            "start": 1.803,
-                            "end": 2.407,
-                            "score": 0.875
-                        },
-                        {
-                            "word": "civilizations",
-                            "start": 2.448,
-                            "end": 3.193,
-                            "score": 0.879
-                        },
-                        {
-                            "word": "by",
-                            "start": 3.233,
-                            "end": 3.374,
-                            "score": 0.83
-                        },
-                        {
-                            "word": "weighing",
-                            "start": 3.414,
-                            "end": 3.696,
-                            "score": 0.943
-                        },
-                        {
-                            "word": "star",
-                            "start": 3.736,
-                            "end": 3.998,
-                            "score": 0.782
-                        },
-                        {
-                            "word": "formation,",
-                            "start": 4.038,
-                            "end": 4.582,
-                            "score": 0.919
-                        },
-                        {
-                            "word": "habitable",
-                            "start": 4.945,
-                            "end": 5.408,
-                            "score": 0.843
-                        },
-                        {
-                            "word": "planets,",
-                            "start": 5.448,
-                            "end": 5.851,
-                            "score": 0.819
-                        },
-                        {
-                            "word": "and",
-                            "start": 6.052,
-                            "end": 6.153,
-                            "score": 0.821
-                        },
-                        {
-                            "word": "life's",
-                            "start": 6.213,
-                            "end": 6.475,
-                            "score": 0.922
-                        },
-                        {
-                            "word": "evolution.",
-                            "start": 6.556,
-                            "end": 7.059,
-                            "score": 0.928
-                        }
-                    ],
-                    "avg_logprob": -0.03896188092502681
-                }
-            ],
-            "word_segments": [
-                {
-                    "word": "The",
-                    "start": 0.514,
-                    "end": 0.595,
-                    "score": 0.979
-                },
-                {
-                    "word": "Drake",
-                    "start": 0.635,
-                    "end": 0.857,
-                    "score": 0.894
-                },
-                {
-                    "word": "equation",
-                    "start": 0.897,
-                    "end": 1.32,
-                    "score": 0.906
-                },
-                {
-                    "word": "estimates",
-                    "start": 1.38,
-                    "end": 1.763,
-                    "score": 0.747
-                },
-                {
-                    "word": "communicative",
-                    "start": 1.803,
-                    "end": 2.407,
-                    "score": 0.875
-                },
-                {
-                    "word": "civilizations",
-                    "start": 2.448,
-                    "end": 3.193,
-                    "score": 0.879
-                },
-                {
-                    "word": "by",
-                    "start": 3.233,
-                    "end": 3.374,
-                    "score": 0.83
-                },
-                {
-                    "word": "weighing",
-                    "start": 3.414,
-                    "end": 3.696,
-                    "score": 0.943
-                },
-                {
-                    "word": "star",
-                    "start": 3.736,
-                    "end": 3.998,
-                    "score": 0.782
-                },
-                {
-                    "word": "formation,",
-                    "start": 4.038,
-                    "end": 4.582,
-                    "score": 0.919
-                },
-                {
-                    "word": "habitable",
-                    "start": 4.945,
-                    "end": 5.408,
-                    "score": 0.843
-                },
-                {
-                    "word": "planets,",
-                    "start": 5.448,
-                    "end": 5.851,
-                    "score": 0.819
-                },
-                {
-                    "word": "and",
-                    "start": 6.052,
-                    "end": 6.153,
-                    "score": 0.821
-                },
-                {
-                    "word": "life's",
-                    "start": 6.213,
-                    "end": 6.475,
-                    "score": 0.922
-                },
-                {
-                    "word": "evolution.",
-                    "start": 6.556,
-                    "end": 7.059,
-                    "score": 0.928
-                }
-            ]
-        }
+        "result": [
+            {
+                "word": "Fermi's",
+                "start": 0.232,
+                "end": 0.554,
+                "score": 0.658
+            },
+            {
+                "word": "question",
+                "start": 0.594,
+                "end": 0.936,
+                "score": 0.807
+            },
+            {
+                "word": "highlighted",
+                "start": 0.976,
+                "end": 1.399,
+                "score": 0.894
+            },
+            {
+                "word": "a",
+                "start": 1.459,
+                "end": 1.479,
+                "score": 0.998
+            },
+            {
+                "word": "stark",
+                "start": 1.52,
+                "end": 1.801,
+                "score": 0.87
+            },
+            {
+                "word": "contradiction.",
+                "start": 1.841,
+                "end": 2.485,
+                "score": 0.82
+            },
+            {
+                "word": "If",
+                "start": 3.069,
+                "end": 3.149,
+                "score": 0.836
+            },
+            {
+                "word": "intelligent",
+                "start": 3.189,
+                "end": 3.632,
+                "score": 0.88
+            },
+            {
+                "word": "life",
+                "start": 3.672,
+                "end": 3.833,
+                "score": 0.839
+            },
+            {
+                "word": "is",
+                "start": 3.873,
+                "end": 3.954,
+                "score": 0.67
+            },
+            {
+                "word": "common,",
+                "start": 3.974,
+                "end": 4.296,
+                "score": 0.908
+            },
+            {
+                "word": "why",
+                "start": 4.456,
+                "end": 4.638,
+                "score": 0.856
+            },
+            {
+                "word": "haven't",
+                "start": 4.678,
+                "end": 4.919,
+                "score": 0.836
+            },
+            {
+                "word": "we",
+                "start": 4.939,
+                "end": 5.02,
+                "score": 1.0
+            },
+            {
+                "word": "seen",
+                "start": 5.08,
+                "end": 5.321,
+                "score": 0.86
+            },
+            {
+                "word": "or",
+                "start": 5.442,
+                "end": 5.523,
+                "score": 0.522
+            },
+            {
+                "word": "heard",
+                "start": 5.563,
+                "end": 5.764,
+                "score": 0.83
+            },
+            {
+                "word": "it?",
+                "start": 5.804,
+                "end": 5.865,
+                "score": 0.967
+            }
+        ]
     },
-    "type": "IMAGE",
-    "Image": [
-        "Drake Equation diagram"
-    ]
+    "typography": {
+        "type": "KEY_LINE",
+        "text": "If intelligent life is common, why haven\u2019t we seen or heard it?"
+    }
 }
