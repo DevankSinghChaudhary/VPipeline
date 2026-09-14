@@ -22,3 +22,10 @@ extracted/
 
 # Node_Modules
 node_modules/
+
+# Audios
+*.wav
+*.mp3
+
+# Data
+*_data.json
