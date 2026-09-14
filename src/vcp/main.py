@@ -11,24 +11,4 @@ async def main(state: GlobalState):
 
 if __name__ == "__main__":
     output = asyncio.run(main(GlobalState))
-    print(output["script"])
-    print()
-    print()
-
-    print(output["visual"])
-    print()
-    print()
-
-    print(output["sorted"])
-    print()
-    print()
-
     print(output["decomposition"])
-    print()
-    print()
-
-    print(output["stt"])
-    print()
-    print()
-
-    print(output["original_script"])

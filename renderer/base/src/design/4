@@ -1,7 +1,0 @@
-export const textures = {
-  grain: "textures/paper.jpg",
-
-  text: "textures/noise.jpg",
-
-  image: "textures/grain.jpg",
-};

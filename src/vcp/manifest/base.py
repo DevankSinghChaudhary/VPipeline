@@ -4,7 +4,7 @@ import shutil
 from vcp.state import global_state
 from vcp.utils import root
 
-SCENE_DATA = root.find() / "renderer/data"
+MANIFEST_PATH = root.find() / "renderer/data"
 AUDIO_PATH = root.find() / "renderer/public/audio"
 
 
@@ -27,9 +27,11 @@ def manifest(state: global_state):
     none = {}
     none_audio = {}
 
-    if SCENE_DATA.exists():
-        shutil.rmtree(SCENE_DATA)
-        SCENE_DATA.mkdir(parents=True, exist_ok=True)
+    all_scenes = []
+
+    if MANIFEST_PATH.exists():
+        shutil.rmtree(MANIFEST_PATH)
+        MANIFEST_PATH.mkdir(parents=True, exist_ok=True)
 
     for s in scenes:
         for audio in _audio:
@@ -45,8 +47,7 @@ def manifest(state: global_state):
                     image_scene["audio"] = image_audio
                     image_scene["type"] = "IMAGE"
                     image_scene["Image"] = s.image.asset
-                    with open(f"{SCENE_DATA}/{s.scene_id}_data.json", "w") as file:
-                        json.dump(image_scene, file, indent=4)
+                    all_scenes.append(image_scene)
                     print(f"Sent {s.scene_id} as Image Scene for rendering.")
 
             elif s.visual_modalities == ["IMAGE_WITH_TEXT"]:
@@ -66,8 +67,7 @@ def manifest(state: global_state):
                     image_typography["text"] = s.image.text
                     image_typography["image"] = image
                     image_with_text["typography"] = image_typography
-                    with open(f"{SCENE_DATA}/{s.scene_id}_data.json", "w") as file:
-                        json.dump(image_with_text, file, indent=4)
+                    all_scenes.append(image_with_text)
                     print(f"Sent {s.scene_id} as Image with Text scene for rendering.")
 
             elif s.visual_modalities == ["TYPOGRAPHY"]:
@@ -84,8 +84,7 @@ def manifest(state: global_state):
                     typography["type"] = s.typography.type_typography
                     typography["text"] = s.typography.text
                     text_scene["typography"] = typography
-                    with open(f"{SCENE_DATA}/{s.scene_id}_data.json", "w") as file:
-                        json.dump(text_scene, file, indent=4)
+                    all_scenes.append(text_scene)
                     print(f"Sent {s.scene_id} as Typography scene for rendering.")
 
             else:
@@ -97,8 +96,9 @@ def manifest(state: global_state):
                     none_audio["result"] = audio["result"]["word_segments"]
 
                     none["audio"] = none_audio
-                    with open(f"{SCENE_DATA}/{s.scene_id}_data.json", "w") as file:
-                        json.dump(none, file, indent=4)
+                    all_scenes.append(none)
                     print(
                         f"Sent {s.scene_id} as Normal Word-to-Word Typography for rendering."
                     )
+    with open(f"{MANIFEST_PATH}/RendererManifest.json", "w", encoding="utf-8") as file:
+        json.dump(all_scenes, file, indent=4, ensure_ascii=False)
