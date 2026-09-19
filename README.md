@@ -23,9 +23,12 @@ Pipeline aims to automate that entire workflow through specialized AI agents.
 ---
 
 ## ToDo
-> Yes I use this for my daily todo.
 
-19-sept [] Plan the renderer structure for tomorrow work, save @ /documents/structure.txt
+> Yes, I use this for my daily todo.
+
+**19 Sept**
+- [ ] Plan the renderer structure for tomorrow's work
+  - Save @ `/documents/structure.txt`
 
 ## Planned Features 
 
