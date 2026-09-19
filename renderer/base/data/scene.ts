@@ -5,7 +5,7 @@ export const scene: SceneData = {
   type: "TYPOGRAPHY",
   audio: {
     path: "audio/1.wav",
-    duration: 6.44,
+    duration: 10.64,
     result: [],
   },
   typography: {

@@ -39,14 +39,14 @@ class WhisperX:
         result = self.asr_model.transcribe(
             audio,
             batch_size=self.batch_size,
-            language=self.LANGUAGE,
+            language="en",
         )
 
         return audio, result
 
     def load_alignment(self):
         self.align_model, self.align_metadata = whisperx.load_align_model(
-            language_code=self.LANGUAGE,
+            language_code="en",
             device=self.device,
         )
 

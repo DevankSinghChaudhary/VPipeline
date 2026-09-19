@@ -8,7 +8,7 @@ from langchain.agents import create_agent
 from vcp.chat import ChatVPipeline
 from vcp.prompts import SystemPrompt
 from vcp.schemas import ResearchResponse
-from vcp.state import GlobalState
+from vcp.state import global_state
 from vcp.utils import read, root, web_search
 
 load_dotenv()
@@ -38,7 +38,7 @@ SKILL_PATH = BASE_DIR / "src" / "vcp" / "skills"
 RESEARCH_SKILL = read(SKILL_PATH / "research.md")
 
 
-async def researcher(state: GlobalState):
+async def researcher(state: global_state):
     print("[AGENT] Researcher | Started Researching")
     st = time.time()
     topic = state["topic"]
@@ -128,7 +128,7 @@ async def researcher(state: GlobalState):
         tools=[web_search],
     )
 
-    result = await agent.ainvoke({"messages": {"role": "user", "content": prompt}})
+    result = await agent.ainvoke({"messages": [{"role": "user", "content": prompt}]})
     result = result["structured_response"]
 
     print("[AGENT] Researcher | Finished Successfully")

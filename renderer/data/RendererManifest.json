@@ -1,930 +1,1667 @@
 [
     {
-        "scene_id": 3,
+        "scene_id": 11,
         "type": "IMAGE_WITH_TEXT",
         "audio": {
-            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/3.wav",
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/11.wav",
             "result": [
                 {
-                    "word": "Frank",
-                    "start": 0.192,
-                    "end": 0.433,
-                    "score": 0.881
+                    "word": "The",
+                    "start": 0.132,
+                    "end": 0.212,
+                    "score": 0.997
                 },
                 {
-                    "word": "Drake's",
-                    "start": 0.473,
-                    "end": 0.774,
-                    "score": 0.767
+                    "word": "wow",
+                    "start": 0.252,
+                    "end": 0.575,
+                    "score": 0.903
                 },
                 {
-                    "word": "1961",
-                    "start": 0.895,
-                    "end": 1.518,
-                    "score": 0.593
+                    "word": "signal",
+                    "start": 0.897,
+                    "end": 1.239,
+                    "score": 0.868
                 },
                 {
-                    "word": "equation",
-                    "start": 1.699,
-                    "end": 2.201,
-                    "score": 0.762
+                    "word": "in",
+                    "start": 1.3,
+                    "end": 1.34,
+                    "score": 1.0
                 },
                 {
-                    "word": "attempted",
-                    "start": 2.241,
-                    "end": 2.623,
-                    "score": 0.802
+                    "word": "1977",
+                    "start": 1.36,
+                    "end": 1.501,
+                    "score": 0.998
                 },
                 {
-                    "word": "to",
-                    "start": 2.663,
-                    "end": 2.744,
-                    "score": 0.758
+                    "word": "remains",
+                    "start": 1.521,
+                    "end": 1.763,
+                    "score": 0.317
                 },
                 {
-                    "word": "quantify",
-                    "start": 2.804,
-                    "end": 3.346,
-                    "score": 0.861
+                    "word": "unexplained",
+                    "start": 1.783,
+                    "end": 2.125,
+                    "score": 0.294
                 },
                 {
-                    "word": "communicative",
-                    "start": 3.407,
-                    "end": 4.009,
-                    "score": 0.824
+                    "word": "after",
+                    "start": 2.186,
+                    "end": 2.447,
+                    "score": 0.483
                 },
                 {
-                    "word": "civilizations",
-                    "start": 4.05,
-                    "end": 4.873,
-                    "score": 0.895
+                    "word": "72",
+                    "start": 2.467,
+                    "end": 2.508,
+                    "score": 0.999
                 },
                 {
-                    "word": "but",
-                    "start": 5.074,
-                    "end": 5.215,
-                    "score": 0.827
+                    "word": "seconds",
+                    "start": 2.689,
+                    "end": 3.011,
+                    "score": 0.55
                 },
                 {
-                    "word": "key",
-                    "start": 5.275,
-                    "end": 5.476,
-                    "score": 0.948
+                    "word": "of",
+                    "start": 3.031,
+                    "end": 3.152,
+                    "score": 0.4
                 },
                 {
-                    "word": "variables,",
-                    "start": 5.516,
-                    "end": 6.139,
-                    "score": 0.879
-                },
-                {
-                    "word": "like",
-                    "start": 6.421,
-                    "end": 6.581,
-                    "score": 0.858
-                },
-                {
-                    "word": "life's",
-                    "start": 6.642,
-                    "end": 6.883,
-                    "score": 0.79
-                },
-                {
-                    "word": "emergence,",
-                    "start": 6.963,
-                    "end": 7.465,
-                    "score": 0.858
-                },
-                {
-                    "word": "remain",
-                    "start": 7.646,
-                    "end": 7.968,
-                    "score": 0.843
-                },
-                {
-                    "word": "unknown.",
-                    "start": 8.028,
-                    "end": 8.37,
-                    "score": 0.894
+                    "word": "detection.",
+                    "start": 3.172,
+                    "end": 3.655,
+                    "score": 0.622
                 }
             ]
         },
         "typography": {
             "type_text": "KEY_LINE",
-            "text": "1961",
+            "text": "1977",
             "image": {
                 "image": [
-                    "Frank Drake portrait"
+                    "Wow! signal profile"
                 ]
             }
         }
     },
     {
-        "scene_id": 7,
+        "scene_id": 17,
+        "type": "TYPOGRAPHY",
         "audio": {
-            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/7.wav",
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/17.wav",
             "result": [
                 {
-                    "word": "Despite",
-                    "start": 0.212,
-                    "end": 0.574,
-                    "score": 0.931
+                    "word": "Recent",
+                    "start": 0.211,
+                    "end": 0.512,
+                    "score": 0.9
                 },
                 {
-                    "word": "projects",
-                    "start": 0.615,
-                    "end": 1.037,
-                    "score": 0.924
+                    "word": "advancements",
+                    "start": 0.572,
+                    "end": 1.073,
+                    "score": 0.915
                 },
                 {
-                    "word": "like",
-                    "start": 1.098,
-                    "end": 1.259,
-                    "score": 0.874
+                    "word": "in",
+                    "start": 1.133,
+                    "end": 1.193,
+                    "score": 0.99
                 },
                 {
-                    "word": "SETI's",
-                    "start": 1.299,
-                    "end": 1.621,
-                    "score": 0.747
-                },
-                {
-                    "word": "Allen",
-                    "start": 1.742,
-                    "end": 1.943,
-                    "score": 0.766
-                },
-                {
-                    "word": "Telescope",
-                    "start": 1.963,
-                    "end": 2.467,
-                    "score": 0.852
-                },
-                {
-                    "word": "Array",
-                    "start": 2.507,
-                    "end": 2.708,
-                    "score": 0.991
+                    "word": "AI",
+                    "start": 1.314,
+                    "end": 1.594,
+                    "score": 0.816
                 },
                 {
                     "word": "and",
-                    "start": 2.768,
-                    "end": 2.849,
-                    "score": 0.728
+                    "start": 1.614,
+                    "end": 1.694,
+                    "score": 0.818
                 },
                 {
-                    "word": "TESS,",
-                    "start": 2.889,
-                    "end": 3.211,
-                    "score": 0.91
+                    "word": "machine",
+                    "start": 1.734,
+                    "end": 2.075,
+                    "score": 0.786
                 },
                 {
-                    "word": "no",
-                    "start": 3.674,
-                    "end": 3.835,
-                    "score": 0.755
+                    "word": "learning",
+                    "start": 2.115,
+                    "end": 2.416,
+                    "score": 0.848
                 },
                 {
-                    "word": "technosignatures",
-                    "start": 3.896,
-                    "end": 4.741,
+                    "word": "now",
+                    "start": 2.476,
+                    "end": 2.656,
+                    "score": 0.952
+                },
+                {
+                    "word": "aid",
+                    "start": 2.777,
+                    "end": 2.917,
+                    "score": 0.952
+                },
+                {
+                    "word": "in",
+                    "start": 2.957,
+                    "end": 3.037,
+                    "score": 0.646
+                },
+                {
+                    "word": "analyzing",
+                    "start": 3.137,
+                    "end": 3.618,
                     "score": 0.852
                 },
                 {
-                    "word": "or",
-                    "start": 4.822,
-                    "end": 4.902,
-                    "score": 0.765
+                    "word": "SETI",
+                    "start": 3.678,
+                    "end": 3.939,
+                    "score": 0.732
                 },
                 {
-                    "word": "evidence",
-                    "start": 4.983,
-                    "end": 5.305,
-                    "score": 0.879
-                },
-                {
-                    "word": "of",
-                    "start": 5.345,
-                    "end": 5.385,
-                    "score": 1.0
-                },
-                {
-                    "word": "extraterrestrial",
-                    "start": 5.466,
-                    "end": 6.271,
-                    "score": 0.881
-                },
-                {
-                    "word": "intelligence",
-                    "start": 6.311,
-                    "end": 6.875,
-                    "score": 0.923
-                },
-                {
-                    "word": "has",
-                    "start": 6.915,
-                    "end": 7.036,
-                    "score": 0.963
-                },
-                {
-                    "word": "been",
-                    "start": 7.076,
-                    "end": 7.237,
+                    "word": "data",
+                    "start": 3.959,
+                    "end": 4.28,
                     "score": 0.828
                 },
                 {
-                    "word": "found.",
-                    "start": 7.277,
-                    "end": 7.619,
-                    "score": 0.937
+                    "word": "more",
+                    "start": 4.44,
+                    "end": 4.6,
+                    "score": 0.75
+                },
+                {
+                    "word": "efficiently.",
+                    "start": 4.64,
+                    "end": 5.181,
+                    "score": 0.926
                 }
             ]
         },
-        "type": "IMAGE",
-        "Image": [
-            "Allen Telescope Array"
-        ]
+        "typography": {
+            "type": "KEY_LINE",
+            "text": "AI aids SETI analysis"
+        }
     },
     {
-        "scene_id": 3,
-        "type": "IMAGE_WITH_TEXT",
+        "scene_id": 17,
+        "type": "TYPOGRAPHY",
         "audio": {
-            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/3.wav",
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/17.wav",
             "result": [
                 {
-                    "word": "Frank",
-                    "start": 0.192,
-                    "end": 0.433,
-                    "score": 0.881
+                    "word": "Recent",
+                    "start": 0.211,
+                    "end": 0.512,
+                    "score": 0.9
                 },
                 {
-                    "word": "Drake's",
-                    "start": 0.473,
-                    "end": 0.774,
-                    "score": 0.767
+                    "word": "advancements",
+                    "start": 0.572,
+                    "end": 1.073,
+                    "score": 0.915
                 },
                 {
-                    "word": "1961",
-                    "start": 0.895,
-                    "end": 1.518,
-                    "score": 0.593
+                    "word": "in",
+                    "start": 1.133,
+                    "end": 1.193,
+                    "score": 0.99
                 },
                 {
-                    "word": "equation",
-                    "start": 1.699,
-                    "end": 2.201,
-                    "score": 0.762
+                    "word": "AI",
+                    "start": 1.314,
+                    "end": 1.594,
+                    "score": 0.816
                 },
                 {
-                    "word": "attempted",
-                    "start": 2.241,
-                    "end": 2.623,
-                    "score": 0.802
+                    "word": "and",
+                    "start": 1.614,
+                    "end": 1.694,
+                    "score": 0.818
                 },
                 {
-                    "word": "to",
-                    "start": 2.663,
-                    "end": 2.744,
-                    "score": 0.758
+                    "word": "machine",
+                    "start": 1.734,
+                    "end": 2.075,
+                    "score": 0.786
                 },
                 {
-                    "word": "quantify",
-                    "start": 2.804,
-                    "end": 3.346,
-                    "score": 0.861
+                    "word": "learning",
+                    "start": 2.115,
+                    "end": 2.416,
+                    "score": 0.848
                 },
                 {
-                    "word": "communicative",
-                    "start": 3.407,
-                    "end": 4.009,
-                    "score": 0.824
+                    "word": "now",
+                    "start": 2.476,
+                    "end": 2.656,
+                    "score": 0.952
                 },
                 {
-                    "word": "civilizations",
-                    "start": 4.05,
-                    "end": 4.873,
-                    "score": 0.895
+                    "word": "aid",
+                    "start": 2.777,
+                    "end": 2.917,
+                    "score": 0.952
                 },
                 {
-                    "word": "but",
-                    "start": 5.074,
-                    "end": 5.215,
-                    "score": 0.827
+                    "word": "in",
+                    "start": 2.957,
+                    "end": 3.037,
+                    "score": 0.646
                 },
                 {
-                    "word": "key",
-                    "start": 5.275,
-                    "end": 5.476,
-                    "score": 0.948
+                    "word": "analyzing",
+                    "start": 3.137,
+                    "end": 3.618,
+                    "score": 0.852
                 },
                 {
-                    "word": "variables,",
-                    "start": 5.516,
-                    "end": 6.139,
-                    "score": 0.879
+                    "word": "SETI",
+                    "start": 3.678,
+                    "end": 3.939,
+                    "score": 0.732
                 },
                 {
-                    "word": "like",
-                    "start": 6.421,
-                    "end": 6.581,
-                    "score": 0.858
+                    "word": "data",
+                    "start": 3.959,
+                    "end": 4.28,
+                    "score": 0.828
                 },
                 {
-                    "word": "life's",
-                    "start": 6.642,
-                    "end": 6.883,
-                    "score": 0.79
+                    "word": "more",
+                    "start": 4.44,
+                    "end": 4.6,
+                    "score": 0.75
                 },
                 {
-                    "word": "emergence,",
-                    "start": 6.963,
-                    "end": 7.465,
-                    "score": 0.858
+                    "word": "efficiently.",
+                    "start": 4.64,
+                    "end": 5.181,
+                    "score": 0.926
+                }
+            ]
+        },
+        "typography": {
+            "type": "KEY_LINE",
+            "text": "AI aids SETI analysis"
+        }
+    },
+    {
+        "scene_id": 11,
+        "type": "IMAGE_WITH_TEXT",
+        "audio": {
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/11.wav",
+            "result": [
+                {
+                    "word": "The",
+                    "start": 0.132,
+                    "end": 0.212,
+                    "score": 0.997
                 },
                 {
-                    "word": "remain",
-                    "start": 7.646,
-                    "end": 7.968,
-                    "score": 0.843
+                    "word": "wow",
+                    "start": 0.252,
+                    "end": 0.575,
+                    "score": 0.903
                 },
                 {
-                    "word": "unknown.",
-                    "start": 8.028,
-                    "end": 8.37,
-                    "score": 0.894
+                    "word": "signal",
+                    "start": 0.897,
+                    "end": 1.239,
+                    "score": 0.868
+                },
+                {
+                    "word": "in",
+                    "start": 1.3,
+                    "end": 1.34,
+                    "score": 1.0
+                },
+                {
+                    "word": "1977",
+                    "start": 1.36,
+                    "end": 1.501,
+                    "score": 0.998
+                },
+                {
+                    "word": "remains",
+                    "start": 1.521,
+                    "end": 1.763,
+                    "score": 0.317
+                },
+                {
+                    "word": "unexplained",
+                    "start": 1.783,
+                    "end": 2.125,
+                    "score": 0.294
+                },
+                {
+                    "word": "after",
+                    "start": 2.186,
+                    "end": 2.447,
+                    "score": 0.483
+                },
+                {
+                    "word": "72",
+                    "start": 2.467,
+                    "end": 2.508,
+                    "score": 0.999
+                },
+                {
+                    "word": "seconds",
+                    "start": 2.689,
+                    "end": 3.011,
+                    "score": 0.55
+                },
+                {
+                    "word": "of",
+                    "start": 3.031,
+                    "end": 3.152,
+                    "score": 0.4
+                },
+                {
+                    "word": "detection.",
+                    "start": 3.172,
+                    "end": 3.655,
+                    "score": 0.622
                 }
             ]
         },
         "typography": {
             "type_text": "KEY_LINE",
-            "text": "1961",
+            "text": "1977",
             "image": {
                 "image": [
-                    "Frank Drake portrait"
+                    "Wow! signal profile"
                 ]
             }
         }
     },
     {
-        "scene_id": 8,
-        "type": "TYPOGRAPHY",
+        "scene_id": 18,
         "audio": {
-            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/8.wav",
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/18.wav",
             "result": [
                 {
-                    "word": "The",
-                    "start": 0.577,
-                    "end": 0.678,
-                    "score": 0.899
-                },
-                {
-                    "word": "paradox",
-                    "start": 0.718,
-                    "end": 1.222,
-                    "score": 0.918
-                },
-                {
-                    "word": "endures,",
-                    "start": 1.283,
-                    "end": 1.726,
-                    "score": 0.778
-                },
-                {
-                    "word": "driving",
-                    "start": 1.746,
-                    "end": 2.069,
-                    "score": 0.89
-                },
-                {
-                    "word": "both",
-                    "start": 2.109,
-                    "end": 2.291,
-                    "score": 0.802
-                },
-                {
-                    "word": "scientific",
-                    "start": 2.331,
-                    "end": 2.895,
-                    "score": 0.857
-                },
-                {
-                    "word": "searches",
-                    "start": 2.936,
-                    "end": 3.298,
-                    "score": 0.74
-                },
-                {
-                    "word": "and",
-                    "start": 3.339,
-                    "end": 3.439,
-                    "score": 0.8
-                },
-                {
-                    "word": "speculative",
-                    "start": 3.48,
-                    "end": 4.044,
-                    "score": 0.86
-                },
-                {
-                    "word": "debates",
-                    "start": 4.084,
-                    "end": 4.427,
-                    "score": 0.884
-                },
-                {
-                    "word": "about",
-                    "start": 4.467,
-                    "end": 4.669,
-                    "score": 0.972
-                },
-                {
-                    "word": "our",
-                    "start": 4.729,
-                    "end": 4.83,
-                    "score": 0.779
-                },
-                {
-                    "word": "place",
-                    "start": 4.87,
-                    "end": 5.132,
-                    "score": 0.843
-                },
-                {
-                    "word": "in",
-                    "start": 5.173,
-                    "end": 5.253,
-                    "score": 0.839
-                },
-                {
-                    "word": "the",
-                    "start": 5.274,
-                    "end": 5.354,
-                    "score": 0.834
-                },
-                {
-                    "word": "universe.",
-                    "start": 5.435,
-                    "end": 5.878,
-                    "score": 0.851
-                }
-            ]
-        },
-        "typography": {
-            "type": "KEY_LINE",
-            "text": "The paradox endures"
-        }
-    },
-    {
-        "scene_id": 8,
-        "type": "TYPOGRAPHY",
-        "audio": {
-            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/8.wav",
-            "result": [
-                {
-                    "word": "The",
-                    "start": 0.577,
-                    "end": 0.678,
-                    "score": 0.899
-                },
-                {
-                    "word": "paradox",
-                    "start": 0.718,
-                    "end": 1.222,
-                    "score": 0.918
-                },
-                {
-                    "word": "endures,",
-                    "start": 1.283,
-                    "end": 1.726,
-                    "score": 0.778
-                },
-                {
-                    "word": "driving",
-                    "start": 1.746,
-                    "end": 2.069,
-                    "score": 0.89
-                },
-                {
-                    "word": "both",
-                    "start": 2.109,
-                    "end": 2.291,
-                    "score": 0.802
-                },
-                {
-                    "word": "scientific",
-                    "start": 2.331,
-                    "end": 2.895,
-                    "score": 0.857
-                },
-                {
-                    "word": "searches",
-                    "start": 2.936,
-                    "end": 3.298,
-                    "score": 0.74
-                },
-                {
-                    "word": "and",
-                    "start": 3.339,
-                    "end": 3.439,
-                    "score": 0.8
-                },
-                {
-                    "word": "speculative",
-                    "start": 3.48,
-                    "end": 4.044,
-                    "score": 0.86
-                },
-                {
-                    "word": "debates",
-                    "start": 4.084,
-                    "end": 4.427,
-                    "score": 0.884
-                },
-                {
-                    "word": "about",
-                    "start": 4.467,
-                    "end": 4.669,
-                    "score": 0.972
-                },
-                {
-                    "word": "our",
-                    "start": 4.729,
-                    "end": 4.83,
-                    "score": 0.779
-                },
-                {
-                    "word": "place",
-                    "start": 4.87,
-                    "end": 5.132,
-                    "score": 0.843
-                },
-                {
-                    "word": "in",
-                    "start": 5.173,
-                    "end": 5.253,
-                    "score": 0.839
-                },
-                {
-                    "word": "the",
-                    "start": 5.274,
-                    "end": 5.354,
-                    "score": 0.834
-                },
-                {
-                    "word": "universe.",
-                    "start": 5.435,
-                    "end": 5.878,
-                    "score": 0.851
-                }
-            ]
-        },
-        "typography": {
-            "type": "KEY_LINE",
-            "text": "The paradox endures"
-        }
-    },
-    {
-        "scene_id": 8,
-        "type": "TYPOGRAPHY",
-        "audio": {
-            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/8.wav",
-            "result": [
-                {
-                    "word": "The",
-                    "start": 0.577,
-                    "end": 0.678,
-                    "score": 0.899
-                },
-                {
-                    "word": "paradox",
-                    "start": 0.718,
-                    "end": 1.222,
-                    "score": 0.918
-                },
-                {
-                    "word": "endures,",
-                    "start": 1.283,
-                    "end": 1.726,
-                    "score": 0.778
-                },
-                {
-                    "word": "driving",
-                    "start": 1.746,
-                    "end": 2.069,
-                    "score": 0.89
-                },
-                {
-                    "word": "both",
-                    "start": 2.109,
-                    "end": 2.291,
-                    "score": 0.802
-                },
-                {
-                    "word": "scientific",
-                    "start": 2.331,
-                    "end": 2.895,
-                    "score": 0.857
-                },
-                {
-                    "word": "searches",
-                    "start": 2.936,
-                    "end": 3.298,
-                    "score": 0.74
-                },
-                {
-                    "word": "and",
-                    "start": 3.339,
-                    "end": 3.439,
-                    "score": 0.8
-                },
-                {
-                    "word": "speculative",
-                    "start": 3.48,
-                    "end": 4.044,
-                    "score": 0.86
-                },
-                {
-                    "word": "debates",
-                    "start": 4.084,
-                    "end": 4.427,
-                    "score": 0.884
-                },
-                {
-                    "word": "about",
-                    "start": 4.467,
-                    "end": 4.669,
-                    "score": 0.972
-                },
-                {
-                    "word": "our",
-                    "start": 4.729,
-                    "end": 4.83,
-                    "score": 0.779
-                },
-                {
-                    "word": "place",
-                    "start": 4.87,
-                    "end": 5.132,
-                    "score": 0.843
-                },
-                {
-                    "word": "in",
-                    "start": 5.173,
-                    "end": 5.253,
-                    "score": 0.839
-                },
-                {
-                    "word": "the",
-                    "start": 5.274,
-                    "end": 5.354,
-                    "score": 0.834
-                },
-                {
-                    "word": "universe.",
-                    "start": 5.435,
-                    "end": 5.878,
-                    "score": 0.851
-                }
-            ]
-        },
-        "typography": {
-            "type": "KEY_LINE",
-            "text": "The paradox endures"
-        }
-    },
-    {
-        "scene_id": 7,
-        "audio": {
-            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/7.wav",
-            "result": [
-                {
-                    "word": "Despite",
+                    "word": "Interstellar",
                     "start": 0.212,
-                    "end": 0.574,
-                    "score": 0.931
+                    "end": 0.736,
+                    "score": 0.836
                 },
                 {
-                    "word": "projects",
-                    "start": 0.615,
-                    "end": 1.037,
-                    "score": 0.924
+                    "word": "objects",
+                    "start": 0.837,
+                    "end": 1.16,
+                    "score": 0.814
                 },
                 {
                     "word": "like",
-                    "start": 1.098,
-                    "end": 1.259,
-                    "score": 0.874
+                    "start": 1.22,
+                    "end": 1.361,
+                    "score": 0.888
                 },
                 {
-                    "word": "SETI's",
-                    "start": 1.299,
-                    "end": 1.621,
-                    "score": 0.747
+                    "word": "omuamua",
+                    "start": 1.502,
+                    "end": 2.127,
+                    "score": 0.878
                 },
                 {
-                    "word": "Allen",
-                    "start": 1.742,
-                    "end": 1.943,
-                    "score": 0.766
+                    "word": "have",
+                    "start": 2.288,
+                    "end": 2.429,
+                    "score": 0.94
                 },
                 {
-                    "word": "Telescope",
-                    "start": 1.963,
-                    "end": 2.467,
-                    "score": 0.852
+                    "word": "fueled",
+                    "start": 2.51,
+                    "end": 2.812,
+                    "score": 0.821
                 },
                 {
-                    "word": "Array",
-                    "start": 2.507,
-                    "end": 2.708,
-                    "score": 0.991
+                    "word": "speculation",
+                    "start": 2.873,
+                    "end": 3.558,
+                    "score": 0.932
                 },
                 {
-                    "word": "and",
-                    "start": 2.768,
-                    "end": 2.849,
-                    "score": 0.728
+                    "word": "but",
+                    "start": 3.618,
+                    "end": 3.739,
+                    "score": 0.833
                 },
                 {
-                    "word": "TESS,",
-                    "start": 2.889,
-                    "end": 3.211,
-                    "score": 0.91
+                    "word": "yielded",
+                    "start": 3.779,
+                    "end": 4.142,
+                    "score": 0.759
                 },
                 {
                     "word": "no",
-                    "start": 3.674,
-                    "end": 3.835,
-                    "score": 0.755
+                    "start": 4.203,
+                    "end": 4.344,
+                    "score": 0.902
                 },
                 {
-                    "word": "technosignatures",
-                    "start": 3.896,
-                    "end": 4.741,
-                    "score": 0.852
-                },
-                {
-                    "word": "or",
-                    "start": 4.822,
-                    "end": 4.902,
-                    "score": 0.765
-                },
-                {
-                    "word": "evidence",
-                    "start": 4.983,
-                    "end": 5.305,
-                    "score": 0.879
-                },
-                {
-                    "word": "of",
-                    "start": 5.345,
-                    "end": 5.385,
-                    "score": 1.0
-                },
-                {
-                    "word": "extraterrestrial",
-                    "start": 5.466,
-                    "end": 6.271,
-                    "score": 0.881
-                },
-                {
-                    "word": "intelligence",
-                    "start": 6.311,
-                    "end": 6.875,
-                    "score": 0.923
-                },
-                {
-                    "word": "has",
-                    "start": 6.915,
-                    "end": 7.036,
-                    "score": 0.963
-                },
-                {
-                    "word": "been",
-                    "start": 7.076,
-                    "end": 7.237,
-                    "score": 0.828
-                },
-                {
-                    "word": "found.",
-                    "start": 7.277,
-                    "end": 7.619,
-                    "score": 0.937
+                    "word": "proof.",
+                    "start": 4.424,
+                    "end": 4.686,
+                    "score": 0.837
                 }
             ]
         },
         "type": "IMAGE",
         "Image": [
-            "Allen Telescope Array"
+            "'Oumuamua' deep image"
         ]
     },
     {
-        "scene_id": 8,
+        "scene_id": 17,
         "type": "TYPOGRAPHY",
         "audio": {
-            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/8.wav",
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/17.wav",
             "result": [
                 {
-                    "word": "The",
-                    "start": 0.577,
-                    "end": 0.678,
-                    "score": 0.899
+                    "word": "Recent",
+                    "start": 0.211,
+                    "end": 0.512,
+                    "score": 0.9
                 },
                 {
-                    "word": "paradox",
-                    "start": 0.718,
-                    "end": 1.222,
-                    "score": 0.918
-                },
-                {
-                    "word": "endures,",
-                    "start": 1.283,
-                    "end": 1.726,
-                    "score": 0.778
-                },
-                {
-                    "word": "driving",
-                    "start": 1.746,
-                    "end": 2.069,
-                    "score": 0.89
-                },
-                {
-                    "word": "both",
-                    "start": 2.109,
-                    "end": 2.291,
-                    "score": 0.802
-                },
-                {
-                    "word": "scientific",
-                    "start": 2.331,
-                    "end": 2.895,
-                    "score": 0.857
-                },
-                {
-                    "word": "searches",
-                    "start": 2.936,
-                    "end": 3.298,
-                    "score": 0.74
-                },
-                {
-                    "word": "and",
-                    "start": 3.339,
-                    "end": 3.439,
-                    "score": 0.8
-                },
-                {
-                    "word": "speculative",
-                    "start": 3.48,
-                    "end": 4.044,
-                    "score": 0.86
-                },
-                {
-                    "word": "debates",
-                    "start": 4.084,
-                    "end": 4.427,
-                    "score": 0.884
-                },
-                {
-                    "word": "about",
-                    "start": 4.467,
-                    "end": 4.669,
-                    "score": 0.972
-                },
-                {
-                    "word": "our",
-                    "start": 4.729,
-                    "end": 4.83,
-                    "score": 0.779
-                },
-                {
-                    "word": "place",
-                    "start": 4.87,
-                    "end": 5.132,
-                    "score": 0.843
+                    "word": "advancements",
+                    "start": 0.572,
+                    "end": 1.073,
+                    "score": 0.915
                 },
                 {
                     "word": "in",
-                    "start": 5.173,
-                    "end": 5.253,
-                    "score": 0.839
+                    "start": 1.133,
+                    "end": 1.193,
+                    "score": 0.99
                 },
                 {
-                    "word": "the",
-                    "start": 5.274,
-                    "end": 5.354,
-                    "score": 0.834
+                    "word": "AI",
+                    "start": 1.314,
+                    "end": 1.594,
+                    "score": 0.816
                 },
                 {
-                    "word": "universe.",
-                    "start": 5.435,
-                    "end": 5.878,
-                    "score": 0.851
+                    "word": "and",
+                    "start": 1.614,
+                    "end": 1.694,
+                    "score": 0.818
+                },
+                {
+                    "word": "machine",
+                    "start": 1.734,
+                    "end": 2.075,
+                    "score": 0.786
+                },
+                {
+                    "word": "learning",
+                    "start": 2.115,
+                    "end": 2.416,
+                    "score": 0.848
+                },
+                {
+                    "word": "now",
+                    "start": 2.476,
+                    "end": 2.656,
+                    "score": 0.952
+                },
+                {
+                    "word": "aid",
+                    "start": 2.777,
+                    "end": 2.917,
+                    "score": 0.952
+                },
+                {
+                    "word": "in",
+                    "start": 2.957,
+                    "end": 3.037,
+                    "score": 0.646
+                },
+                {
+                    "word": "analyzing",
+                    "start": 3.137,
+                    "end": 3.618,
+                    "score": 0.852
+                },
+                {
+                    "word": "SETI",
+                    "start": 3.678,
+                    "end": 3.939,
+                    "score": 0.732
+                },
+                {
+                    "word": "data",
+                    "start": 3.959,
+                    "end": 4.28,
+                    "score": 0.828
+                },
+                {
+                    "word": "more",
+                    "start": 4.44,
+                    "end": 4.6,
+                    "score": 0.75
+                },
+                {
+                    "word": "efficiently.",
+                    "start": 4.64,
+                    "end": 5.181,
+                    "score": 0.926
                 }
             ]
         },
         "typography": {
             "type": "KEY_LINE",
-            "text": "The paradox endures"
+            "text": "AI aids SETI analysis"
         }
+    },
+    {
+        "scene_id": 17,
+        "type": "TYPOGRAPHY",
+        "audio": {
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/17.wav",
+            "result": [
+                {
+                    "word": "Recent",
+                    "start": 0.211,
+                    "end": 0.512,
+                    "score": 0.9
+                },
+                {
+                    "word": "advancements",
+                    "start": 0.572,
+                    "end": 1.073,
+                    "score": 0.915
+                },
+                {
+                    "word": "in",
+                    "start": 1.133,
+                    "end": 1.193,
+                    "score": 0.99
+                },
+                {
+                    "word": "AI",
+                    "start": 1.314,
+                    "end": 1.594,
+                    "score": 0.816
+                },
+                {
+                    "word": "and",
+                    "start": 1.614,
+                    "end": 1.694,
+                    "score": 0.818
+                },
+                {
+                    "word": "machine",
+                    "start": 1.734,
+                    "end": 2.075,
+                    "score": 0.786
+                },
+                {
+                    "word": "learning",
+                    "start": 2.115,
+                    "end": 2.416,
+                    "score": 0.848
+                },
+                {
+                    "word": "now",
+                    "start": 2.476,
+                    "end": 2.656,
+                    "score": 0.952
+                },
+                {
+                    "word": "aid",
+                    "start": 2.777,
+                    "end": 2.917,
+                    "score": 0.952
+                },
+                {
+                    "word": "in",
+                    "start": 2.957,
+                    "end": 3.037,
+                    "score": 0.646
+                },
+                {
+                    "word": "analyzing",
+                    "start": 3.137,
+                    "end": 3.618,
+                    "score": 0.852
+                },
+                {
+                    "word": "SETI",
+                    "start": 3.678,
+                    "end": 3.939,
+                    "score": 0.732
+                },
+                {
+                    "word": "data",
+                    "start": 3.959,
+                    "end": 4.28,
+                    "score": 0.828
+                },
+                {
+                    "word": "more",
+                    "start": 4.44,
+                    "end": 4.6,
+                    "score": 0.75
+                },
+                {
+                    "word": "efficiently.",
+                    "start": 4.64,
+                    "end": 5.181,
+                    "score": 0.926
+                }
+            ]
+        },
+        "typography": {
+            "type": "KEY_LINE",
+            "text": "AI aids SETI analysis"
+        }
+    },
+    {
+        "scene_id": 17,
+        "type": "TYPOGRAPHY",
+        "audio": {
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/17.wav",
+            "result": [
+                {
+                    "word": "Recent",
+                    "start": 0.211,
+                    "end": 0.512,
+                    "score": 0.9
+                },
+                {
+                    "word": "advancements",
+                    "start": 0.572,
+                    "end": 1.073,
+                    "score": 0.915
+                },
+                {
+                    "word": "in",
+                    "start": 1.133,
+                    "end": 1.193,
+                    "score": 0.99
+                },
+                {
+                    "word": "AI",
+                    "start": 1.314,
+                    "end": 1.594,
+                    "score": 0.816
+                },
+                {
+                    "word": "and",
+                    "start": 1.614,
+                    "end": 1.694,
+                    "score": 0.818
+                },
+                {
+                    "word": "machine",
+                    "start": 1.734,
+                    "end": 2.075,
+                    "score": 0.786
+                },
+                {
+                    "word": "learning",
+                    "start": 2.115,
+                    "end": 2.416,
+                    "score": 0.848
+                },
+                {
+                    "word": "now",
+                    "start": 2.476,
+                    "end": 2.656,
+                    "score": 0.952
+                },
+                {
+                    "word": "aid",
+                    "start": 2.777,
+                    "end": 2.917,
+                    "score": 0.952
+                },
+                {
+                    "word": "in",
+                    "start": 2.957,
+                    "end": 3.037,
+                    "score": 0.646
+                },
+                {
+                    "word": "analyzing",
+                    "start": 3.137,
+                    "end": 3.618,
+                    "score": 0.852
+                },
+                {
+                    "word": "SETI",
+                    "start": 3.678,
+                    "end": 3.939,
+                    "score": 0.732
+                },
+                {
+                    "word": "data",
+                    "start": 3.959,
+                    "end": 4.28,
+                    "score": 0.828
+                },
+                {
+                    "word": "more",
+                    "start": 4.44,
+                    "end": 4.6,
+                    "score": 0.75
+                },
+                {
+                    "word": "efficiently.",
+                    "start": 4.64,
+                    "end": 5.181,
+                    "score": 0.926
+                }
+            ]
+        },
+        "typography": {
+            "type": "KEY_LINE",
+            "text": "AI aids SETI analysis"
+        }
+    },
+    {
+        "scene_id": 18,
+        "audio": {
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/18.wav",
+            "result": [
+                {
+                    "word": "Interstellar",
+                    "start": 0.212,
+                    "end": 0.736,
+                    "score": 0.836
+                },
+                {
+                    "word": "objects",
+                    "start": 0.837,
+                    "end": 1.16,
+                    "score": 0.814
+                },
+                {
+                    "word": "like",
+                    "start": 1.22,
+                    "end": 1.361,
+                    "score": 0.888
+                },
+                {
+                    "word": "omuamua",
+                    "start": 1.502,
+                    "end": 2.127,
+                    "score": 0.878
+                },
+                {
+                    "word": "have",
+                    "start": 2.288,
+                    "end": 2.429,
+                    "score": 0.94
+                },
+                {
+                    "word": "fueled",
+                    "start": 2.51,
+                    "end": 2.812,
+                    "score": 0.821
+                },
+                {
+                    "word": "speculation",
+                    "start": 2.873,
+                    "end": 3.558,
+                    "score": 0.932
+                },
+                {
+                    "word": "but",
+                    "start": 3.618,
+                    "end": 3.739,
+                    "score": 0.833
+                },
+                {
+                    "word": "yielded",
+                    "start": 3.779,
+                    "end": 4.142,
+                    "score": 0.759
+                },
+                {
+                    "word": "no",
+                    "start": 4.203,
+                    "end": 4.344,
+                    "score": 0.902
+                },
+                {
+                    "word": "proof.",
+                    "start": 4.424,
+                    "end": 4.686,
+                    "score": 0.837
+                }
+            ]
+        },
+        "type": "IMAGE",
+        "Image": [
+            "'Oumuamua' deep image"
+        ]
+    },
+    {
+        "scene_id": 18,
+        "audio": {
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/18.wav",
+            "result": [
+                {
+                    "word": "Interstellar",
+                    "start": 0.212,
+                    "end": 0.736,
+                    "score": 0.836
+                },
+                {
+                    "word": "objects",
+                    "start": 0.837,
+                    "end": 1.16,
+                    "score": 0.814
+                },
+                {
+                    "word": "like",
+                    "start": 1.22,
+                    "end": 1.361,
+                    "score": 0.888
+                },
+                {
+                    "word": "omuamua",
+                    "start": 1.502,
+                    "end": 2.127,
+                    "score": 0.878
+                },
+                {
+                    "word": "have",
+                    "start": 2.288,
+                    "end": 2.429,
+                    "score": 0.94
+                },
+                {
+                    "word": "fueled",
+                    "start": 2.51,
+                    "end": 2.812,
+                    "score": 0.821
+                },
+                {
+                    "word": "speculation",
+                    "start": 2.873,
+                    "end": 3.558,
+                    "score": 0.932
+                },
+                {
+                    "word": "but",
+                    "start": 3.618,
+                    "end": 3.739,
+                    "score": 0.833
+                },
+                {
+                    "word": "yielded",
+                    "start": 3.779,
+                    "end": 4.142,
+                    "score": 0.759
+                },
+                {
+                    "word": "no",
+                    "start": 4.203,
+                    "end": 4.344,
+                    "score": 0.902
+                },
+                {
+                    "word": "proof.",
+                    "start": 4.424,
+                    "end": 4.686,
+                    "score": 0.837
+                }
+            ]
+        },
+        "type": "IMAGE",
+        "Image": [
+            "'Oumuamua' deep image"
+        ]
+    },
+    {
+        "scene_id": 11,
+        "type": "IMAGE_WITH_TEXT",
+        "audio": {
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/11.wav",
+            "result": [
+                {
+                    "word": "The",
+                    "start": 0.132,
+                    "end": 0.212,
+                    "score": 0.997
+                },
+                {
+                    "word": "wow",
+                    "start": 0.252,
+                    "end": 0.575,
+                    "score": 0.903
+                },
+                {
+                    "word": "signal",
+                    "start": 0.897,
+                    "end": 1.239,
+                    "score": 0.868
+                },
+                {
+                    "word": "in",
+                    "start": 1.3,
+                    "end": 1.34,
+                    "score": 1.0
+                },
+                {
+                    "word": "1977",
+                    "start": 1.36,
+                    "end": 1.501,
+                    "score": 0.998
+                },
+                {
+                    "word": "remains",
+                    "start": 1.521,
+                    "end": 1.763,
+                    "score": 0.317
+                },
+                {
+                    "word": "unexplained",
+                    "start": 1.783,
+                    "end": 2.125,
+                    "score": 0.294
+                },
+                {
+                    "word": "after",
+                    "start": 2.186,
+                    "end": 2.447,
+                    "score": 0.483
+                },
+                {
+                    "word": "72",
+                    "start": 2.467,
+                    "end": 2.508,
+                    "score": 0.999
+                },
+                {
+                    "word": "seconds",
+                    "start": 2.689,
+                    "end": 3.011,
+                    "score": 0.55
+                },
+                {
+                    "word": "of",
+                    "start": 3.031,
+                    "end": 3.152,
+                    "score": 0.4
+                },
+                {
+                    "word": "detection.",
+                    "start": 3.172,
+                    "end": 3.655,
+                    "score": 0.622
+                }
+            ]
+        },
+        "typography": {
+            "type_text": "KEY_LINE",
+            "text": "1977",
+            "image": {
+                "image": [
+                    "Wow! signal profile"
+                ]
+            }
+        }
+    },
+    {
+        "scene_id": 18,
+        "audio": {
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/18.wav",
+            "result": [
+                {
+                    "word": "Interstellar",
+                    "start": 0.212,
+                    "end": 0.736,
+                    "score": 0.836
+                },
+                {
+                    "word": "objects",
+                    "start": 0.837,
+                    "end": 1.16,
+                    "score": 0.814
+                },
+                {
+                    "word": "like",
+                    "start": 1.22,
+                    "end": 1.361,
+                    "score": 0.888
+                },
+                {
+                    "word": "omuamua",
+                    "start": 1.502,
+                    "end": 2.127,
+                    "score": 0.878
+                },
+                {
+                    "word": "have",
+                    "start": 2.288,
+                    "end": 2.429,
+                    "score": 0.94
+                },
+                {
+                    "word": "fueled",
+                    "start": 2.51,
+                    "end": 2.812,
+                    "score": 0.821
+                },
+                {
+                    "word": "speculation",
+                    "start": 2.873,
+                    "end": 3.558,
+                    "score": 0.932
+                },
+                {
+                    "word": "but",
+                    "start": 3.618,
+                    "end": 3.739,
+                    "score": 0.833
+                },
+                {
+                    "word": "yielded",
+                    "start": 3.779,
+                    "end": 4.142,
+                    "score": 0.759
+                },
+                {
+                    "word": "no",
+                    "start": 4.203,
+                    "end": 4.344,
+                    "score": 0.902
+                },
+                {
+                    "word": "proof.",
+                    "start": 4.424,
+                    "end": 4.686,
+                    "score": 0.837
+                }
+            ]
+        },
+        "type": "IMAGE",
+        "Image": [
+            "'Oumuamua' deep image"
+        ]
+    },
+    {
+        "scene_id": 18,
+        "audio": {
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/18.wav",
+            "result": [
+                {
+                    "word": "Interstellar",
+                    "start": 0.212,
+                    "end": 0.736,
+                    "score": 0.836
+                },
+                {
+                    "word": "objects",
+                    "start": 0.837,
+                    "end": 1.16,
+                    "score": 0.814
+                },
+                {
+                    "word": "like",
+                    "start": 1.22,
+                    "end": 1.361,
+                    "score": 0.888
+                },
+                {
+                    "word": "omuamua",
+                    "start": 1.502,
+                    "end": 2.127,
+                    "score": 0.878
+                },
+                {
+                    "word": "have",
+                    "start": 2.288,
+                    "end": 2.429,
+                    "score": 0.94
+                },
+                {
+                    "word": "fueled",
+                    "start": 2.51,
+                    "end": 2.812,
+                    "score": 0.821
+                },
+                {
+                    "word": "speculation",
+                    "start": 2.873,
+                    "end": 3.558,
+                    "score": 0.932
+                },
+                {
+                    "word": "but",
+                    "start": 3.618,
+                    "end": 3.739,
+                    "score": 0.833
+                },
+                {
+                    "word": "yielded",
+                    "start": 3.779,
+                    "end": 4.142,
+                    "score": 0.759
+                },
+                {
+                    "word": "no",
+                    "start": 4.203,
+                    "end": 4.344,
+                    "score": 0.902
+                },
+                {
+                    "word": "proof.",
+                    "start": 4.424,
+                    "end": 4.686,
+                    "score": 0.837
+                }
+            ]
+        },
+        "type": "IMAGE",
+        "Image": [
+            "'Oumuamua' deep image"
+        ]
+    },
+    {
+        "scene_id": 17,
+        "type": "TYPOGRAPHY",
+        "audio": {
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/17.wav",
+            "result": [
+                {
+                    "word": "Recent",
+                    "start": 0.211,
+                    "end": 0.512,
+                    "score": 0.9
+                },
+                {
+                    "word": "advancements",
+                    "start": 0.572,
+                    "end": 1.073,
+                    "score": 0.915
+                },
+                {
+                    "word": "in",
+                    "start": 1.133,
+                    "end": 1.193,
+                    "score": 0.99
+                },
+                {
+                    "word": "AI",
+                    "start": 1.314,
+                    "end": 1.594,
+                    "score": 0.816
+                },
+                {
+                    "word": "and",
+                    "start": 1.614,
+                    "end": 1.694,
+                    "score": 0.818
+                },
+                {
+                    "word": "machine",
+                    "start": 1.734,
+                    "end": 2.075,
+                    "score": 0.786
+                },
+                {
+                    "word": "learning",
+                    "start": 2.115,
+                    "end": 2.416,
+                    "score": 0.848
+                },
+                {
+                    "word": "now",
+                    "start": 2.476,
+                    "end": 2.656,
+                    "score": 0.952
+                },
+                {
+                    "word": "aid",
+                    "start": 2.777,
+                    "end": 2.917,
+                    "score": 0.952
+                },
+                {
+                    "word": "in",
+                    "start": 2.957,
+                    "end": 3.037,
+                    "score": 0.646
+                },
+                {
+                    "word": "analyzing",
+                    "start": 3.137,
+                    "end": 3.618,
+                    "score": 0.852
+                },
+                {
+                    "word": "SETI",
+                    "start": 3.678,
+                    "end": 3.939,
+                    "score": 0.732
+                },
+                {
+                    "word": "data",
+                    "start": 3.959,
+                    "end": 4.28,
+                    "score": 0.828
+                },
+                {
+                    "word": "more",
+                    "start": 4.44,
+                    "end": 4.6,
+                    "score": 0.75
+                },
+                {
+                    "word": "efficiently.",
+                    "start": 4.64,
+                    "end": 5.181,
+                    "score": 0.926
+                }
+            ]
+        },
+        "typography": {
+            "type": "KEY_LINE",
+            "text": "AI aids SETI analysis"
+        }
+    },
+    {
+        "scene_id": 17,
+        "type": "TYPOGRAPHY",
+        "audio": {
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/17.wav",
+            "result": [
+                {
+                    "word": "Recent",
+                    "start": 0.211,
+                    "end": 0.512,
+                    "score": 0.9
+                },
+                {
+                    "word": "advancements",
+                    "start": 0.572,
+                    "end": 1.073,
+                    "score": 0.915
+                },
+                {
+                    "word": "in",
+                    "start": 1.133,
+                    "end": 1.193,
+                    "score": 0.99
+                },
+                {
+                    "word": "AI",
+                    "start": 1.314,
+                    "end": 1.594,
+                    "score": 0.816
+                },
+                {
+                    "word": "and",
+                    "start": 1.614,
+                    "end": 1.694,
+                    "score": 0.818
+                },
+                {
+                    "word": "machine",
+                    "start": 1.734,
+                    "end": 2.075,
+                    "score": 0.786
+                },
+                {
+                    "word": "learning",
+                    "start": 2.115,
+                    "end": 2.416,
+                    "score": 0.848
+                },
+                {
+                    "word": "now",
+                    "start": 2.476,
+                    "end": 2.656,
+                    "score": 0.952
+                },
+                {
+                    "word": "aid",
+                    "start": 2.777,
+                    "end": 2.917,
+                    "score": 0.952
+                },
+                {
+                    "word": "in",
+                    "start": 2.957,
+                    "end": 3.037,
+                    "score": 0.646
+                },
+                {
+                    "word": "analyzing",
+                    "start": 3.137,
+                    "end": 3.618,
+                    "score": 0.852
+                },
+                {
+                    "word": "SETI",
+                    "start": 3.678,
+                    "end": 3.939,
+                    "score": 0.732
+                },
+                {
+                    "word": "data",
+                    "start": 3.959,
+                    "end": 4.28,
+                    "score": 0.828
+                },
+                {
+                    "word": "more",
+                    "start": 4.44,
+                    "end": 4.6,
+                    "score": 0.75
+                },
+                {
+                    "word": "efficiently.",
+                    "start": 4.64,
+                    "end": 5.181,
+                    "score": 0.926
+                }
+            ]
+        },
+        "typography": {
+            "type": "KEY_LINE",
+            "text": "AI aids SETI analysis"
+        }
+    },
+    {
+        "scene_id": 17,
+        "type": "TYPOGRAPHY",
+        "audio": {
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/17.wav",
+            "result": [
+                {
+                    "word": "Recent",
+                    "start": 0.211,
+                    "end": 0.512,
+                    "score": 0.9
+                },
+                {
+                    "word": "advancements",
+                    "start": 0.572,
+                    "end": 1.073,
+                    "score": 0.915
+                },
+                {
+                    "word": "in",
+                    "start": 1.133,
+                    "end": 1.193,
+                    "score": 0.99
+                },
+                {
+                    "word": "AI",
+                    "start": 1.314,
+                    "end": 1.594,
+                    "score": 0.816
+                },
+                {
+                    "word": "and",
+                    "start": 1.614,
+                    "end": 1.694,
+                    "score": 0.818
+                },
+                {
+                    "word": "machine",
+                    "start": 1.734,
+                    "end": 2.075,
+                    "score": 0.786
+                },
+                {
+                    "word": "learning",
+                    "start": 2.115,
+                    "end": 2.416,
+                    "score": 0.848
+                },
+                {
+                    "word": "now",
+                    "start": 2.476,
+                    "end": 2.656,
+                    "score": 0.952
+                },
+                {
+                    "word": "aid",
+                    "start": 2.777,
+                    "end": 2.917,
+                    "score": 0.952
+                },
+                {
+                    "word": "in",
+                    "start": 2.957,
+                    "end": 3.037,
+                    "score": 0.646
+                },
+                {
+                    "word": "analyzing",
+                    "start": 3.137,
+                    "end": 3.618,
+                    "score": 0.852
+                },
+                {
+                    "word": "SETI",
+                    "start": 3.678,
+                    "end": 3.939,
+                    "score": 0.732
+                },
+                {
+                    "word": "data",
+                    "start": 3.959,
+                    "end": 4.28,
+                    "score": 0.828
+                },
+                {
+                    "word": "more",
+                    "start": 4.44,
+                    "end": 4.6,
+                    "score": 0.75
+                },
+                {
+                    "word": "efficiently.",
+                    "start": 4.64,
+                    "end": 5.181,
+                    "score": 0.926
+                }
+            ]
+        },
+        "typography": {
+            "type": "KEY_LINE",
+            "text": "AI aids SETI analysis"
+        }
+    },
+    {
+        "scene_id": 17,
+        "type": "TYPOGRAPHY",
+        "audio": {
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/17.wav",
+            "result": [
+                {
+                    "word": "Recent",
+                    "start": 0.211,
+                    "end": 0.512,
+                    "score": 0.9
+                },
+                {
+                    "word": "advancements",
+                    "start": 0.572,
+                    "end": 1.073,
+                    "score": 0.915
+                },
+                {
+                    "word": "in",
+                    "start": 1.133,
+                    "end": 1.193,
+                    "score": 0.99
+                },
+                {
+                    "word": "AI",
+                    "start": 1.314,
+                    "end": 1.594,
+                    "score": 0.816
+                },
+                {
+                    "word": "and",
+                    "start": 1.614,
+                    "end": 1.694,
+                    "score": 0.818
+                },
+                {
+                    "word": "machine",
+                    "start": 1.734,
+                    "end": 2.075,
+                    "score": 0.786
+                },
+                {
+                    "word": "learning",
+                    "start": 2.115,
+                    "end": 2.416,
+                    "score": 0.848
+                },
+                {
+                    "word": "now",
+                    "start": 2.476,
+                    "end": 2.656,
+                    "score": 0.952
+                },
+                {
+                    "word": "aid",
+                    "start": 2.777,
+                    "end": 2.917,
+                    "score": 0.952
+                },
+                {
+                    "word": "in",
+                    "start": 2.957,
+                    "end": 3.037,
+                    "score": 0.646
+                },
+                {
+                    "word": "analyzing",
+                    "start": 3.137,
+                    "end": 3.618,
+                    "score": 0.852
+                },
+                {
+                    "word": "SETI",
+                    "start": 3.678,
+                    "end": 3.939,
+                    "score": 0.732
+                },
+                {
+                    "word": "data",
+                    "start": 3.959,
+                    "end": 4.28,
+                    "score": 0.828
+                },
+                {
+                    "word": "more",
+                    "start": 4.44,
+                    "end": 4.6,
+                    "score": 0.75
+                },
+                {
+                    "word": "efficiently.",
+                    "start": 4.64,
+                    "end": 5.181,
+                    "score": 0.926
+                }
+            ]
+        },
+        "typography": {
+            "type": "KEY_LINE",
+            "text": "AI aids SETI analysis"
+        }
+    },
+    {
+        "scene_id": 18,
+        "audio": {
+            "path": "/home/devank/Projects/VPipeline/renderer/public/audio/18.wav",
+            "result": [
+                {
+                    "word": "Interstellar",
+                    "start": 0.212,
+                    "end": 0.736,
+                    "score": 0.836
+                },
+                {
+                    "word": "objects",
+                    "start": 0.837,
+                    "end": 1.16,
+                    "score": 0.814
+                },
+                {
+                    "word": "like",
+                    "start": 1.22,
+                    "end": 1.361,
+                    "score": 0.888
+                },
+                {
+                    "word": "omuamua",
+                    "start": 1.502,
+                    "end": 2.127,
+                    "score": 0.878
+                },
+                {
+                    "word": "have",
+                    "start": 2.288,
+                    "end": 2.429,
+                    "score": 0.94
+                },
+                {
+                    "word": "fueled",
+                    "start": 2.51,
+                    "end": 2.812,
+                    "score": 0.821
+                },
+                {
+                    "word": "speculation",
+                    "start": 2.873,
+                    "end": 3.558,
+                    "score": 0.932
+                },
+                {
+                    "word": "but",
+                    "start": 3.618,
+                    "end": 3.739,
+                    "score": 0.833
+                },
+                {
+                    "word": "yielded",
+                    "start": 3.779,
+                    "end": 4.142,
+                    "score": 0.759
+                },
+                {
+                    "word": "no",
+                    "start": 4.203,
+                    "end": 4.344,
+                    "score": 0.902
+                },
+                {
+                    "word": "proof.",
+                    "start": 4.424,
+                    "end": 4.686,
+                    "score": 0.837
+                }
+            ]
+        },
+        "type": "IMAGE",
+        "Image": [
+            "'Oumuamua' deep image"
+        ]
     }
 ]

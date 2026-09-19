@@ -1,4 +1,6 @@
+import os
 import re
+import time
 from html import unescape
 
 import requests
@@ -8,6 +10,7 @@ from urllib3.util.retry import Retry
 
 from vcp.schemas import WikimediaAsset
 from vcp.state import GlobalState
+from vcp.utils import root
 
 API_URL = "https://commons.wikimedia.org/w/api.php"
 
@@ -20,6 +23,61 @@ ALLOWED_MIME = {
     "image/png",
     "image/webp",
 }
+
+DOWNLOAD_PATH = root.find() / "renderer/public/images"
+
+# Global session for downloads with retry logic
+download_session = requests.Session()
+retry = Retry(
+    total=5,
+    connect=3,
+    read=3,
+    status=5,
+    backoff_factor=1.0,
+    status_forcelist={429, 500, 502, 503, 504},
+    allowed_methods={"GET"},
+    respect_retry_after_header=True,
+)
+adapter = HTTPAdapter(max_retries=retry)
+download_session.mount("https://", adapter)
+download_session.mount("http://", adapter)
+download_session.headers.update(HEADERS)
+
+
+def download_image(url: str, save_dir: str = DOWNLOAD_PATH, delay: float = 0.5) -> str:
+    """
+    Download an image from a direct URL and save it to a custom directory.
+    Adds a delay between downloads to avoid rate limiting.
+
+    Args:
+        url: Direct URL of the image.
+        save_dir: Custom directory to save the image (default: DOWNLOAD_PATH).
+        delay: Delay in seconds between downloads (default: 1.0).
+
+    Returns:
+        Path to the downloaded image file, or an empty string if download fails.
+    """
+    os.makedirs(save_dir, exist_ok=True)
+
+    # Remove query parameters from the URL
+    clean_url = url.split("?")[0]
+    filename = os.path.basename(clean_url)
+    filepath = os.path.join(save_dir, filename)
+
+    try:
+        # Add delay to avoid rate limiting
+        time.sleep(delay)
+
+        response = download_session.get(clean_url, stream=True, timeout=10)
+        response.raise_for_status()
+
+        with open(filepath, "wb") as file:
+            file.writelines(response.iter_content(1024))
+        print(f"Downloaded: {filename}")
+        return filepath
+    except Exception as e:
+        print(f"Failed to download {clean_url}: {e}")
+        return ""
 
 
 class WikimediaImageSearch:
@@ -43,7 +101,7 @@ class WikimediaImageSearch:
         self.session.mount("https://", adapter)
         self.session.mount("http://", adapter)
 
-    def search(self, query: str, limit: int = 20) -> list[WikimediaAsset]:
+    def search(self, query: str, limit: int = 1) -> list[WikimediaAsset]:
         query = query.strip()
 
         if not query:
@@ -161,11 +219,33 @@ def fanout_image(state: GlobalState):
     ]
 
 
-def search_images(state, limit: int = 20):
+def search_images(
+    state,
+    limit: int = 5,
+    download: bool = True,
+    save_dir: str = DOWNLOAD_PATH,
+    delay: float = 0.2,
+):
     query = state["query"]
 
     print(f"    [TOOL] Wikimedia Searched for {query}")
 
     images = WikimediaImageSearch().search(query, limit)
 
-    return {"images": [{image.title: image.description} for image in images]}
+    result = {
+        "images": [
+            {
+                "title": image.title,
+                "description": image.description,
+                "url": image.url,
+                **(
+                    {"local_path": download_image(image.url, save_dir, delay)}
+                    if download
+                    else {}
+                ),
+            }
+            for image in images
+        ]
+    }
+
+    return result
