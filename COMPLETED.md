@@ -1,5 +1,6 @@
-`Refrence from [README's](/README.md/) Todo list for completed tasks`
+<code>Reference from <a href="./README.md">README's</a> todo list for completed tasks</code>
 
+---
 _x = Completed_
 
 **19 Sept**
