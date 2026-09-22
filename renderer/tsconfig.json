@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "Preserve",
-    "moduleResolution": "Bundler",
-    "jsx": "react-jsx",
-    "strict": true,
-    "noEmit": true,
-    "lib": ["es2015"],
-    "esModuleInterop": true,
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "allowJs": false,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "noUnusedLocals": true
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
-  "exclude": ["remotion.config.ts"]
+  "include": ["src"]
 }

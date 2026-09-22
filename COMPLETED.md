@@ -1,8 +1,10 @@
-<code>Reference from <a href="./README.md">README's</a> todo list for completed tasks</code>
+<code>Reference from <a href="https://github.com/DevankSinghChaudhary/VPipeline/blob/main/README.md#todo">README's</a> todo list for completed tasks</code>
 
 ---
-_x = Completed_
 
+## 2026
+
+### September
 **19 Sept**
-- [ ] Plan the renderer structure for tomorrow's work
+- [x] Plan the renderer structure for tomorrow's work
   - Save @ `/documents/structure.txt`

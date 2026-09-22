@@ -23,6 +23,9 @@ extracted/
 # Node_Modules
 node_modules/
 
+#PUBLIC
+renderer/public/images/
+
 # Audios
 *.wav
 *.mp3

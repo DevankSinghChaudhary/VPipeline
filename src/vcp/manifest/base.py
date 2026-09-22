@@ -1,104 +1,162 @@
 import json
-import shutil
+from pathlib import Path
+
+from mutagen import File
 
 from vcp.state import global_state
 from vcp.utils import root
 
 MANIFEST_PATH = root.find() / "renderer/data"
-AUDIO_PATH = root.find() / "renderer/public/audio"
+MANIFEST_FILE = MANIFEST_PATH / "RendererManifest.json"
+PUBLIC_PATH = root.find() / "renderer/public"
+
+
+def get_audio_duration(audio_path: str) -> float:
+    audio = File(audio_path)
+
+    if audio is None or audio.info is None:
+        raise ValueError(f"Could not read audio metadata: {audio_path}")
+
+    return float(audio.info.length)
+
+
+def get_public_audio_path(audio_path: str) -> str:
+    path = Path(audio_path)
+
+    try:
+        relative_path = path.relative_to(PUBLIC_PATH)
+    except ValueError as exc:
+        raise ValueError(
+            f"Audio file is outside Remotion public directory:\n"
+            f"  Audio:  {path}\n"
+            f"  Public: {PUBLIC_PATH}"
+        ) from exc
+
+    return f"/{relative_path.as_posix()}"
+
+
+def get_audio_words(audio: dict) -> list[dict]:
+    return audio["result"]["word_segments"]
+
+
+def build_audio(audio: dict) -> dict:
+    audio_path = audio["path"]
+
+    return {
+        "path": get_public_audio_path(audio_path),
+        "words": get_audio_words(audio),
+    }
+
+
+def build_visual(scene) -> dict:
+    if scene.visual_modalities == ["IMAGE"]:
+        return {
+            "template": "default",
+            "image": scene.image.asset,
+        }
+
+    if scene.visual_modalities == ["IMAGE_WITH_TEXT"]:
+        return {
+            "template": "key_line",
+            "text": scene.image.text,
+            "image": scene.image.asset,
+        }
+
+    if scene.visual_modalities == ["TYPOGRAPHY"]:
+        return {
+            "template": scene.typography.type_typography,
+            "text": scene.typography.text,
+        }
+
+    if scene.visual_modalities == ["NONE"]:
+        return {
+            "template": "word_by_word",
+        }
+
+    raise ValueError(
+        f"Unsupported visual modality for scene "
+        f"{scene.scene_id}: {scene.visual_modalities}"
+    )
 
 
 def manifest(state: global_state):
     scenes = state["decomposition"].scene
-    _audio = state["stt"]
+    audio_data = state["stt"]
 
-    image_scene = {}
-    image_audio = {}
+    audio_by_id = {int(audio["audio_id"]): audio for audio in audio_data}
 
-    image_with_text = {}
-    image_with_text_audio = {}
-    image_typography = {}
-    image = {}
-
-    text_scene = {}
-    typography = {}
-    typography_audio = {}
-
-    none = {}
-    none_audio = {}
+    MANIFEST_PATH.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
 
     all_scenes = []
+    seen_scene_ids = set()
 
-    if MANIFEST_PATH.exists():
-        shutil.rmtree(MANIFEST_PATH)
-        MANIFEST_PATH.mkdir(parents=True, exist_ok=True)
+    for source_scene in scenes:
+        scene_id = int(source_scene.scene_id)
 
-    for s in scenes:
-        for audio in _audio:
-            if s.visual_modalities == ["IMAGE"]:
-                if int(audio["audio_id"]) == int(s.scene_id):
-                    print()
-                    print(f"Identified {s.scene_id} as Image scene.")
-                    image_scene["scene_id"] = s.scene_id
+        if scene_id in seen_scene_ids:
+            print(f"Warning: duplicate scene {scene_id} skipped.")
+            continue
 
-                    image_audio["path"] = audio["path"]
-                    image_audio["result"] = audio["result"]["word_segments"]
+        seen_scene_ids.add(scene_id)
 
-                    image_scene["audio"] = image_audio
-                    image_scene["type"] = "IMAGE"
-                    image_scene["Image"] = s.image.asset
-                    all_scenes.append(image_scene)
-                    print(f"Sent {s.scene_id} as Image Scene for rendering.")
+        audio = audio_by_id.get(scene_id)
 
-            elif s.visual_modalities == ["IMAGE_WITH_TEXT"]:
-                if int(audio["audio_id"]) == int(s.scene_id):
-                    print()
-                    print(f"Identified {s.scene_id} as Image with Text scene.")
-                    image_with_text["scene_id"] = s.scene_id
-                    image_with_text["type"] = "IMAGE_WITH_TEXT"
+        if audio is None:
+            print(f"Warning: no audio found for scene {scene_id}. Scene skipped.")
+            continue
 
-                    image_with_text_audio["path"] = audio["path"]
-                    image_with_text_audio["result"] = audio["result"]["word_segments"]
+        audio_path = audio["path"]
+        duration = get_audio_duration(audio_path)
 
-                    image["image"] = s.image.asset
+        modalities = source_scene.visual_modalities
 
-                    image_with_text["audio"] = image_with_text_audio
-                    image_typography["type_text"] = s.image.type_text
-                    image_typography["text"] = s.image.text
-                    image_typography["image"] = image
-                    image_with_text["typography"] = image_typography
-                    all_scenes.append(image_with_text)
-                    print(f"Sent {s.scene_id} as Image with Text scene for rendering.")
+        if modalities == ["IMAGE"]:
+            scene_type = "IMAGE"
 
-            elif s.visual_modalities == ["TYPOGRAPHY"]:
-                if int(audio["audio_id"]) == int(s.scene_id):
-                    print()
-                    print(f"Identified {s.scene_id} as Typography scene.")
-                    text_scene["scene_id"] = s.scene_id
-                    text_scene["type"] = "TYPOGRAPHY"
+        elif modalities == ["IMAGE_WITH_TEXT"]:
+            scene_type = "IMAGE_WITH_TEXT"
 
-                    typography_audio["path"] = audio["path"]
-                    typography_audio["result"] = audio["result"]["word_segments"]
+        elif modalities == ["TYPOGRAPHY"]:
+            scene_type = "TYPOGRAPHY"
 
-                    text_scene["audio"] = typography_audio
-                    typography["type"] = s.typography.type_typography
-                    typography["text"] = s.typography.text
-                    text_scene["typography"] = typography
-                    all_scenes.append(text_scene)
-                    print(f"Sent {s.scene_id} as Typography scene for rendering.")
+        elif modalities == ["NONE"]:
+            scene_type = "NONE"
 
-            else:
-                if int(audio["audio_id"]) == int(s.scene_id):
-                    print()
-                    print(f"Identified {s.scene_id} as None.")
-                    none["id"] = s.scene_id
-                    none_audio["path"] = audio["path"]
-                    none_audio["result"] = audio["result"]["word_segments"]
+        else:
+            raise ValueError(
+                f"Unsupported visual modality for scene {scene_id}: {modalities}"
+            )
 
-                    none["audio"] = none_audio
-                    all_scenes.append(none)
-                    print(
-                        f"Sent {s.scene_id} as Normal Word-to-Word Typography for rendering."
-                    )
-    with open(f"{MANIFEST_PATH}/RendererManifest.json", "w", encoding="utf-8") as file:
-        json.dump(all_scenes, file, indent=4, ensure_ascii=False)
+        scene = {
+            "scene_id": scene_id,
+            "type": scene_type,
+            "duration": duration,
+            "audio": build_audio(audio),
+            "visual": build_visual(source_scene),
+        }
+
+        all_scenes.append(scene)
+
+        print()
+        print(f"Scene {scene_id}: {scene_type}")
+        print(f"Duration: {duration:.3f}s")
+        print(f"Template: {scene['visual']['template']}")
+
+    with open(
+        MANIFEST_FILE,
+        "w",
+        encoding="utf-8",
+    ) as file:
+        json.dump(
+            all_scenes,
+            file,
+            indent=4,
+            ensure_ascii=False,
+        )
+
+    print()
+    print(f"Manifest written to {MANIFEST_FILE}")
+    print(f"Total scenes: {len(all_scenes)}")

@@ -26,23 +26,23 @@ Pipeline aims to automate that entire workflow through specialized AI agents.
 
 > Yes, I use this for my daily todo.
 
+<code> Completed TODOs <a href="https://github.com/DevankSinghChaudhary/VPipeline/blob/main/COMPLETED.md">COMPLETED.md</a></code>
+
 **19 Sept**
-- [ ] Plan the renderer structure for tomorrow's work
+- [x] Plan the renderer structure for tomorrow's work
   - Save @ `/documents/structure.txt`
 
+---
 ## Planned Features 
 
-- AI-generated visuals 
+- AI-generated visuals (Not SLOP)
 - Dynamic typography 
 - Animated diagrams 
 - Geographic maps 
-- Point-cloud visualizations 
 - Timeline animation
 - Procedural graphics 
 - Automatic video editing 
 - MP4 rendering 
-- Multiple TTS providers 
-- Multiple LLM providers
 
 > [!IMPORTANT]
 > Already reached till `.mp4` in [previous version](https://github.com/DevankSinghChaudhary/video-creation-pipeline/).
