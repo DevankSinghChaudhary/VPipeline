@@ -1,91 +1,194 @@
-![Logo](.github/images/logo.png)
+![VPipeline Logo](.github/images/logo.png)
 
-[![Mistral AI](https://img.shields.io/badge/Built%20with-Mistral%20AI-9B59B6?logo=mistralai&logoColor=orange)](https://mistral.ai/)
-[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)](https://www.python.org)
-[![LangGraph](https://img.shields.io/badge/LangGraph-Multi--Agent-blue?logo=langgraph&logoColor=skyblue)](https://langchain.com/langgraph)
-
-> [!IMPORTANT]
-> Tested on Linux. Windows and macOS untested.
-
-VPipeline is an AI-powered video creation pipeline that transforms a single topic into a fully narrated documentary workflow. The current implementation generates formatted narration and high-quality audio, with the long-term goal of producing complete cinematic videos automatically. 
-
-> [!NOTE] 
-> **Current Status:** VPipeline generates narrated audio (`.wav`). 
-> 
-> **Final Goal:** Generate complete, fully automated `.mp4` documentary videos with narration, visuals, animations, typography, maps, and procedural graphics. 
-
----
-## Vision
-Traditional video creation requires researching, writing, recording, editing, sourcing visuals, synchronizing narration, and rendering everything together. 
-
-Pipeline aims to automate that entire workflow through specialized AI agents.
-
----
-## Planned Features 
-
-- AI-generated visuals (Not SLOP)
-- Dynamic typography 
-- Animated diagrams 
-- Geographic maps 
-- Timeline animation
-- Procedural graphics 
-- Automatic video editing 
-- MP4 rendering 
+[![Mistral AI](https://img.shields.io/badge/Built%20with-Mistral%20AI-9B59B6?logo=mistralai\&logoColor=orange)](https://mistral.ai/)
+[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python\&logoColor=white)](https://www.python.org/)
+[![LangGraph](https://img.shields.io/badge/Built%20with-LangGraph-blue)](https://langchain.com/langgraph)
 
 > [!IMPORTANT]
-> Already reached till `.mp4` in [previous version](https://github.com/DevankSinghChaudhary/video-creation-pipeline/).
+> **Current platform:** Linux tested. Windows and macOS are currently untested.
 
-## Structure of VPipeline
+# VPipeline
 
-![Structure of VPipeline](.github/images/vpipeline-structure.png)  
+**VPipeline is an AI-native video production pipeline that turns a topic into a structured documentary workflow.**
 
-## Project Status 
-VPipeline is under active development. 
+The project is designed to automate the repetitive parts of documentary production through specialized stages for research, writing, narration, visual planning, asset handling, composition, and rendering.
 
-The audio generation pipeline is operational. Visual generation, animation, and final video rendering are currently being developed. 
+## Current Status
 
----
-## Requirements
+**Current working pipeline:**
 
-|Hardware     | Minimum VRAM  | Recommended VRAM |
-|-------------|:-------------:|:----------------:|
-|GPU          |     6GB       |       8GB        |
+```text
+Topic
+  ↓
+Research
+  ↓
+Story
+  ↓
+Narration
+  ↓
+TTS
+  ↓
+WAV
+```
 
-*NVIDIA is preferred*
-*Example: RTX 3050*
+The current implementation produces a narrated audio file (`.wav`).
+
+The final goal is a complete automated documentary pipeline:
+
+```text
+Topic
+  ↓
+Research
+  ↓
+Story
+  ↓
+Narration
+  ↓
+TTS
+  ↓
+Visual Planning
+  ↓
+Asset Retrieval / Generation
+  ↓
+Composition
+  ↓
+Rendering
+  ↓
+MP4
+```
 
 > [!NOTE]
-> As VRAM will be used for tts and stt models.
+> A previous version of VPipeline already reached MP4 generation. See the [previous repository](https://github.com/DevankSinghChaudhary/video-creation-pipeline/).
 
+## Vision
 
-## Clone & Run
+Creating a documentary normally requires research, writing, narration, visual sourcing, editing, synchronization, animation, and rendering.
 
-### 1. Clone the repository:
+VPipeline aims to turn those separate tasks into an automated, modular pipeline.
+
+The long-term visual system includes:
+
+* Dynamic typography
+* Charts and data visualization
+* Animated diagrams
+* Geographic maps
+* Timeline animation
+* Procedural graphics
+* Image and video assets
+* Automated composition
+* Final MP4 rendering
+
+## Architecture
+
+![VPipeline Structure](.github/images/vpipeline-structure.png)
+
+VPipeline is built as a sequence of specialized stages rather than one model being responsible for the entire process.
+
+## Project Status
+
+VPipeline is under active development.
+
+### Working
+
+* Research
+* Story generation
+* Narration generation
+* Text-to-speech
+* Audio output
+
+### In development
+
+* Visual planning
+* Asset retrieval
+* Visual decomposition
+* Composition
+* Animation
+* Final video rendering
+* More independent AI components
+
+## Requirements
+
+### Software
+
+* Python 3.12
+* [uv](https://docs.astral.sh/uv/)
+* Linux for the currently tested setup
+
+### Hardware
+
+The current local setup uses NVIDIA CUDA for AI workloads.
+
+A GPU with approximately **6 GB VRAM** is recommended for the current local configuration because model memory is shared between components such as TTS/STT.
+
+> [!NOTE]
+> VRAM requirements may change as the pipeline evolves and models are replaced or optimized.
+
+## Installation
+
+### 1. Clone
 
 ```bash
 git clone https://github.com/DevankSinghChaudhary/VPipeline.git
 cd VPipeline
 ```
 
----
-
-### 2. Install necessary requirements
+### 2. Install dependencies
 
 ```bash
 uv sync
 ```
 
-> [!NOTE]
-> To install uv, refer to this [doc](https://docs.astral.sh/uv/getting-started/installation/)
+Install `uv` using the [official installation guide](https://docs.astral.sh/uv/getting-started/installation/).
 
-### 3. Run the pipeline
+### 3. Run
 
 ```bash
-cd VPipeline/src/vcp  
-uv run main.py
+uv run ...
 ```
 
+Replace the command above with the current VPipeline entry point.
 
-## License 
+## Output
 
-[MIT](https://github.com/DevankSinghChaudhary/VPipeline/tree/main?tab=MIT-1-ov-file)
+The current pipeline produces narrated audio:
+
+```text
+output/
+└── narration.wav
+```
+
+## Development
+
+VPipeline is experimental and actively changing.
+
+The architecture, models, visual system, and interfaces may change significantly between releases.
+
+## Roadmap
+
+```text
+[x] Research
+[x] Story
+[x] Narration
+[x] TTS
+[ ] Visual planning
+[ ] Asset retrieval
+[ ] Visual decomposition
+[ ] Composition
+[ ] Animation
+[ ] Automated editing
+[ ] MP4 rendering
+[ ] Specialized decision models
+```
+
+## Contributing
+
+VPipeline is open source. Contributions, experimentation, and ideas are welcome.
+
+## License
+
+[MIT License](LICENSE)
+
+---
+
+Built by **Devank Singh Chaudhary**.
+
