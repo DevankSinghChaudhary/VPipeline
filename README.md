@@ -186,7 +186,7 @@ VPipeline is open source. Contributions, experimentation, and ideas are welcome.
 
 ## License
 
-[MIT License](LICENSE)
+[MIT License](https://github.com/DevankSinghChaudhary/VPipeline/?tab=MIT-1-ov-file)
 
 ---
 
