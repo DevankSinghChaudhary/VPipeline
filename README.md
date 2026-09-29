@@ -80,7 +80,7 @@ The long-term visual system includes:
 
 ## Architecture
 
-![VPipeline Structure](.github/images/vpipeline-structure.png)
+![VPipeline Structure](https://raw.githubusercontent.com/DevankSinghChaudhary/VPipeline/refs/heads/main/.github/images/vpipeline-structure.png)
 
 VPipeline is built as a sequence of specialized stages rather than one model being responsible for the entire process.
 
