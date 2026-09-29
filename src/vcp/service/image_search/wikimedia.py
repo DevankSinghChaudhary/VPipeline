@@ -221,10 +221,10 @@ def fanout_image(state: GlobalState):
 
 def search_images(
     state,
-    limit: int = 5,
+    limit: int = 3,
     download: bool = True,
     save_dir: str = DOWNLOAD_PATH,
-    delay: float = 0.2,
+    delay: float = 0.1,
 ):
     query = state["query"]
 

@@ -1,0 +1,1884 @@
+[
+    {
+        "scene_id": 1,
+        "type": "IMAGE_WITH_TEXT",
+        "duration": 9.06,
+        "audio": {
+            "path": "/audio/1.wav",
+            "words": [
+                {
+                    "word": "In",
+                    "start": 0.472,
+                    "end": 0.532,
+                    "score": 1.0
+                },
+                {
+                    "word": "1936,",
+                    "start": 0.633,
+                    "end": 1.515,
+                    "score": 0.585
+                },
+                {
+                    "word": "Albert",
+                    "start": 1.736,
+                    "end": 1.996,
+                    "score": 0.808
+                },
+                {
+                    "word": "Einstein",
+                    "start": 2.077,
+                    "end": 2.558,
+                    "score": 0.81
+                },
+                {
+                    "word": "predicted",
+                    "start": 2.598,
+                    "end": 2.999,
+                    "score": 0.854
+                },
+                {
+                    "word": "a",
+                    "start": 3.039,
+                    "end": 3.079,
+                    "score": 0.506
+                },
+                {
+                    "word": "phenomenon",
+                    "start": 3.099,
+                    "end": 3.621,
+                    "score": 0.816
+                },
+                {
+                    "word": "that",
+                    "start": 3.661,
+                    "end": 3.761,
+                    "score": 1.0
+                },
+                {
+                    "word": "could",
+                    "start": 3.801,
+                    "end": 3.942,
+                    "score": 0.811
+                },
+                {
+                    "word": "revolutionize",
+                    "start": 3.982,
+                    "end": 4.744,
+                    "score": 0.851
+                },
+                {
+                    "word": "astronomy,",
+                    "start": 4.784,
+                    "end": 5.326,
+                    "score": 0.838
+                },
+                {
+                    "word": "the",
+                    "start": 5.626,
+                    "end": 5.747,
+                    "score": 0.905
+                },
+                {
+                    "word": "sun's",
+                    "start": 5.787,
+                    "end": 6.108,
+                    "score": 0.735
+                },
+                {
+                    "word": "gravity",
+                    "start": 6.148,
+                    "end": 6.529,
+                    "score": 0.922
+                },
+                {
+                    "word": "bending",
+                    "start": 6.569,
+                    "end": 6.87,
+                    "score": 0.869
+                },
+                {
+                    "word": "light",
+                    "start": 6.91,
+                    "end": 7.111,
+                    "score": 0.867
+                },
+                {
+                    "word": "into",
+                    "start": 7.151,
+                    "end": 7.311,
+                    "score": 0.734
+                },
+                {
+                    "word": "a",
+                    "start": 7.351,
+                    "end": 7.391,
+                    "score": 0.5
+                },
+                {
+                    "word": "powerful",
+                    "start": 7.452,
+                    "end": 7.873,
+                    "score": 0.848
+                },
+                {
+                    "word": "natural",
+                    "start": 7.933,
+                    "end": 8.234,
+                    "score": 0.858
+                },
+                {
+                    "word": "telescope.",
+                    "start": 8.274,
+                    "end": 8.835,
+                    "score": 0.852
+                }
+            ]
+        },
+        "visual": {
+            "template": "key_line",
+            "text": "1936",
+            "image": [
+                "Albert Einstein portrait"
+            ]
+        }
+    },
+    {
+        "scene_id": 2,
+        "type": "IMAGE_WITH_TEXT",
+        "duration": 8.6,
+        "audio": {
+            "path": "/audio/2.wav",
+            "words": [
+                {
+                    "word": "This",
+                    "start": 0.212,
+                    "end": 0.372,
+                    "score": 0.91
+                },
+                {
+                    "word": "effect,",
+                    "start": 0.452,
+                    "end": 0.814,
+                    "score": 0.824
+                },
+                {
+                    "word": "called",
+                    "start": 0.954,
+                    "end": 1.175,
+                    "score": 0.884
+                },
+                {
+                    "word": "a",
+                    "start": 1.215,
+                    "end": 1.235,
+                    "score": 0.996
+                },
+                {
+                    "word": "solar",
+                    "start": 1.295,
+                    "end": 1.576,
+                    "score": 0.874
+                },
+                {
+                    "word": "gravitational",
+                    "start": 1.616,
+                    "end": 2.299,
+                    "score": 0.88
+                },
+                {
+                    "word": "lens,",
+                    "start": 2.339,
+                    "end": 2.62,
+                    "score": 0.853
+                },
+                {
+                    "word": "focuses",
+                    "start": 2.82,
+                    "end": 3.262,
+                    "score": 0.835
+                },
+                {
+                    "word": "light",
+                    "start": 3.322,
+                    "end": 3.543,
+                    "score": 0.886
+                },
+                {
+                    "word": "from",
+                    "start": 3.563,
+                    "end": 3.703,
+                    "score": 0.826
+                },
+                {
+                    "word": "distant",
+                    "start": 3.764,
+                    "end": 4.085,
+                    "score": 0.774
+                },
+                {
+                    "word": "exoplanets",
+                    "start": 4.165,
+                    "end": 4.787,
+                    "score": 0.833
+                },
+                {
+                    "word": "at",
+                    "start": 4.948,
+                    "end": 5.008,
+                    "score": 0.757
+                },
+                {
+                    "word": "a",
+                    "start": 5.028,
+                    "end": 5.048,
+                    "score": 0.977
+                },
+                {
+                    "word": ".547",
+                    "start": 5.068,
+                    "end": 5.208,
+                    "score": 0.998
+                },
+                {
+                    "word": "astronomical",
+                    "start": 5.229,
+                    "end": 5.63,
+                    "score": 0.265
+                },
+                {
+                    "word": "units",
+                    "start": 5.71,
+                    "end": 5.951,
+                    "score": 0.319
+                },
+                {
+                    "word": "from",
+                    "start": 6.011,
+                    "end": 6.132,
+                    "score": 0.5
+                },
+                {
+                    "word": "the",
+                    "start": 6.172,
+                    "end": 6.292,
+                    "score": 0.491
+                },
+                {
+                    "word": "Sun.",
+                    "start": 6.332,
+                    "end": 6.473,
+                    "score": 0.645
+                }
+            ]
+        },
+        "visual": {
+            "template": "key_line",
+            "text": "547 AU",
+            "image": [
+                "Skylab White Light Coronagraph"
+            ]
+        }
+    },
+    {
+        "scene_id": 3,
+        "type": "TYPOGRAPHY",
+        "duration": 9.23,
+        "audio": {
+            "path": "/audio/3.wav",
+            "words": [
+                {
+                    "word": "The",
+                    "start": 0.493,
+                    "end": 0.593,
+                    "score": 0.924
+                },
+                {
+                    "word": "focal",
+                    "start": 0.633,
+                    "end": 0.954,
+                    "score": 0.92
+                },
+                {
+                    "word": "point",
+                    "start": 0.995,
+                    "end": 1.256,
+                    "score": 0.701
+                },
+                {
+                    "word": "creates",
+                    "start": 1.316,
+                    "end": 1.657,
+                    "score": 0.761
+                },
+                {
+                    "word": "an",
+                    "start": 1.697,
+                    "end": 1.737,
+                    "score": 0.999
+                },
+                {
+                    "word": "angular",
+                    "start": 1.878,
+                    "end": 2.259,
+                    "score": 0.843
+                },
+                {
+                    "word": "resolution",
+                    "start": 2.299,
+                    "end": 2.841,
+                    "score": 0.836
+                },
+                {
+                    "word": "of",
+                    "start": 2.882,
+                    "end": 2.942,
+                    "score": 0.75
+                },
+                {
+                    "word": "about",
+                    "start": 3.002,
+                    "end": 3.223,
+                    "score": 0.921
+                },
+                {
+                    "word": "10",
+                    "start": 3.283,
+                    "end": 3.504,
+                    "score": 0.756
+                },
+                {
+                    "word": "to",
+                    "start": 3.544,
+                    "end": 3.624,
+                    "score": 0.842
+                },
+                {
+                    "word": "the",
+                    "start": 3.664,
+                    "end": 3.725,
+                    "score": 0.999
+                },
+                {
+                    "word": "minus",
+                    "start": 3.765,
+                    "end": 4.086,
+                    "score": 0.917
+                },
+                {
+                    "word": "10",
+                    "start": 4.126,
+                    "end": 4.327,
+                    "score": 0.799
+                },
+                {
+                    "word": "arc",
+                    "start": 4.387,
+                    "end": 4.548,
+                    "score": 0.614
+                },
+                {
+                    "word": "seconds,",
+                    "start": 4.568,
+                    "end": 4.969,
+                    "score": 0.863
+                },
+                {
+                    "word": "brightening",
+                    "start": 5.371,
+                    "end": 5.792,
+                    "score": 0.801
+                },
+                {
+                    "word": "distant",
+                    "start": 5.852,
+                    "end": 6.194,
+                    "score": 0.858
+                },
+                {
+                    "word": "objects",
+                    "start": 6.314,
+                    "end": 6.655,
+                    "score": 0.814
+                },
+                {
+                    "word": "by",
+                    "start": 6.756,
+                    "end": 6.896,
+                    "score": 0.834
+                },
+                {
+                    "word": "up",
+                    "start": 6.997,
+                    "end": 7.077,
+                    "score": 0.986
+                },
+                {
+                    "word": "to",
+                    "start": 7.117,
+                    "end": 7.197,
+                    "score": 0.998
+                },
+                {
+                    "word": "10",
+                    "start": 7.258,
+                    "end": 7.458,
+                    "score": 0.838
+                },
+                {
+                    "word": "to",
+                    "start": 7.499,
+                    "end": 7.559,
+                    "score": 0.773
+                },
+                {
+                    "word": "the",
+                    "start": 7.579,
+                    "end": 7.659,
+                    "score": 0.835
+                },
+                {
+                    "word": "power",
+                    "start": 7.699,
+                    "end": 8.0,
+                    "score": 0.863
+                },
+                {
+                    "word": "of",
+                    "start": 8.041,
+                    "end": 8.081,
+                    "score": 1.0
+                },
+                {
+                    "word": "11",
+                    "start": 8.101,
+                    "end": 8.161,
+                    "score": 0.999
+                },
+                {
+                    "word": "times.",
+                    "start": 8.181,
+                    "end": 8.362,
+                    "score": 0.583
+                }
+            ]
+        },
+        "visual": {
+            "template": "KEY_LINE",
+            "text": "10⁻¹⁰ arcseconds"
+        }
+    },
+    {
+        "scene_id": 4,
+        "type": "TYPOGRAPHY",
+        "duration": 4.94,
+        "audio": {
+            "path": "/audio/4.wav",
+            "words": [
+                {
+                    "word": "In",
+                    "start": 0.413,
+                    "end": 0.695,
+                    "score": 0.528
+                },
+                {
+                    "word": "1979,",
+                    "start": 0.735,
+                    "end": 1.278,
+                    "score": 0.599
+                },
+                {
+                    "word": "Von",
+                    "start": 1.338,
+                    "end": 1.559,
+                    "score": 0.775
+                },
+                {
+                    "word": "R.",
+                    "start": 1.66,
+                    "end": 1.74,
+                    "score": 0.863
+                },
+                {
+                    "word": "Eschleman",
+                    "start": 1.821,
+                    "end": 2.243,
+                    "score": 0.738
+                },
+                {
+                    "word": "first",
+                    "start": 2.283,
+                    "end": 2.484,
+                    "score": 0.691
+                },
+                {
+                    "word": "proposed",
+                    "start": 2.545,
+                    "end": 2.887,
+                    "score": 0.878
+                },
+                {
+                    "word": "using",
+                    "start": 2.987,
+                    "end": 3.168,
+                    "score": 0.908
+                },
+                {
+                    "word": "this",
+                    "start": 3.208,
+                    "end": 3.329,
+                    "score": 0.87
+                },
+                {
+                    "word": "lens",
+                    "start": 3.369,
+                    "end": 3.611,
+                    "score": 0.714
+                },
+                {
+                    "word": "for",
+                    "start": 3.631,
+                    "end": 3.751,
+                    "score": 0.846
+                },
+                {
+                    "word": "deep",
+                    "start": 3.771,
+                    "end": 3.952,
+                    "score": 0.796
+                },
+                {
+                    "word": "space",
+                    "start": 4.013,
+                    "end": 4.294,
+                    "score": 0.869
+                },
+                {
+                    "word": "imaging.",
+                    "start": 4.355,
+                    "end": 4.717,
+                    "score": 0.913
+                }
+            ]
+        },
+        "visual": {
+            "template": "DATE",
+            "text": "1979"
+        }
+    },
+    {
+        "scene_id": 5,
+        "type": "TYPOGRAPHY",
+        "duration": 7.88,
+        "audio": {
+            "path": "/audio/5.wav",
+            "words": [
+                {
+                    "word": "NASA",
+                    "start": 0.232,
+                    "end": 0.533,
+                    "score": 0.839
+                },
+                {
+                    "word": "physicist",
+                    "start": 0.553,
+                    "end": 1.074,
+                    "score": 0.9
+                },
+                {
+                    "word": "Slava",
+                    "start": 1.134,
+                    "end": 1.475,
+                    "score": 0.981
+                },
+                {
+                    "word": "Turishev",
+                    "start": 1.516,
+                    "end": 2.057,
+                    "score": 0.726
+                },
+                {
+                    "word": "revived",
+                    "start": 2.117,
+                    "end": 2.559,
+                    "score": 0.868
+                },
+                {
+                    "word": "the",
+                    "start": 2.599,
+                    "end": 2.699,
+                    "score": 0.808
+                },
+                {
+                    "word": "idea",
+                    "start": 2.759,
+                    "end": 3.02,
+                    "score": 0.789
+                },
+                {
+                    "word": "in",
+                    "start": 3.04,
+                    "end": 3.1,
+                    "score": 0.746
+                },
+                {
+                    "word": "2020,",
+                    "start": 3.14,
+                    "end": 3.983,
+                    "score": 0.664
+                },
+                {
+                    "word": "proposing",
+                    "start": 4.264,
+                    "end": 4.705,
+                    "score": 0.928
+                },
+                {
+                    "word": "a",
+                    "start": 4.745,
+                    "end": 4.786,
+                    "score": 0.724
+                },
+                {
+                    "word": "mission",
+                    "start": 4.826,
+                    "end": 5.086,
+                    "score": 0.951
+                },
+                {
+                    "word": "to",
+                    "start": 5.106,
+                    "end": 5.187,
+                    "score": 0.515
+                },
+                {
+                    "word": "image",
+                    "start": 5.267,
+                    "end": 5.488,
+                    "score": 0.882
+                },
+                {
+                    "word": "an",
+                    "start": 5.528,
+                    "end": 5.588,
+                    "score": 0.79
+                },
+                {
+                    "word": "exoplanet",
+                    "start": 5.668,
+                    "end": 6.23,
+                    "score": 0.903
+                },
+                {
+                    "word": "98",
+                    "start": 6.25,
+                    "end": 6.29,
+                    "score": 0.999
+                },
+                {
+                    "word": "light-years",
+                    "start": 6.35,
+                    "end": 6.832,
+                    "score": 0.477
+                },
+                {
+                    "word": "away.",
+                    "start": 6.852,
+                    "end": 7.012,
+                    "score": 0.476
+                }
+            ]
+        },
+        "visual": {
+            "template": "KEY_LINE",
+            "text": "Slava Turyshev"
+        }
+    },
+    {
+        "scene_id": 6,
+        "type": "TYPOGRAPHY",
+        "duration": 6.44,
+        "audio": {
+            "path": "/audio/6.wav",
+            "words": [
+                {
+                    "word": "His",
+                    "start": 0.232,
+                    "end": 0.352,
+                    "score": 0.929
+                },
+                {
+                    "word": "design",
+                    "start": 0.393,
+                    "end": 0.774,
+                    "score": 0.822
+                },
+                {
+                    "word": "aims",
+                    "start": 0.835,
+                    "end": 1.015,
+                    "score": 0.714
+                },
+                {
+                    "word": "to",
+                    "start": 1.056,
+                    "end": 1.136,
+                    "score": 0.75
+                },
+                {
+                    "word": "capture",
+                    "start": 1.176,
+                    "end": 1.538,
+                    "score": 0.775
+                },
+                {
+                    "word": "surface",
+                    "start": 1.578,
+                    "end": 1.92,
+                    "score": 0.902
+                },
+                {
+                    "word": "details",
+                    "start": 1.94,
+                    "end": 2.442,
+                    "score": 0.749
+                },
+                {
+                    "word": "as",
+                    "start": 2.502,
+                    "end": 2.562,
+                    "score": 0.946
+                },
+                {
+                    "word": "small",
+                    "start": 2.623,
+                    "end": 2.864,
+                    "score": 0.941
+                },
+                {
+                    "word": "as",
+                    "start": 2.924,
+                    "end": 2.984,
+                    "score": 0.897
+                },
+                {
+                    "word": "25",
+                    "start": 3.346,
+                    "end": 3.567,
+                    "score": 0.677
+                },
+                {
+                    "word": "kilometers",
+                    "start": 3.607,
+                    "end": 4.17,
+                    "score": 0.843
+                },
+                {
+                    "word": "in",
+                    "start": 4.27,
+                    "end": 4.33,
+                    "score": 0.999
+                },
+                {
+                    "word": "just",
+                    "start": 4.391,
+                    "end": 4.571,
+                    "score": 0.796
+                },
+                {
+                    "word": "six",
+                    "start": 4.652,
+                    "end": 4.893,
+                    "score": 0.942
+                },
+                {
+                    "word": "months",
+                    "start": 4.953,
+                    "end": 5.194,
+                    "score": 0.87
+                },
+                {
+                    "word": "of",
+                    "start": 5.234,
+                    "end": 5.295,
+                    "score": 0.748
+                },
+                {
+                    "word": "observation",
+                    "start": 5.375,
+                    "end": 5.938,
+                    "score": 0.9
+                },
+                {
+                    "word": "time.",
+                    "start": 5.978,
+                    "end": 6.199,
+                    "score": 0.974
+                }
+            ]
+        },
+        "visual": {
+            "template": "KEY_LINE",
+            "text": "25 km resolution"
+        }
+    },
+    {
+        "scene_id": 7,
+        "type": "IMAGE_WITH_TEXT",
+        "duration": 9.44,
+        "audio": {
+            "path": "/audio/7.wav",
+            "words": [
+                {
+                    "word": "The",
+                    "start": 0.533,
+                    "end": 0.633,
+                    "score": 0.87
+                },
+                {
+                    "word": "mission",
+                    "start": 0.673,
+                    "end": 0.914,
+                    "score": 0.997
+                },
+                {
+                    "word": "would",
+                    "start": 0.934,
+                    "end": 1.075,
+                    "score": 0.825
+                },
+                {
+                    "word": "surpass",
+                    "start": 1.115,
+                    "end": 1.496,
+                    "score": 0.908
+                },
+                {
+                    "word": "current",
+                    "start": 1.556,
+                    "end": 1.817,
+                    "score": 0.929
+                },
+                {
+                    "word": "telescopes",
+                    "start": 1.857,
+                    "end": 2.419,
+                    "score": 0.788
+                },
+                {
+                    "word": "like",
+                    "start": 2.5,
+                    "end": 2.66,
+                    "score": 0.941
+                },
+                {
+                    "word": "the",
+                    "start": 2.7,
+                    "end": 2.781,
+                    "score": 0.83
+                },
+                {
+                    "word": "James",
+                    "start": 2.821,
+                    "end": 3.142,
+                    "score": 0.721
+                },
+                {
+                    "word": "Webb",
+                    "start": 3.202,
+                    "end": 3.423,
+                    "score": 0.853
+                },
+                {
+                    "word": "Space",
+                    "start": 3.443,
+                    "end": 3.744,
+                    "score": 0.921
+                },
+                {
+                    "word": "Telescope",
+                    "start": 3.784,
+                    "end": 4.306,
+                    "score": 0.832
+                },
+                {
+                    "word": "and",
+                    "start": 4.647,
+                    "end": 4.747,
+                    "score": 0.691
+                },
+                {
+                    "word": "the",
+                    "start": 4.768,
+                    "end": 4.848,
+                    "score": 0.846
+                },
+                {
+                    "word": "extremely",
+                    "start": 4.908,
+                    "end": 5.41,
+                    "score": 0.775
+                },
+                {
+                    "word": "large",
+                    "start": 5.45,
+                    "end": 5.731,
+                    "score": 0.926
+                },
+                {
+                    "word": "telescope,",
+                    "start": 5.791,
+                    "end": 6.353,
+                    "score": 0.838
+                },
+                {
+                    "word": "offering",
+                    "start": 6.674,
+                    "end": 6.975,
+                    "score": 0.905
+                },
+                {
+                    "word": "unmatched",
+                    "start": 7.116,
+                    "end": 7.537,
+                    "score": 0.914
+                },
+                {
+                    "word": "resolution",
+                    "start": 7.597,
+                    "end": 8.18,
+                    "score": 0.912
+                },
+                {
+                    "word": "and",
+                    "start": 8.28,
+                    "end": 8.36,
+                    "score": 0.867
+                },
+                {
+                    "word": "magnification.",
+                    "start": 8.42,
+                    "end": 9.183,
+                    "score": 0.966
+                }
+            ]
+        },
+        "visual": {
+            "template": "key_line",
+            "text": "James Webb Space Telescope",
+            "image": [
+                "James Webb Space Telescope Mirror37"
+            ]
+        }
+    },
+    {
+        "scene_id": 8,
+        "type": "IMAGE_WITH_TEXT",
+        "duration": 6.02,
+        "audio": {
+            "path": "/audio/8.wav",
+            "words": [
+                {
+                    "word": "A",
+                    "start": 0.232,
+                    "end": 0.272,
+                    "score": 0.826
+                },
+                {
+                    "word": "meter-class",
+                    "start": 0.312,
+                    "end": 0.855,
+                    "score": 0.782
+                },
+                {
+                    "word": "telescope",
+                    "start": 0.875,
+                    "end": 1.317,
+                    "score": 0.89
+                },
+                {
+                    "word": "with",
+                    "start": 1.437,
+                    "end": 1.578,
+                    "score": 0.832
+                },
+                {
+                    "word": "a",
+                    "start": 1.618,
+                    "end": 1.638,
+                    "score": 0.973
+                },
+                {
+                    "word": "solar",
+                    "start": 1.678,
+                    "end": 2.0,
+                    "score": 0.805
+                },
+                {
+                    "word": "coronagraph",
+                    "start": 2.04,
+                    "end": 2.663,
+                    "score": 0.836
+                },
+                {
+                    "word": "would",
+                    "start": 2.703,
+                    "end": 2.864,
+                    "score": 0.89
+                },
+                {
+                    "word": "suppress",
+                    "start": 2.884,
+                    "end": 3.225,
+                    "score": 0.903
+                },
+                {
+                    "word": "solar",
+                    "start": 3.266,
+                    "end": 3.567,
+                    "score": 0.825
+                },
+                {
+                    "word": "interference",
+                    "start": 3.627,
+                    "end": 4.23,
+                    "score": 0.925
+                },
+                {
+                    "word": "positioned",
+                    "start": 4.391,
+                    "end": 4.873,
+                    "score": 0.796
+                },
+                {
+                    "word": "at",
+                    "start": 4.933,
+                    "end": 4.993,
+                    "score": 0.766
+                },
+                {
+                    "word": "the",
+                    "start": 5.013,
+                    "end": 5.094,
+                    "score": 0.955
+                },
+                {
+                    "word": "focal",
+                    "start": 5.134,
+                    "end": 5.435,
+                    "score": 0.849
+                },
+                {
+                    "word": "line.",
+                    "start": 5.455,
+                    "end": 5.757,
+                    "score": 0.956
+                }
+            ]
+        },
+        "visual": {
+            "template": "key_line",
+            "text": "Solar coronagraph",
+            "image": [
+                "Skylab White Light Coronagraph"
+            ]
+        }
+    },
+    {
+        "scene_id": 9,
+        "type": "IMAGE_WITH_TEXT",
+        "duration": 8.17,
+        "audio": {
+            "path": "/audio/9.wav",
+            "words": [
+                {
+                    "word": "To",
+                    "start": 0.474,
+                    "end": 0.554,
+                    "score": 0.999
+                },
+                {
+                    "word": "reach",
+                    "start": 0.594,
+                    "end": 1.339,
+                    "score": 0.644
+                },
+                {
+                    "word": "547",
+                    "start": 1.399,
+                    "end": 1.982,
+                    "score": 0.682
+                },
+                {
+                    "word": "astronomical",
+                    "start": 2.123,
+                    "end": 2.747,
+                    "score": 0.844
+                },
+                {
+                    "word": "units,",
+                    "start": 2.827,
+                    "end": 3.089,
+                    "score": 0.885
+                },
+                {
+                    "word": "the",
+                    "start": 3.41,
+                    "end": 3.511,
+                    "score": 0.678
+                },
+                {
+                    "word": "mission",
+                    "start": 3.551,
+                    "end": 3.793,
+                    "score": 0.856
+                },
+                {
+                    "word": "proposes",
+                    "start": 3.833,
+                    "end": 4.296,
+                    "score": 0.783
+                },
+                {
+                    "word": "solar",
+                    "start": 4.336,
+                    "end": 4.658,
+                    "score": 0.848
+                },
+                {
+                    "word": "sales",
+                    "start": 4.698,
+                    "end": 5.0,
+                    "score": 0.747
+                },
+                {
+                    "word": "accelerating",
+                    "start": 5.12,
+                    "end": 5.784,
+                    "score": 0.888
+                },
+                {
+                    "word": "to",
+                    "start": 5.844,
+                    "end": 5.905,
+                    "score": 1.0
+                },
+                {
+                    "word": "150",
+                    "start": 5.925,
+                    "end": 5.985,
+                    "score": 0.667
+                },
+                {
+                    "word": "km",
+                    "start": 6.046,
+                    "end": 6.086,
+                    "score": 0.0
+                },
+                {
+                    "word": "per",
+                    "start": 6.106,
+                    "end": 6.166,
+                    "score": 0.293
+                },
+                {
+                    "word": "second.",
+                    "start": 6.186,
+                    "end": 6.347,
+                    "score": 0.429
+                }
+            ]
+        },
+        "visual": {
+            "template": "key_line",
+            "text": "150 km/s",
+            "image": [
+                "Advanced Composite Solar Sail System Artist’s Concept 3"
+            ]
+        }
+    },
+    {
+        "scene_id": 10,
+        "type": "TYPOGRAPHY",
+        "duration": 2.43,
+        "audio": {
+            "path": "/audio/10.wav",
+            "words": [
+                {
+                    "word": "covering",
+                    "start": 0.172,
+                    "end": 0.536,
+                    "score": 0.851
+                },
+                {
+                    "word": "the",
+                    "start": 0.576,
+                    "end": 0.657,
+                    "score": 0.832
+                },
+                {
+                    "word": "distance",
+                    "start": 0.697,
+                    "end": 1.081,
+                    "score": 0.879
+                },
+                {
+                    "word": "in",
+                    "start": 1.141,
+                    "end": 1.222,
+                    "score": 0.97
+                },
+                {
+                    "word": "17",
+                    "start": 1.242,
+                    "end": 1.343,
+                    "score": 0.973
+                },
+                {
+                    "word": "years.",
+                    "start": 1.384,
+                    "end": 1.545,
+                    "score": 0.47
+                }
+            ]
+        },
+        "visual": {
+            "template": "KEY_LINE",
+            "text": "17 years"
+        }
+    },
+    {
+        "scene_id": 11,
+        "type": "NONE",
+        "duration": 6.63,
+        "audio": {
+            "path": "/audio/11.wav",
+            "words": [
+                {
+                    "word": "Challenges",
+                    "start": 0.534,
+                    "end": 1.036,
+                    "score": 0.868
+                },
+                {
+                    "word": "include",
+                    "start": 1.097,
+                    "end": 1.438,
+                    "score": 0.871
+                },
+                {
+                    "word": "propulsion,",
+                    "start": 1.519,
+                    "end": 2.062,
+                    "score": 0.886
+                },
+                {
+                    "word": "deep",
+                    "start": 2.223,
+                    "end": 2.424,
+                    "score": 0.816
+                },
+                {
+                    "word": "space",
+                    "start": 2.464,
+                    "end": 2.745,
+                    "score": 0.883
+                },
+                {
+                    "word": "communication,",
+                    "start": 2.765,
+                    "end": 3.53,
+                    "score": 0.837
+                },
+                {
+                    "word": "and",
+                    "start": 3.67,
+                    "end": 3.751,
+                    "score": 0.834
+                },
+                {
+                    "word": "maintaining",
+                    "start": 3.791,
+                    "end": 4.294,
+                    "score": 0.862
+                },
+                {
+                    "word": "instrumentation",
+                    "start": 4.354,
+                    "end": 5.037,
+                    "score": 0.799
+                },
+                {
+                    "word": "stability",
+                    "start": 5.058,
+                    "end": 5.54,
+                    "score": 0.844
+                },
+                {
+                    "word": "over",
+                    "start": 5.641,
+                    "end": 5.781,
+                    "score": 0.998
+                },
+                {
+                    "word": "decades.",
+                    "start": 5.842,
+                    "end": 6.324,
+                    "score": 0.932
+                }
+            ]
+        },
+        "visual": {
+            "template": "word_by_word"
+        }
+    },
+    {
+        "scene_id": 12,
+        "type": "TYPOGRAPHY",
+        "duration": 6.02,
+        "audio": {
+            "path": "/audio/12.wav",
+            "words": [
+                {
+                    "word": "If",
+                    "start": 0.272,
+                    "end": 0.352,
+                    "score": 0.836
+                },
+                {
+                    "word": "successful,",
+                    "start": 0.393,
+                    "end": 0.975,
+                    "score": 0.883
+                },
+                {
+                    "word": "the",
+                    "start": 1.015,
+                    "end": 1.096,
+                    "score": 0.834
+                },
+                {
+                    "word": "mission",
+                    "start": 1.116,
+                    "end": 1.377,
+                    "score": 0.815
+                },
+                {
+                    "word": "could",
+                    "start": 1.417,
+                    "end": 1.558,
+                    "score": 0.802
+                },
+                {
+                    "word": "deliver",
+                    "start": 1.578,
+                    "end": 1.94,
+                    "score": 0.809
+                },
+                {
+                    "word": "the",
+                    "start": 1.98,
+                    "end": 2.06,
+                    "score": 0.837
+                },
+                {
+                    "word": "first",
+                    "start": 2.1,
+                    "end": 2.321,
+                    "score": 0.832
+                },
+                {
+                    "word": "direct",
+                    "start": 2.361,
+                    "end": 2.643,
+                    "score": 0.915
+                },
+                {
+                    "word": "images",
+                    "start": 2.703,
+                    "end": 3.004,
+                    "score": 0.831
+                },
+                {
+                    "word": "of",
+                    "start": 3.045,
+                    "end": 3.105,
+                    "score": 0.75
+                },
+                {
+                    "word": "exoplanet",
+                    "start": 3.185,
+                    "end": 3.748,
+                    "score": 0.89
+                },
+                {
+                    "word": "surfaces",
+                    "start": 3.768,
+                    "end": 4.27,
+                    "score": 0.894
+                },
+                {
+                    "word": "and",
+                    "start": 4.35,
+                    "end": 4.411,
+                    "score": 0.999
+                },
+                {
+                    "word": "detect",
+                    "start": 4.451,
+                    "end": 4.772,
+                    "score": 0.951
+                },
+                {
+                    "word": "biosignatures.",
+                    "start": 4.833,
+                    "end": 5.717,
+                    "score": 0.872
+                }
+            ]
+        },
+        "visual": {
+            "template": "KEY_LINE",
+            "text": "First direct images of exoplanet surfaces"
+        }
+    },
+    {
+        "scene_id": 13,
+        "type": "TYPOGRAPHY",
+        "duration": 5.88,
+        "audio": {
+            "path": "/audio/13.wav",
+            "words": [
+                {
+                    "word": "It",
+                    "start": 0.232,
+                    "end": 0.292,
+                    "score": 0.98
+                },
+                {
+                    "word": "may",
+                    "start": 0.333,
+                    "end": 0.494,
+                    "score": 0.85
+                },
+                {
+                    "word": "also",
+                    "start": 0.554,
+                    "end": 0.815,
+                    "score": 0.838
+                },
+                {
+                    "word": "reveal",
+                    "start": 0.876,
+                    "end": 1.197,
+                    "score": 0.74
+                },
+                {
+                    "word": "geological",
+                    "start": 1.258,
+                    "end": 1.841,
+                    "score": 0.906
+                },
+                {
+                    "word": "features,",
+                    "start": 1.901,
+                    "end": 2.344,
+                    "score": 0.793
+                },
+                {
+                    "word": "weather",
+                    "start": 2.605,
+                    "end": 2.866,
+                    "score": 0.848
+                },
+                {
+                    "word": "patterns",
+                    "start": 2.907,
+                    "end": 3.309,
+                    "score": 0.84
+                },
+                {
+                    "word": "and",
+                    "start": 3.47,
+                    "end": 3.57,
+                    "score": 0.687
+                },
+                {
+                    "word": "signs",
+                    "start": 3.631,
+                    "end": 3.892,
+                    "score": 0.816
+                },
+                {
+                    "word": "of",
+                    "start": 3.932,
+                    "end": 3.993,
+                    "score": 0.796
+                },
+                {
+                    "word": "habitability",
+                    "start": 4.033,
+                    "end": 4.676,
+                    "score": 0.784
+                },
+                {
+                    "word": "on",
+                    "start": 4.737,
+                    "end": 4.817,
+                    "score": 0.916
+                },
+                {
+                    "word": "distant",
+                    "start": 4.877,
+                    "end": 5.199,
+                    "score": 0.89
+                },
+                {
+                    "word": "worlds.",
+                    "start": 5.239,
+                    "end": 5.642,
+                    "score": 0.841
+                }
+            ]
+        },
+        "visual": {
+            "template": "KEY_LINE",
+            "text": "Geological features, weather patterns, habitability"
+        }
+    },
+    {
+        "scene_id": 14,
+        "type": "TYPOGRAPHY",
+        "duration": 5.58,
+        "audio": {
+            "path": "/audio/14.wav",
+            "words": [
+                {
+                    "word": "Beyond",
+                    "start": 0.192,
+                    "end": 0.534,
+                    "score": 0.864
+                },
+                {
+                    "word": "exoplanets,",
+                    "start": 0.594,
+                    "end": 1.298,
+                    "score": 0.86
+                },
+                {
+                    "word": "the",
+                    "start": 1.479,
+                    "end": 1.579,
+                    "score": 0.672
+                },
+                {
+                    "word": "mission",
+                    "start": 1.599,
+                    "end": 1.861,
+                    "score": 0.81
+                },
+                {
+                    "word": "could",
+                    "start": 1.901,
+                    "end": 2.041,
+                    "score": 0.809
+                },
+                {
+                    "word": "study",
+                    "start": 2.062,
+                    "end": 2.343,
+                    "score": 0.825
+                },
+                {
+                    "word": "interstellar",
+                    "start": 2.403,
+                    "end": 2.966,
+                    "score": 0.825
+                },
+                {
+                    "word": "objects",
+                    "start": 3.087,
+                    "end": 3.449,
+                    "score": 0.815
+                },
+                {
+                    "word": "and",
+                    "start": 3.549,
+                    "end": 3.63,
+                    "score": 0.914
+                },
+                {
+                    "word": "provide",
+                    "start": 3.67,
+                    "end": 4.032,
+                    "score": 0.93
+                },
+                {
+                    "word": "insights",
+                    "start": 4.112,
+                    "end": 4.494,
+                    "score": 0.924
+                },
+                {
+                    "word": "into",
+                    "start": 4.534,
+                    "end": 4.695,
+                    "score": 0.89
+                },
+                {
+                    "word": "dark",
+                    "start": 4.735,
+                    "end": 4.997,
+                    "score": 0.856
+                },
+                {
+                    "word": "matter.",
+                    "start": 5.037,
+                    "end": 5.339,
+                    "score": 0.958
+                }
+            ]
+        },
+        "visual": {
+            "template": "KEY_LINE",
+            "text": "Study interstellar objects, dark matter"
+        }
+    },
+    {
+        "scene_id": 15,
+        "type": "TYPOGRAPHY",
+        "duration": 7.24,
+        "audio": {
+            "path": "/audio/15.wav",
+            "words": [
+                {
+                    "word": "Currently",
+                    "start": 0.212,
+                    "end": 0.594,
+                    "score": 0.903
+                },
+                {
+                    "word": "in",
+                    "start": 0.634,
+                    "end": 0.715,
+                    "score": 0.863
+                },
+                {
+                    "word": "conceptual",
+                    "start": 0.755,
+                    "end": 1.298,
+                    "score": 0.917
+                },
+                {
+                    "word": "development,",
+                    "start": 1.338,
+                    "end": 1.841,
+                    "score": 0.832
+                },
+                {
+                    "word": "the",
+                    "start": 2.002,
+                    "end": 2.102,
+                    "score": 0.784
+                },
+                {
+                    "word": "mission",
+                    "start": 2.142,
+                    "end": 2.384,
+                    "score": 0.898
+                },
+                {
+                    "word": "relies",
+                    "start": 2.404,
+                    "end": 2.746,
+                    "score": 0.78
+                },
+                {
+                    "word": "on",
+                    "start": 2.806,
+                    "end": 2.866,
+                    "score": 0.762
+                },
+                {
+                    "word": "advancements",
+                    "start": 2.927,
+                    "end": 3.47,
+                    "score": 0.8
+                },
+                {
+                    "word": "in",
+                    "start": 3.51,
+                    "end": 3.59,
+                    "score": 0.728
+                },
+                {
+                    "word": "propulsion,",
+                    "start": 3.61,
+                    "end": 4.153,
+                    "score": 0.933
+                },
+                {
+                    "word": "artificial",
+                    "start": 4.515,
+                    "end": 4.998,
+                    "score": 0.862
+                },
+                {
+                    "word": "intelligence,",
+                    "start": 5.038,
+                    "end": 5.661,
+                    "score": 0.861
+                },
+                {
+                    "word": "and",
+                    "start": 5.782,
+                    "end": 5.862,
+                    "score": 0.873
+                },
+                {
+                    "word": "materials",
+                    "start": 5.923,
+                    "end": 6.446,
+                    "score": 0.851
+                },
+                {
+                    "word": "science.",
+                    "start": 6.506,
+                    "end": 6.908,
+                    "score": 0.82
+                }
+            ]
+        },
+        "visual": {
+            "template": "NORMAL",
+            "text": "Conceptual development: propulsion, AI, materials"
+        }
+    },
+    {
+        "scene_id": 16,
+        "type": "TYPOGRAPHY",
+        "duration": 7.04,
+        "audio": {
+            "path": "/audio/16.wav",
+            "words": [
+                {
+                    "word": "Funded",
+                    "start": 0.333,
+                    "end": 0.614,
+                    "score": 0.732
+                },
+                {
+                    "word": "by",
+                    "start": 0.654,
+                    "end": 0.775,
+                    "score": 0.908
+                },
+                {
+                    "word": "NASA's",
+                    "start": 0.855,
+                    "end": 1.257,
+                    "score": 0.653
+                },
+                {
+                    "word": "innovative",
+                    "start": 1.338,
+                    "end": 1.8,
+                    "score": 0.917
+                },
+                {
+                    "word": "advanced",
+                    "start": 1.82,
+                    "end": 2.202,
+                    "score": 0.922
+                },
+                {
+                    "word": "concepts,",
+                    "start": 2.243,
+                    "end": 2.765,
+                    "score": 0.915
+                },
+                {
+                    "word": "it",
+                    "start": 2.987,
+                    "end": 3.047,
+                    "score": 0.754
+                },
+                {
+                    "word": "represents",
+                    "start": 3.087,
+                    "end": 3.63,
+                    "score": 0.736
+                },
+                {
+                    "word": "a",
+                    "start": 3.67,
+                    "end": 3.71,
+                    "score": 0.574
+                },
+                {
+                    "word": "long-term",
+                    "start": 3.751,
+                    "end": 4.233,
+                    "score": 0.862
+                },
+                {
+                    "word": "goal",
+                    "start": 4.253,
+                    "end": 4.494,
+                    "score": 0.914
+                },
+                {
+                    "word": "for",
+                    "start": 4.555,
+                    "end": 4.655,
+                    "score": 0.999
+                },
+                {
+                    "word": "the",
+                    "start": 4.696,
+                    "end": 4.776,
+                    "score": 0.833
+                },
+                {
+                    "word": "next",
+                    "start": 4.816,
+                    "end": 4.997,
+                    "score": 0.911
+                },
+                {
+                    "word": "few",
+                    "start": 5.057,
+                    "end": 5.218,
+                    "score": 0.761
+                },
+                {
+                    "word": "decades",
+                    "start": 5.279,
+                    "end": 5.64,
+                    "score": 0.862
+                },
+                {
+                    "word": "of",
+                    "start": 5.681,
+                    "end": 5.741,
+                    "score": 0.75
+                },
+                {
+                    "word": "space",
+                    "start": 5.801,
+                    "end": 6.083,
+                    "score": 0.875
+                },
+                {
+                    "word": "exploration.",
+                    "start": 6.143,
+                    "end": 6.766,
+                    "score": 0.884
+                }
+            ]
+        },
+        "visual": {
+            "template": "NORMAL",
+            "text": "Funded by NASA Innovative Advanced Concepts"
+        }
+    }
+]

@@ -10,6 +10,7 @@
     "@remotion/cli": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "recharts": "^3.10.1",
     "remotion": "latest"
   },
   "devDependencies": {
