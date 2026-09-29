@@ -1,7 +1,7 @@
 ![Logo](.github/images/logo.png)
 
 [![Mistral AI](https://img.shields.io/badge/Built%20with-Mistral%20AI-9B59B6?logo=mistralai&logoColor=orange)](https://mistral.ai/)
-[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)](https://www.python.otg)
+[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)](https://www.python.org)
 [![LangGraph](https://img.shields.io/badge/LangGraph-Multi--Agent-blue?logo=langgraph&logoColor=skyblue)](https://langchain.com/langgraph)
 
 > [!IMPORTANT]
@@ -19,18 +19,6 @@ VPipeline is an AI-powered video creation pipeline that transforms a single topi
 Traditional video creation requires researching, writing, recording, editing, sourcing visuals, synchronizing narration, and rendering everything together. 
 
 Pipeline aims to automate that entire workflow through specialized AI agents.
-
----
-
-## ToDo
-
-> Yes, I use this for my daily todo.
-
-<code> Completed TODOs <a href="https://github.com/DevankSinghChaudhary/VPipeline/blob/main/COMPLETED.md">COMPLETED.md</a></code>
-
-**19 Sept**
-- [x] Plan the renderer structure for tomorrow's work
-  - Save @ `/documents/structure.txt`
 
 ---
 ## Planned Features 
