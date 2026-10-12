@@ -13,6 +13,11 @@
 
 The project is designed to automate the repetitive parts of documentary production through specialized stages for research, writing, narration, visual planning, asset handling, composition, and rendering.
 
+## Demo
+
+https://github.com/user-attachments/assets/8d8c32bf-748f-4eac-b3ed-eff7b8ed8f90
+
+
 ## Current Status
 
 **Current working pipeline:**
@@ -179,10 +184,6 @@ The architecture, models, visual system, and interfaces may change significantly
 [ ] MP4 rendering
 [ ] Specialized decision models
 ```
-
-## Demo
-
-https://github.com/user-attachments/assets/8d8c32bf-748f-4eac-b3ed-eff7b8ed8f90
 
 
 ## Contributing
