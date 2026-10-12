@@ -29,6 +29,7 @@ dependencies = [
     "soundfile>=0.14.0",
     "tinyfish>=0.4.0",
     "trafilatura>=2.1.0",
+    "typer>=0.27.1",
     "uvicorn>=0.51.0",
     "whisperx>=3.4.5",
 ]
@@ -36,6 +37,9 @@ dependencies = [
 [build-system]
 requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
+
+[project.scripts]
+pipeline = "vcp.cli:app"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

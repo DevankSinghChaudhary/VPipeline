@@ -180,6 +180,10 @@ The architecture, models, visual system, and interfaces may change significantly
 [ ] Specialized decision models
 ```
 
+## Demo
+
+![Demo Video](.github/videos/VPipeline.mp4)
+
 ## Contributing
 
 VPipeline is open source. Contributions, experimentation, and ideas are welcome.

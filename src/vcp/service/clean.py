@@ -22,10 +22,12 @@ PROJECT_ROOT = find_project_root()
 AUDIO_PATH = PROJECT_ROOT / os.getenv("AUDIO_PATH")
 AUDIO = PROJECT_ROOT / "renderer/public/audio"
 DATA = PROJECT_ROOT / "renderer/public/data"
+MANIFEST = PROJECT_ROOT / "renderer/src/data"
 
 print(f"Cleaning {AUDIO}")
 print(f"Cleaning {AUDIO_PATH}")
 print(f"Cleaning {DATA}")
+print(f"Cleaning {MANIFEST}")
 
 
 def clear_audio():
@@ -35,7 +37,10 @@ def clear_audio():
         shutil.rmtree(AUDIO)
     if DATA.exists():
         shutil.rmtree(DATA)
+    if MANIFEST.exists():
+        shutil.rmtree(MANIFEST)
 
     AUDIO_PATH.mkdir(parents=True, exist_ok=True)
     AUDIO.mkdir(parents=True, exist_ok=True)
     DATA.mkdir(parents=True, exist_ok=True)
+    MANIFEST.mkdir(parents=True, exist_ok=True)

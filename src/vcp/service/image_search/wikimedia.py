@@ -24,7 +24,8 @@ ALLOWED_MIME = {
     "image/webp",
 }
 
-DOWNLOAD_PATH = root.find() / "renderer/public/images"
+path = root()
+DOWNLOAD_PATH = path.find("renderer/public/images")
 
 # Global session for downloads with retry logic
 download_session = requests.Session()

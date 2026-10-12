@@ -8,8 +8,8 @@ from langchain.agents import create_agent
 from vcp.chat import ChatVPipeline
 from vcp.prompts import SystemPrompt
 from vcp.schemas import ResearchResponse
-from vcp.state import global_state
-from vcp.utils import read, root, web_search
+from vcp.state import GlobalState
+from vcp.utils import root, web_search
 
 load_dotenv()
 
@@ -31,14 +31,13 @@ model = ChatVPipeline(
 # base_url=os.environ["KIRA_AI_BASE"],
 # )
 
-
 # SKILL
-BASE_DIR = root.find()
-SKILL_PATH = BASE_DIR / "src" / "vcp" / "skills"
-RESEARCH_SKILL = read(SKILL_PATH / "research.md")
+path = root()
+SKILL_DIR = path.find("src/vcp/skills")
+RESEARCH_SKILL = path.find(f"{SKILL_DIR}/research.md")
 
 
-async def researcher(state: global_state):
+async def researcher(state: GlobalState):
     print("[AGENT] Researcher | Started Researching")
     st = time.time()
     topic = state["topic"]

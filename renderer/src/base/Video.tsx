@@ -1,29 +1,33 @@
 import React from "react";
-import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
-import { rendererManifest } from "./data/manifest";
-import { SceneRenderer } from "./scenes/SceneRenderer";
-import { getSceneDurationInFrames } from "./utils/timeline";
+import { AbsoluteFill, Sequence, Audio, staticFile } from "remotion";
+import type { RendererManifest } from "./data/types";
+import { DebugTypographyScene } from "../debug/DebugTypographyScene";
 
-export const Video: React.FC = () => {
-  let currentFrame = 0;
+type Props = {
+  manifest: RendererManifest;
+};
+
+const FPS = 30;
+
+export const Video: React.FC<Props> = ({ manifest }) => {
+  let startFrame = 0;
 
   return (
     <AbsoluteFill>
-      {rendererManifest.map((scene) => {
-        const durationInFrames = getSceneDurationInFrames(scene);
-        const from = currentFrame;
-        currentFrame += durationInFrames;
+      <Audio src={staticFile("bgMusic/bg.mp3")} volume={0.1} />
+      {manifest.map((scene) => {
+        const durationInFrames = Math.ceil(scene.duration * FPS);
+        const sceneStart = startFrame;
+
+        startFrame += durationInFrames;
 
         return (
           <Sequence
             key={scene.scene_id}
-            from={from}
+            from={sceneStart}
             durationInFrames={durationInFrames}
           >
-            <AbsoluteFill>
-              <SceneRenderer scene={scene} />
-              <Audio src={staticFile(scene.audio.path)} />
-            </AbsoluteFill>
+            <DebugTypographyScene scene={scene} />
           </Sequence>
         );
       })}

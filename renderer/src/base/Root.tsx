@@ -1,22 +1,27 @@
-import React from "react";
 import { Composition } from "remotion";
+import manifest from "../data/RendererManifest.json";
+
 import { Video } from "./Video";
-import { rendererManifest } from "./data/manifest";
-import { FPS, getTotalDurationInFrames } from "./utils/timeline";
 
-import { LowerThirdPreview } from "./preview/LowerThird";
+const FPS = 30;
 
-export const RemotionRoot: React.FC = () => {
+const totalDuration = manifest.reduce(
+  (total, scene) => total + scene.duration,
+  0
+);
+
+export const RemotionRoot = () => {
   return (
-    <>
-      <Composition
-        id="LowerThirdPreview"
-        component={LowerThirdPreview}
-        durationInFrames={90}
-        fps={30}
-        width={1920}
-        height={1080}
-      />
-    </>
+    <Composition
+      id="VPipeline"
+      component={Video}
+      durationInFrames={Math.ceil(totalDuration * FPS)}
+      fps={FPS}
+      width={1920}
+      height={1080}
+      defaultProps={{
+        manifest,
+      }}
+    />
   );
 };

@@ -4,10 +4,9 @@ from dotenv import load_dotenv
 from langchain.agents import create_agent
 
 from vcp.chat import ChatVPipeline
-from vcp.prompts import SystemPrompt
 from vcp.schemas import ScriptResponse
 from vcp.state import GlobalState
-from vcp.utils import read, root, timed
+from vcp.utils import root, timed
 
 load_dotenv()
 
@@ -29,13 +28,22 @@ model = ChatVPipeline(
 #   base_url=os.environ["KIRA_AI_BASE"],
 # )
 
-BASE_DIR = root.find()
-SKILL_PATH = BASE_DIR / "src/vcp/skills/humanscope"
-RESEARCH_SKILL = read(SKILL_PATH / "SKILL.md")
+path = root()
+SKILL_PATH = path.find("src/vcp/skills/humanscope")
+SYSTEM_PATH = path.find("src/vcp/nodes/script/prompt.md")
 
-SYSTEM_PROMPT = (
-    SystemPrompt.load("script") + "\n\n" + "=" * 20 + "\n\n" + RESEARCH_SKILL
-)
+# RESEARCH_SKILL = read(SKILL_PATH / "SKILL.md")
+
+# SYSTEM_PROMPT = (
+#   SystemPrompt.load("script") + "\n\n" + "=" * 20 + "\n\n" + RESEARCH_SKILL
+# )
+
+with open(
+    SYSTEM_PATH,
+    "r",
+    encoding="utf-8",
+) as file:
+    SYSTEM_PROMPT = file.read()
 
 
 @timed
@@ -93,11 +101,6 @@ def writer(state: GlobalState):
     * background
     * broad context
     * vague historical framing
-
-    LENGTH:
-
-    * Target: 50-60 words
-    * Hard max: 80 words
 
     STYLE:
     Neutral.

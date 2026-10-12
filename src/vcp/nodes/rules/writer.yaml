@@ -1,0 +1,8 @@
+# Standards @ vcp/nodes/standards/
+
+standards:
+  - id: asd-ste100
+    description: "Controlled-language standard for producing clear, concise, and unambiguous technical English through restricted vocabulary, simplified grammar, and consistent writing rules."
+    enforcement: 0.8
+
+  - id:

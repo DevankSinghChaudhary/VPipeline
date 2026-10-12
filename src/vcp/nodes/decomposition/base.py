@@ -19,7 +19,7 @@ model = ChatVPipeline(
 )
 
 model = ChatVPipeline(
-    model="mercury-2",
+    model="mercury-2.5",
     base_url=os.environ["INCEPTION_URL"],
     api_key=os.environ["INCEPTION"],
 )

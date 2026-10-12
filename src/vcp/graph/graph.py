@@ -16,20 +16,15 @@ from vcp.nodes import (
 from vcp.service import (
     clear_audio,
     fanout_image,
-    fanout_tts,
     omni,
     search_images,
-    tts_batch_complete,
     whisperx_engine,
 )
 from vcp.state import GlobalState
 
-from .user import user_topic
-
 
 # Main function of graph.
-async def graph(state: GlobalState):
-    topic = user_topic()
+async def graph(state: GlobalState, topic: str | None = None):
     start = time.time()
     clear_audio()
     # Defining State of the graph {State}
@@ -41,7 +36,6 @@ async def graph(state: GlobalState):
     builder.add_node("Formatter", formatter)
     builder.add_node("Visualizer", visualizer)
     builder.add_node("Image", search_images)
-    builder.add_node("TTSBatchComplete", tts_batch_complete)
     builder.add_node("Omni", omni)
     builder.add_node("Merger", merger)
     builder.add_node("Decompositioner", decompositioner)
@@ -57,14 +51,12 @@ async def graph(state: GlobalState):
     builder.add_edge(START, "Researcher")
     builder.add_edge("Researcher", "Writer")
     builder.add_edge("Writer", "Formatter")
-    builder.add_conditional_edges("Formatter", fanout_tts)
-    builder.add_edge("Omni", "TTSBatchComplete")
+    builder.add_edge("Formatter", "Omni")
     builder.add_edge("Formatter", "Visualizer")
     builder.add_conditional_edges("Visualizer", fanout_image)
-    builder.add_conditional_edges("TTSBatchComplete", fanout_tts)
     builder.add_edge("Visualizer", "Sorter")
-    builder.add_edge("Sorter", "Decompositioner")
     builder.add_edge("Omni", "Whisper")
+    builder.add_edge("Sorter", "Decompositioner")
     builder.add_edge("Whisper", "RendererManifest")
     builder.add_edge("RendererManifest", END)
     # builder.add_edge("LINK", "Whisper")

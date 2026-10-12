@@ -1,13 +1,13 @@
 from pathlib import Path
 
-from vcp.state import global_state
+from vcp.state import GlobalState
 from vcp.utils import timed
 
 from .base import WhisperX
 
 
 @timed
-def whisperx_engine(state: global_state):
+def whisperx_engine(state: GlobalState):
     engine = WhisperX(
         device="cuda",
         model_name="small",

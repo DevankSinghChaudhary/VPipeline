@@ -1,6 +1,6 @@
 import json
 
-from vcp.state import global_state
+from vcp.state import GlobalState
 from vcp.utils import timed
 
 # for _script in script:
@@ -8,7 +8,7 @@ from vcp.utils import timed
 
 
 @timed
-def matcher(state: global_state):
+def matcher(state: GlobalState):
     original_script = state["original_script"].script
     whisper_script = state["stt"]
 

@@ -3,12 +3,13 @@ from pathlib import Path
 
 from mutagen import File
 
-from vcp.state import global_state
+from vcp.state import GlobalState
 from vcp.utils import root
 
-MANIFEST_PATH = root.find() / "renderer/data"
-MANIFEST_FILE = MANIFEST_PATH / "RendererManifest.json"
-PUBLIC_PATH = root.find() / "renderer/public"
+path = root()
+MANIFEST_PATH = path.find("renderer/src/data")
+MANIFEST_FILE = path.find("renderer/src/data/RendererManifest.json")
+PUBLIC_PATH = path.find("renderer/public")
 
 
 def get_audio_duration(audio_path: str) -> float:
@@ -79,7 +80,7 @@ def build_visual(scene) -> dict:
     )
 
 
-def manifest(state: global_state):
+def manifest(state: GlobalState):
     scenes = state["decomposition"].scene
     audio_data = state["stt"]
 

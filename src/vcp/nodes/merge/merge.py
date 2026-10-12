@@ -6,7 +6,8 @@ from vcp.service import clear_audio
 from vcp.state import GlobalState
 from vcp.utils import root, timed
 
-MERGED_PATH = root.find() / "renderer/public/audio/audio.mp3"
+_path = root()
+MERGED_PATH = _path.find("renderer/public/audio/audio.mp3")
 
 
 @timed
