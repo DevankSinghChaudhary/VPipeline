@@ -182,7 +182,7 @@ The architecture, models, visual system, and interfaces may change significantly
 
 ## Demo
 
-![Demo Video](.github/videos/VPipeline.mp4)
+![Demo Video](https://go.screenpal.com/u/EK5h/vpipeline)
 
 ## Contributing
 
