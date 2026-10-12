@@ -182,7 +182,7 @@ The architecture, models, visual system, and interfaces may change significantly
 
 ## Demo
 
-<video src="https://github.com/user-attachments/assets/8d8c32bf-748f-4eac-b3ed-eff7b8ed8f90" controls playsinline></video>
+<video src="https://github.com/user-attachments/assets/8d8c32bf-748f-4eac-b3ed-eff7b8ed8f90"></video>
 
 
 ## Contributing
