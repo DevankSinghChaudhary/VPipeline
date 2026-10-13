@@ -18,6 +18,8 @@ The project is designed to automate the repetitive parts of documentary producti
 https://github.com/user-attachments/assets/8d8c32bf-748f-4eac-b3ed-eff7b8ed8f90
 
 
+https://github.com/user-attachments/assets/bd2bc8a4-c536-4131-aec5-c658e4318188
+
 ## Current Status
 
 **Current working pipeline:**

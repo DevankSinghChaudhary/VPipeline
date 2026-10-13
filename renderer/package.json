@@ -7,7 +7,10 @@
     "render": "remotion render VPipeline out/video.mp4"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.9",
     "@remotion/cli": "latest",
+    "@remotion/google-fonts": "^4.0.535",
+    "@remotion/three": "4.0.526",
     "react": "latest",
     "react-dom": "latest",
     "recharts": "^3.10.1",

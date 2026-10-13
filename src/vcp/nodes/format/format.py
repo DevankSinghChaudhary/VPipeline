@@ -58,6 +58,7 @@ def formatter(state: GlobalState) -> dict:
         - Improve sentence rhythm.
         - Improve listening clarity.
         - Preserve every factual statement.
+        - Don't remove grammar rules, like in place of question mark, place question mark don't remove it.
 
         You may:
 

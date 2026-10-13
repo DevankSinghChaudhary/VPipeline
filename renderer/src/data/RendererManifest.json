@@ -2,117 +2,111 @@
     {
         "scene_id": 1,
         "type": "IMAGE_WITH_TEXT",
-        "duration": 6.77,
+        "duration": 6.38,
         "audio": {
             "path": "/audio/1.wav",
             "words": [
                 {
                     "word": "In",
-                    "start": 0.514,
-                    "end": 0.595,
-                    "score": 0.83
+                    "start": 0.454,
+                    "end": 0.755,
+                    "score": 0.484
                 },
                 {
                     "word": "1950,",
-                    "start": 0.696,
-                    "end": 1.401,
-                    "score": 0.741
+                    "start": 0.816,
+                    "end": 1.178,
+                    "score": 0.867
                 },
                 {
                     "word": "physicist",
-                    "start": 1.441,
-                    "end": 1.924,
-                    "score": 0.845
+                    "start": 1.238,
+                    "end": 1.721,
+                    "score": 0.921
                 },
                 {
                     "word": "Enrico",
-                    "start": 1.964,
-                    "end": 2.327,
-                    "score": 0.584
+                    "start": 1.762,
+                    "end": 2.124,
+                    "score": 0.73
                 },
                 {
                     "word": "Fermi",
-                    "start": 2.367,
-                    "end": 2.689,
-                    "score": 0.893
+                    "start": 2.184,
+                    "end": 2.506,
+                    "score": 0.818
                 },
                 {
                     "word": "posed",
-                    "start": 2.73,
-                    "end": 2.971,
-                    "score": 0.7
+                    "start": 2.567,
+                    "end": 2.808,
+                    "score": 0.981
                 },
                 {
                     "word": "a",
-                    "start": 2.992,
-                    "end": 3.032,
-                    "score": 0.619
+                    "start": 2.848,
+                    "end": 2.888,
+                    "score": 0.501
+                },
+                {
+                    "word": "simple",
+                    "start": 2.929,
+                    "end": 3.21,
+                    "score": 0.87
                 },
                 {
                     "word": "question",
-                    "start": 3.092,
-                    "end": 3.535,
-                    "score": 0.863
+                    "start": 3.251,
+                    "end": 3.613,
+                    "score": 0.822
                 },
                 {
                     "word": "during",
-                    "start": 3.576,
-                    "end": 3.817,
-                    "score": 0.802
+                    "start": 3.633,
+                    "end": 3.854,
+                    "score": 0.749
                 },
                 {
                     "word": "a",
-                    "start": 3.858,
-                    "end": 3.898,
-                    "score": 0.497
+                    "start": 3.895,
+                    "end": 3.935,
+                    "score": 0.498
                 },
                 {
                     "word": "lunch",
-                    "start": 3.938,
-                    "end": 4.16,
-                    "score": 0.933
+                    "start": 3.955,
+                    "end": 4.176,
+                    "score": 0.754
                 },
                 {
-                    "word": "discussion",
-                    "start": 4.2,
-                    "end": 4.643,
-                    "score": 0.886
+                    "word": "conversation.",
+                    "start": 4.217,
+                    "end": 4.901,
+                    "score": 0.937
                 },
                 {
-                    "word": "at",
-                    "start": 4.683,
-                    "end": 4.744,
-                    "score": 0.756
+                    "word": "Where",
+                    "start": 5.283,
+                    "end": 5.484,
+                    "score": 0.84
                 },
                 {
-                    "word": "Los",
-                    "start": 4.764,
-                    "end": 4.965,
-                    "score": 0.854
+                    "word": "is",
+                    "start": 5.545,
+                    "end": 5.625,
+                    "score": 0.565
                 },
                 {
-                    "word": "Alamos",
-                    "start": 5.066,
-                    "end": 5.469,
-                    "score": 0.872
-                },
-                {
-                    "word": "National",
-                    "start": 5.509,
-                    "end": 5.892,
-                    "score": 0.798
-                },
-                {
-                    "word": "Laboratory.",
-                    "start": 5.932,
-                    "end": 6.516,
-                    "score": 0.834
+                    "word": "everybody?",
+                    "start": 5.706,
+                    "end": 6.169,
+                    "score": 0.964
                 }
             ]
         },
         "visual": {
             "template": "key_line",
-            "text": null,
+            "text": "Where is everybody?",
             "image": [
                 "Enrico Fermi portrait"
             ]
@@ -120,1764 +114,2135 @@
     },
     {
         "scene_id": 2,
-        "type": "IMAGE_WITH_TEXT",
-        "duration": 9.14,
+        "type": "IMAGE",
+        "duration": 5.7,
         "audio": {
             "path": "/audio/2.wav",
             "words": [
                 {
-                    "word": "Given",
-                    "start": 0.192,
-                    "end": 0.412,
-                    "score": 0.835
+                    "word": "His",
+                    "start": 0.212,
+                    "end": 0.332,
+                    "score": 0.631
                 },
                 {
-                    "word": "the",
-                    "start": 0.452,
-                    "end": 0.533,
-                    "score": 0.831
-                },
-                {
-                    "word": "vast",
-                    "start": 0.553,
-                    "end": 0.813,
-                    "score": 0.767
-                },
-                {
-                    "word": "number",
-                    "start": 0.874,
-                    "end": 1.094,
+                    "word": "question",
+                    "start": 0.373,
+                    "end": 0.754,
                     "score": 0.918
                 },
                 {
-                    "word": "of",
-                    "start": 1.114,
-                    "end": 1.175,
-                    "score": 0.75
+                    "word": "highlighted",
+                    "start": 0.795,
+                    "end": 1.176,
+                    "score": 0.91
                 },
                 {
-                    "word": "stars",
-                    "start": 1.235,
-                    "end": 1.556,
-                    "score": 0.68
+                    "word": "a",
+                    "start": 1.217,
+                    "end": 1.257,
+                    "score": 0.5
                 },
                 {
-                    "word": "in",
-                    "start": 1.596,
-                    "end": 1.656,
-                    "score": 0.792
+                    "word": "contradiction.",
+                    "start": 1.297,
+                    "end": 1.94,
+                    "score": 0.837
                 },
                 {
-                    "word": "the",
-                    "start": 1.676,
-                    "end": 1.756,
-                    "score": 0.832
+                    "word": "The",
+                    "start": 2.382,
+                    "end": 2.483,
+                    "score": 0.881
                 },
                 {
                     "word": "Milky",
-                    "start": 1.797,
-                    "end": 2.098,
-                    "score": 0.888
+                    "start": 2.503,
+                    "end": 2.804,
+                    "score": 0.857
                 },
                 {
-                    "word": "Way,",
-                    "start": 2.138,
-                    "end": 2.358,
-                    "score": 0.87
+                    "word": "Way",
+                    "start": 2.844,
+                    "end": 3.025,
+                    "score": 0.732
                 },
                 {
-                    "word": "estimated",
-                    "start": 2.86,
-                    "end": 3.321,
-                    "score": 0.833
+                    "word": "contains",
+                    "start": 3.065,
+                    "end": 3.467,
+                    "score": 0.923
                 },
                 {
-                    "word": "at",
-                    "start": 3.402,
-                    "end": 3.683,
-                    "score": 0.739
-                },
-                {
-                    "word": "100",
-                    "start": 3.803,
-                    "end": 4.024,
-                    "score": 0.773
-                },
-                {
-                    "word": "to",
-                    "start": 4.064,
-                    "end": 4.385,
-                    "score": 0.44
-                },
-                {
-                    "word": "400",
-                    "start": 4.465,
-                    "end": 4.706,
-                    "score": 0.304
-                },
-                {
-                    "word": "billion,",
-                    "start": 4.746,
-                    "end": 5.127,
-                    "score": 0.808
-                },
-                {
-                    "word": "Wai",
-                    "start": 5.428,
-                    "end": 5.609,
-                    "score": 0.26
-                },
-                {
-                    "word": "had",
-                    "start": 5.649,
-                    "end": 5.769,
-                    "score": 0.675
-                },
-                {
-                    "word": "no",
-                    "start": 5.809,
-                    "end": 5.95,
-                    "score": 0.796
-                },
-                {
-                    "word": "evidence",
-                    "start": 6.05,
-                    "end": 6.411,
-                    "score": 0.865
+                    "word": "billions",
+                    "start": 3.548,
+                    "end": 3.889,
+                    "score": 0.97
                 },
                 {
                     "word": "of",
-                    "start": 6.451,
-                    "end": 6.512,
-                    "score": 0.753
+                    "start": 3.93,
+                    "end": 3.99,
+                    "score": 0.788
                 },
                 {
-                    "word": "intelligent",
-                    "start": 6.572,
-                    "end": 7.053,
-                    "score": 0.92
+                    "word": "stars,",
+                    "start": 4.05,
+                    "end": 4.472,
+                    "score": 0.773
                 },
                 {
-                    "word": "extraterrestrial",
-                    "start": 7.154,
-                    "end": 7.916,
-                    "score": 0.896
+                    "word": "many",
+                    "start": 4.573,
+                    "end": 4.794,
+                    "score": 0.944
                 },
                 {
-                    "word": "life",
-                    "start": 7.976,
-                    "end": 8.177,
-                    "score": 0.861
+                    "word": "with",
+                    "start": 4.834,
+                    "end": 4.974,
+                    "score": 0.75
                 },
                 {
-                    "word": "been",
-                    "start": 8.237,
-                    "end": 8.378,
-                    "score": 0.88
-                },
-                {
-                    "word": "detected.",
-                    "start": 8.418,
-                    "end": 8.859,
-                    "score": 0.947
+                    "word": "planets.",
+                    "start": 5.015,
+                    "end": 5.417,
+                    "score": 0.91
                 }
             ]
         },
         "visual": {
-            "template": "key_line",
-            "text": null,
+            "template": "default",
             "image": [
-                "Milky Way galaxy"
+                "Milky Way galaxy center"
             ]
         }
     },
     {
         "scene_id": 3,
         "type": "TYPOGRAPHY",
-        "duration": 2.97,
+        "duration": 3.95,
         "audio": {
             "path": "/audio/3.wav",
             "words": [
                 {
-                    "word": "This",
-                    "start": 0.195,
-                    "end": 0.356,
-                    "score": 0.783
+                    "word": "Yet",
+                    "start": 0.54,
+                    "end": 0.661,
+                    "score": 0.856
                 },
                 {
-                    "word": "contradiction",
-                    "start": 0.416,
-                    "end": 1.018,
-                    "score": 0.898
+                    "word": "we",
+                    "start": 0.681,
+                    "end": 0.761,
+                    "score": 0.998
                 },
                 {
-                    "word": "became",
-                    "start": 1.098,
-                    "end": 1.399,
-                    "score": 0.838
+                    "word": "have",
+                    "start": 0.802,
+                    "end": 0.902,
+                    "score": 0.987
                 },
                 {
-                    "word": "known",
-                    "start": 1.439,
-                    "end": 1.639,
-                    "score": 0.756
+                    "word": "no",
+                    "start": 0.942,
+                    "end": 1.083,
+                    "score": 0.842
                 },
                 {
-                    "word": "as",
-                    "start": 1.68,
-                    "end": 1.76,
-                    "score": 0.83
+                    "word": "confirmed",
+                    "start": 1.123,
+                    "end": 1.545,
+                    "score": 0.828
                 },
                 {
-                    "word": "the",
-                    "start": 1.78,
-                    "end": 1.86,
-                    "score": 0.835
+                    "word": "evidence",
+                    "start": 1.666,
+                    "end": 1.988,
+                    "score": 0.893
                 },
                 {
-                    "word": "Fermi",
-                    "start": 1.9,
-                    "end": 2.181,
-                    "score": 0.732
+                    "word": "of",
+                    "start": 2.028,
+                    "end": 2.088,
+                    "score": 0.754
                 },
                 {
-                    "word": "Paradox.",
-                    "start": 2.201,
-                    "end": 2.743,
-                    "score": 0.87
+                    "word": "extraterrestrial",
+                    "start": 2.169,
+                    "end": 2.853,
+                    "score": 0.875
+                },
+                {
+                    "word": "civilizations.",
+                    "start": 2.893,
+                    "end": 3.617,
+                    "score": 0.78
                 }
             ]
         },
         "visual": {
             "template": "KEY_LINE",
-            "text": "Fermi Paradox"
+            "text": "No confirmed evidence of extraterrestrial civilizations"
         }
     },
     {
         "scene_id": 4,
-        "type": "IMAGE",
-        "duration": 7.35,
+        "type": "TYPOGRAPHY",
+        "duration": 7.61,
         "audio": {
             "path": "/audio/4.wav",
             "words": [
                 {
-                    "word": "The",
-                    "start": 0.192,
-                    "end": 0.292,
-                    "score": 0.814
+                    "word": "Fermi",
+                    "start": 0.252,
+                    "end": 0.573,
+                    "score": 0.686
                 },
                 {
-                    "word": "Milky",
-                    "start": 0.313,
-                    "end": 0.634,
-                    "score": 0.839
+                    "word": "estimated",
+                    "start": 0.654,
+                    "end": 1.116,
+                    "score": 0.805
                 },
                 {
-                    "word": "Way",
-                    "start": 0.695,
-                    "end": 0.896,
-                    "score": 0.802
+                    "word": "that",
+                    "start": 1.156,
+                    "end": 1.277,
+                    "score": 0.874
                 },
                 {
-                    "word": "hosts",
-                    "start": 0.956,
-                    "end": 1.218,
-                    "score": 0.827
+                    "word": "even",
+                    "start": 1.357,
+                    "end": 1.518,
+                    "score": 0.852
                 },
                 {
-                    "word": "many",
-                    "start": 1.258,
-                    "end": 1.479,
-                    "score": 0.837
+                    "word": "with",
+                    "start": 1.558,
+                    "end": 1.678,
+                    "score": 0.875
                 },
                 {
-                    "word": "stars",
-                    "start": 1.519,
-                    "end": 1.841,
-                    "score": 0.653
+                    "word": "slow",
+                    "start": 1.739,
+                    "end": 1.96,
+                    "score": 0.882
                 },
                 {
-                    "word": "older",
-                    "start": 1.962,
-                    "end": 2.183,
-                    "score": 0.705
+                    "word": "expansion,",
+                    "start": 2.0,
+                    "end": 2.603,
+                    "score": 0.887
                 },
                 {
-                    "word": "than",
-                    "start": 2.203,
-                    "end": 2.324,
-                    "score": 0.89
+                    "word": "an",
+                    "start": 2.904,
+                    "end": 2.984,
+                    "score": 0.878
                 },
                 {
-                    "word": "the",
-                    "start": 2.364,
-                    "end": 2.444,
-                    "score": 0.834
+                    "word": "advanced",
+                    "start": 3.024,
+                    "end": 3.406,
+                    "score": 0.972
                 },
                 {
-                    "word": "Sun,",
-                    "start": 2.505,
-                    "end": 2.766,
+                    "word": "civilization",
+                    "start": 3.466,
+                    "end": 4.149,
                     "score": 0.859
                 },
                 {
-                    "word": "increasing",
-                    "start": 3.169,
-                    "end": 3.611,
-                    "score": 0.9
+                    "word": "should",
+                    "start": 4.19,
+                    "end": 4.33,
+                    "score": 0.917
                 },
                 {
-                    "word": "the",
-                    "start": 3.651,
-                    "end": 3.712,
+                    "word": "have",
+                    "start": 4.37,
+                    "end": 4.451,
                     "score": 1.0
                 },
                 {
-                    "word": "likelihood",
-                    "start": 3.752,
-                    "end": 4.214,
-                    "score": 0.848
+                    "word": "colonized",
+                    "start": 4.491,
+                    "end": 4.993,
+                    "score": 0.826
+                },
+                {
+                    "word": "the",
+                    "start": 5.033,
+                    "end": 5.094,
+                    "score": 0.999
+                },
+                {
+                    "word": "galaxy",
+                    "start": 5.134,
+                    "end": 5.616,
+                    "score": 0.901
+                },
+                {
+                    "word": "within",
+                    "start": 5.676,
+                    "end": 5.917,
+                    "score": 0.91
+                },
+                {
+                    "word": "tens",
+                    "start": 5.978,
+                    "end": 6.239,
+                    "score": 0.945
                 },
                 {
                     "word": "of",
-                    "start": 4.234,
-                    "end": 4.295,
+                    "start": 6.299,
+                    "end": 6.359,
                     "score": 0.75
                 },
                 {
-                    "word": "Earth-like",
-                    "start": 4.415,
-                    "end": 4.818,
-                    "score": 0.814
+                    "word": "millions",
+                    "start": 6.42,
+                    "end": 6.821,
+                    "score": 0.9
                 },
                 {
-                    "word": "planets",
-                    "start": 4.858,
-                    "end": 5.24,
-                    "score": 0.868
+                    "word": "of",
+                    "start": 6.882,
+                    "end": 6.942,
+                    "score": 0.756
                 },
                 {
-                    "word": "forming",
-                    "start": 5.3,
-                    "end": 5.642,
-                    "score": 0.83
-                },
-                {
-                    "word": "earlier",
-                    "start": 5.743,
-                    "end": 6.085,
-                    "score": 0.777
-                },
-                {
-                    "word": "in",
-                    "start": 6.125,
-                    "end": 6.185,
-                    "score": 0.996
-                },
-                {
-                    "word": "cosmic",
-                    "start": 6.226,
-                    "end": 6.648,
-                    "score": 0.823
-                },
-                {
-                    "word": "history.",
-                    "start": 6.688,
-                    "end": 7.111,
-                    "score": 0.873
+                    "word": "years.",
+                    "start": 7.002,
+                    "end": 7.304,
+                    "score": 0.861
                 }
             ]
         },
         "visual": {
-            "template": "default",
-            "image": [
-                "Milky Way galaxy"
-            ]
+            "template": "KEY_LINE",
+            "text": "Advanced civilization should have colonized galaxy"
         }
     },
     {
         "scene_id": 5,
         "type": "TYPOGRAPHY",
-        "duration": 6.74,
+        "duration": 6.32,
         "audio": {
             "path": "/audio/5.wav",
             "words": [
                 {
-                    "word": "Yet,",
-                    "start": 0.212,
-                    "end": 0.413,
-                    "score": 0.899
-                },
-                {
-                    "word": "despite",
-                    "start": 0.493,
-                    "end": 0.875,
-                    "score": 0.796
-                },
-                {
-                    "word": "these",
-                    "start": 0.935,
-                    "end": 1.096,
-                    "score": 0.778
-                },
-                {
-                    "word": "probabilities,",
-                    "start": 1.136,
-                    "end": 1.84,
-                    "score": 0.902
-                },
-                {
-                    "word": "no",
-                    "start": 2.121,
-                    "end": 2.242,
-                    "score": 1.0
-                },
-                {
-                    "word": "confirmed",
-                    "start": 2.302,
-                    "end": 2.704,
-                    "score": 0.863
-                },
-                {
-                    "word": "signals",
-                    "start": 2.744,
-                    "end": 3.106,
-                    "score": 0.711
-                },
-                {
-                    "word": "or",
-                    "start": 3.146,
-                    "end": 3.227,
-                    "score": 0.7
-                },
-                {
-                    "word": "artifacts",
-                    "start": 3.307,
-                    "end": 3.789,
-                    "score": 0.802
+                    "word": "Instead",
+                    "start": 0.232,
+                    "end": 0.533,
+                    "score": 0.854
                 },
                 {
                     "word": "of",
-                    "start": 3.85,
-                    "end": 3.91,
-                    "score": 0.75
+                    "start": 0.574,
+                    "end": 0.614,
+                    "score": 1.0
                 },
                 {
-                    "word": "extraterrestrial",
-                    "start": 4.051,
-                    "end": 4.794,
-                    "score": 0.777
+                    "word": "seeing",
+                    "start": 0.674,
+                    "end": 0.935,
+                    "score": 0.806
                 },
                 {
-                    "word": "civilizations",
-                    "start": 4.835,
-                    "end": 5.578,
-                    "score": 0.925
+                    "word": "this",
+                    "start": 0.956,
+                    "end": 1.096,
+                    "score": 0.868
                 },
                 {
-                    "word": "have",
-                    "start": 5.638,
-                    "end": 5.759,
-                    "score": 0.996
+                    "word": "as",
+                    "start": 1.157,
+                    "end": 1.257,
+                    "score": 0.614
                 },
                 {
-                    "word": "been",
-                    "start": 5.799,
-                    "end": 5.94,
-                    "score": 0.876
+                    "word": "a",
+                    "start": 1.297,
+                    "end": 1.317,
+                    "score": 0.998
                 },
                 {
-                    "word": "observed.",
-                    "start": 6.0,
-                    "end": 6.483,
-                    "score": 0.831
+                    "word": "paradox,",
+                    "start": 1.358,
+                    "end": 1.94,
+                    "score": 0.859
+                },
+                {
+                    "word": "he",
+                    "start": 2.202,
+                    "end": 2.302,
+                    "score": 0.616
+                },
+                {
+                    "word": "considered",
+                    "start": 2.342,
+                    "end": 2.764,
+                    "score": 0.865
+                },
+                {
+                    "word": "practical",
+                    "start": 2.805,
+                    "end": 3.247,
+                    "score": 0.839
+                },
+                {
+                    "word": "barriers.",
+                    "start": 3.287,
+                    "end": 3.769,
+                    "score": 0.805
+                },
+                {
+                    "word": "Interstellar",
+                    "start": 4.151,
+                    "end": 4.774,
+                    "score": 0.883
+                },
+                {
+                    "word": "travel",
+                    "start": 4.814,
+                    "end": 5.156,
+                    "score": 0.796
+                },
+                {
+                    "word": "might",
+                    "start": 5.196,
+                    "end": 5.357,
+                    "score": 0.905
+                },
+                {
+                    "word": "be",
+                    "start": 5.397,
+                    "end": 5.478,
+                    "score": 0.982
+                },
+                {
+                    "word": "impossible.",
+                    "start": 5.538,
+                    "end": 6.061,
+                    "score": 0.916
                 }
             ]
         },
         "visual": {
             "template": "KEY_LINE",
-            "text": "No confirmed signals"
+            "text": "Interstellar travel might be impossible"
         }
     },
     {
         "scene_id": 6,
-        "type": "IMAGE_WITH_TEXT",
-        "duration": 8.17,
+        "type": "TYPOGRAPHY",
+        "duration": 2.64,
         "audio": {
             "path": "/audio/6.wav",
             "words": [
                 {
-                    "word": "In",
-                    "start": 0.755,
-                    "end": 1.057,
-                    "score": 0.465
-                },
-                {
-                    "word": "1961,",
-                    "start": 1.178,
-                    "end": 1.701,
-                    "score": 0.781
-                },
-                {
-                    "word": "astronomer",
-                    "start": 1.982,
-                    "end": 2.505,
-                    "score": 0.867
-                },
-                {
-                    "word": "Frank",
-                    "start": 2.566,
-                    "end": 2.827,
-                    "score": 0.803
-                },
-                {
-                    "word": "Drake",
-                    "start": 2.887,
-                    "end": 3.189,
-                    "score": 0.799
-                },
-                {
-                    "word": "developed",
-                    "start": 3.25,
-                    "end": 3.672,
-                    "score": 0.874
-                },
-                {
-                    "word": "the",
-                    "start": 3.732,
-                    "end": 3.813,
-                    "score": 0.906
-                },
-                {
-                    "word": "Drake",
-                    "start": 3.853,
-                    "end": 4.094,
-                    "score": 0.707
-                },
-                {
-                    "word": "equation",
-                    "start": 4.135,
-                    "end": 4.577,
-                    "score": 0.934
-                },
-                {
-                    "word": "to",
-                    "start": 4.617,
-                    "end": 4.698,
-                    "score": 0.749
-                },
-                {
-                    "word": "estimate",
-                    "start": 4.798,
-                    "end": 5.161,
-                    "score": 0.87
-                },
-                {
-                    "word": "the",
-                    "start": 5.201,
-                    "end": 5.281,
-                    "score": 0.838
-                },
-                {
-                    "word": "number",
-                    "start": 5.321,
-                    "end": 5.583,
-                    "score": 0.884
-                },
-                {
-                    "word": "of",
-                    "start": 5.623,
-                    "end": 5.684,
-                    "score": 0.75
-                },
-                {
-                    "word": "communicative",
-                    "start": 5.764,
-                    "end": 6.448,
-                    "score": 0.856
+                    "word": "or",
+                    "start": 0.212,
+                    "end": 0.292,
+                    "score": 0.719
                 },
                 {
                     "word": "civilizations",
-                    "start": 6.488,
-                    "end": 7.232,
-                    "score": 0.838
+                    "start": 0.352,
+                    "end": 1.034,
+                    "score": 0.916
                 },
                 {
-                    "word": "in",
-                    "start": 7.273,
-                    "end": 7.333,
-                    "score": 0.788
+                    "word": "might",
+                    "start": 1.094,
+                    "end": 1.275,
+                    "score": 0.804
+                },
+                {
+                    "word": "choose",
+                    "start": 1.315,
+                    "end": 1.555,
+                    "score": 0.816
+                },
+                {
+                    "word": "not",
+                    "start": 1.595,
+                    "end": 1.756,
+                    "score": 0.73
+                },
+                {
+                    "word": "to",
+                    "start": 1.776,
+                    "end": 1.876,
+                    "score": 0.719
+                },
+                {
+                    "word": "expand.",
+                    "start": 1.936,
+                    "end": 2.398,
+                    "score": 0.955
+                }
+            ]
+        },
+        "visual": {
+            "template": "KEY_LINE",
+            "text": "Civilizations might choose not to expand"
+        }
+    },
+    {
+        "scene_id": 7,
+        "type": "IMAGE_WITH_TEXT",
+        "duration": 7.29,
+        "audio": {
+            "path": "/audio/7.wav",
+            "words": [
+                {
+                    "word": "In",
+                    "start": 0.696,
+                    "end": 0.998,
+                    "score": 0.682
+                },
+                {
+                    "word": "1961,",
+                    "start": 1.098,
+                    "end": 1.662,
+                    "score": 0.805
+                },
+                {
+                    "word": "Frank",
+                    "start": 1.984,
+                    "end": 2.186,
+                    "score": 0.815
+                },
+                {
+                    "word": "Drake",
+                    "start": 2.226,
+                    "end": 2.448,
+                    "score": 0.882
+                },
+                {
+                    "word": "developed",
+                    "start": 2.488,
+                    "end": 2.85,
+                    "score": 0.864
                 },
                 {
                     "word": "the",
-                    "start": 7.353,
-                    "end": 7.434,
-                    "score": 0.831
+                    "start": 2.891,
+                    "end": 2.951,
+                    "score": 0.989
+                },
+                {
+                    "word": "Drake",
+                    "start": 2.991,
+                    "end": 3.233,
+                    "score": 0.965
+                },
+                {
+                    "word": "equation",
+                    "start": 3.273,
+                    "end": 3.757,
+                    "score": 0.889
+                },
+                {
+                    "word": "to",
+                    "start": 3.817,
+                    "end": 3.918,
+                    "score": 0.732
+                },
+                {
+                    "word": "estimate",
+                    "start": 4.038,
+                    "end": 4.421,
+                    "score": 0.879
+                },
+                {
+                    "word": "the",
+                    "start": 4.441,
+                    "end": 4.522,
+                    "score": 0.833
+                },
+                {
+                    "word": "number",
+                    "start": 4.562,
+                    "end": 4.784,
+                    "score": 0.931
+                },
+                {
+                    "word": "of",
+                    "start": 4.804,
+                    "end": 4.864,
+                    "score": 0.75
+                },
+                {
+                    "word": "detectable",
+                    "start": 4.925,
+                    "end": 5.488,
+                    "score": 0.893
+                },
+                {
+                    "word": "civilizations",
+                    "start": 5.549,
+                    "end": 6.254,
+                    "score": 0.903
+                },
+                {
+                    "word": "in",
+                    "start": 6.294,
+                    "end": 6.375,
+                    "score": 0.83
+                },
+                {
+                    "word": "our",
+                    "start": 6.415,
+                    "end": 6.495,
+                    "score": 0.691
                 },
                 {
                     "word": "galaxy.",
-                    "start": 7.454,
-                    "end": 7.936,
-                    "score": 0.923
+                    "start": 6.536,
+                    "end": 7.059,
+                    "score": 0.982
                 }
             ]
         },
         "visual": {
             "template": "key_line",
-            "text": null,
+            "text": "1961 — Drake Equation",
             "image": [
-                "Frank Drake"
-            ]
-        }
-    },
-    {
-        "scene_id": 7,
-        "type": "IMAGE",
-        "duration": 8.82,
-        "audio": {
-            "path": "/audio/7.wav",
-            "words": [
-                {
-                    "word": "The",
-                    "start": 0.553,
-                    "end": 0.653,
-                    "score": 0.856
-                },
-                {
-                    "word": "equation",
-                    "start": 0.693,
-                    "end": 1.074,
-                    "score": 0.851
-                },
-                {
-                    "word": "accounts",
-                    "start": 1.115,
-                    "end": 1.395,
-                    "score": 0.863
-                },
-                {
-                    "word": "for",
-                    "start": 1.436,
-                    "end": 1.556,
-                    "score": 0.793
-                },
-                {
-                    "word": "factors",
-                    "start": 1.596,
-                    "end": 2.018,
-                    "score": 0.875
-                },
-                {
-                    "word": "like",
-                    "start": 2.058,
-                    "end": 2.238,
-                    "score": 0.792
-                },
-                {
-                    "word": "star",
-                    "start": 2.298,
-                    "end": 2.539,
-                    "score": 0.919
-                },
-                {
-                    "word": "formation",
-                    "start": 2.579,
-                    "end": 3.081,
-                    "score": 0.86
-                },
-                {
-                    "word": "rates,",
-                    "start": 3.121,
-                    "end": 3.362,
-                    "score": 0.89
-                },
-                {
-                    "word": "the",
-                    "start": 3.783,
-                    "end": 3.864,
-                    "score": 0.984
-                },
-                {
-                    "word": "fraction",
-                    "start": 3.904,
-                    "end": 4.285,
-                    "score": 0.925
-                },
-                {
-                    "word": "of",
-                    "start": 4.305,
-                    "end": 4.365,
-                    "score": 0.75
-                },
-                {
-                    "word": "stars",
-                    "start": 4.425,
-                    "end": 4.706,
-                    "score": 0.879
-                },
-                {
-                    "word": "with",
-                    "start": 4.747,
-                    "end": 4.887,
-                    "score": 0.834
-                },
-                {
-                    "word": "planets,",
-                    "start": 4.927,
-                    "end": 5.328,
-                    "score": 0.917
-                },
-                {
-                    "word": "and",
-                    "start": 5.71,
-                    "end": 5.79,
-                    "score": 0.849
-                },
-                {
-                    "word": "the",
-                    "start": 5.83,
-                    "end": 5.91,
-                    "score": 0.833
-                },
-                {
-                    "word": "likelihood",
-                    "start": 5.95,
-                    "end": 6.432,
-                    "score": 0.793
-                },
-                {
-                    "word": "of",
-                    "start": 6.452,
-                    "end": 6.512,
-                    "score": 0.75
-                },
-                {
-                    "word": "life",
-                    "start": 6.593,
-                    "end": 6.833,
-                    "score": 0.824
-                },
-                {
-                    "word": "evolving",
-                    "start": 6.934,
-                    "end": 7.335,
-                    "score": 0.912
-                },
-                {
-                    "word": "into",
-                    "start": 7.375,
-                    "end": 7.556,
-                    "score": 0.918
-                },
-                {
-                    "word": "intelligent",
-                    "start": 7.596,
-                    "end": 8.077,
-                    "score": 0.877
-                },
-                {
-                    "word": "forms.",
-                    "start": 8.118,
-                    "end": 8.499,
-                    "score": 0.826
-                }
-            ]
-        },
-        "visual": {
-            "template": "default",
-            "image": [
-                "Drake Equation diagram"
+                "Drake Equation"
             ]
         }
     },
     {
         "scene_id": 8,
-        "type": "NONE",
-        "duration": 7.5,
+        "type": "TYPOGRAPHY",
+        "duration": 5.46,
         "audio": {
             "path": "/audio/8.wav",
             "words": [
                 {
-                    "word": "However,",
-                    "start": 0.232,
-                    "end": 0.633,
-                    "score": 0.859
-                },
-                {
-                    "word": "many",
-                    "start": 0.833,
-                    "end": 1.034,
-                    "score": 0.828
-                },
-                {
-                    "word": "variables",
-                    "start": 1.094,
-                    "end": 1.616,
-                    "score": 0.85
-                },
-                {
-                    "word": "in",
-                    "start": 1.656,
-                    "end": 1.716,
-                    "score": 0.897
-                },
-                {
-                    "word": "the",
-                    "start": 1.756,
-                    "end": 1.836,
-                    "score": 0.833
+                    "word": "The",
+                    "start": 0.393,
+                    "end": 0.514,
+                    "score": 0.683
                 },
                 {
                     "word": "equation",
-                    "start": 1.897,
-                    "end": 2.318,
-                    "score": 0.834
-                },
-                {
-                    "word": "remain",
-                    "start": 2.378,
-                    "end": 2.679,
-                    "score": 0.832
-                },
-                {
-                    "word": "unknown,",
-                    "start": 2.759,
-                    "end": 3.16,
-                    "score": 0.847
-                },
-                {
-                    "word": "particularly",
-                    "start": 3.381,
-                    "end": 4.083,
-                    "score": 0.89
-                },
-                {
-                    "word": "those",
-                    "start": 4.143,
-                    "end": 4.344,
+                    "start": 0.554,
+                    "end": 0.956,
                     "score": 0.872
                 },
                 {
-                    "word": "related",
-                    "start": 4.404,
-                    "end": 4.765,
-                    "score": 0.916
+                    "word": "accounts",
+                    "start": 0.976,
+                    "end": 1.278,
+                    "score": 0.87
                 },
                 {
-                    "word": "to",
-                    "start": 4.805,
-                    "end": 4.885,
+                    "word": "for",
+                    "start": 1.318,
+                    "end": 1.419,
+                    "score": 0.952
+                },
+                {
+                    "word": "factors",
+                    "start": 1.479,
+                    "end": 1.861,
+                    "score": 0.895
+                },
+                {
+                    "word": "like",
+                    "start": 1.902,
+                    "end": 2.063,
                     "score": 0.832
                 },
                 {
+                    "word": "star",
+                    "start": 2.103,
+                    "end": 2.364,
+                    "score": 0.766
+                },
+                {
+                    "word": "formation,",
+                    "start": 2.404,
+                    "end": 2.948,
+                    "score": 0.843
+                },
+                {
+                    "word": "habitable",
+                    "start": 3.109,
+                    "end": 3.571,
+                    "score": 0.884
+                },
+                {
+                    "word": "planets,",
+                    "start": 3.631,
+                    "end": 4.034,
+                    "score": 0.93
+                },
+                {
                     "word": "the",
-                    "start": 4.925,
-                    "end": 5.006,
-                    "score": 0.833
+                    "start": 4.134,
+                    "end": 4.235,
+                    "score": 0.794
                 },
                 {
                     "word": "emergence",
-                    "start": 5.066,
-                    "end": 5.527,
-                    "score": 0.88
-                },
-                {
-                    "word": "and",
-                    "start": 5.587,
-                    "end": 5.668,
-                    "score": 0.851
-                },
-                {
-                    "word": "longevity",
-                    "start": 5.708,
-                    "end": 6.249,
-                    "score": 0.918
+                    "start": 4.295,
+                    "end": 4.718,
+                    "score": 0.914
                 },
                 {
                     "word": "of",
-                    "start": 6.31,
-                    "end": 6.39,
-                    "score": 0.674
-                },
-                {
-                    "word": "intelligent",
-                    "start": 6.45,
-                    "end": 6.992,
-                    "score": 0.886
+                    "start": 4.758,
+                    "end": 4.818,
+                    "score": 0.75
                 },
                 {
                     "word": "life.",
-                    "start": 7.032,
-                    "end": 7.292,
-                    "score": 0.975
+                    "start": 4.899,
+                    "end": 5.12,
+                    "score": 0.967
                 }
             ]
         },
         "visual": {
-            "template": "word_by_word"
+            "template": "NORMAL",
+            "text": "Star formation, habitable planets, life"
         }
     },
     {
         "scene_id": 9,
         "type": "TYPOGRAPHY",
-        "duration": 6.53,
+        "duration": 2.16,
         "audio": {
             "path": "/audio/9.wav",
             "words": [
                 {
-                    "word": "One",
-                    "start": 0.292,
-                    "end": 0.413,
-                    "score": 0.721
-                },
-                {
-                    "word": "hypothesis",
-                    "start": 0.453,
-                    "end": 1.076,
-                    "score": 0.745
+                    "word": "and",
+                    "start": 0.192,
+                    "end": 0.293,
+                    "score": 0.832
                 },
                 {
                     "word": "the",
-                    "start": 1.097,
-                    "end": 1.177,
-                    "score": 0.83
+                    "start": 0.313,
+                    "end": 0.374,
+                    "score": 0.995
                 },
                 {
-                    "word": "Great",
-                    "start": 1.217,
-                    "end": 1.398,
-                    "score": 0.811
-                },
-                {
-                    "word": "Filter",
-                    "start": 1.458,
-                    "end": 1.82,
-                    "score": 0.747
-                },
-                {
-                    "word": "suggests",
-                    "start": 1.941,
-                    "end": 2.343,
-                    "score": 0.914
-                },
-                {
-                    "word": "the",
-                    "start": 2.363,
-                    "end": 2.444,
-                    "score": 0.067
-                },
-                {
-                    "word": "step",
-                    "start": 2.484,
-                    "end": 2.725,
-                    "score": 0.999
-                },
-                {
-                    "word": "in",
-                    "start": 2.785,
-                    "end": 2.846,
-                    "score": 0.887
-                },
-                {
-                    "word": "the",
-                    "start": 2.866,
-                    "end": 2.946,
-                    "score": 0.833
-                },
-                {
-                    "word": "evolution",
-                    "start": 3.027,
-                    "end": 3.489,
-                    "score": 0.909
+                    "word": "longevity",
+                    "start": 0.414,
+                    "end": 0.958,
+                    "score": 0.865
                 },
                 {
                     "word": "of",
-                    "start": 3.509,
-                    "end": 3.59,
-                    "score": 0.5
+                    "start": 0.978,
+                    "end": 1.039,
+                    "score": 0.75
                 },
                 {
-                    "word": "intelligent",
-                    "start": 3.63,
-                    "end": 4.112,
-                    "score": 0.853
+                    "word": "civilizations.",
+                    "start": 1.079,
+                    "end": 1.926,
+                    "score": 0.859
+                }
+            ]
+        },
+        "visual": {
+            "template": "NORMAL",
+            "text": "Longevity of civilizations"
+        }
+    },
+    {
+        "scene_id": 10,
+        "type": "TYPOGRAPHY",
+        "duration": 5.02,
+        "audio": {
+            "path": "/audio/10.wav",
+            "words": [
+                {
+                    "word": "Current",
+                    "start": 0.595,
+                    "end": 0.876,
+                    "score": 0.984
                 },
                 {
-                    "word": "life",
-                    "start": 4.153,
-                    "end": 4.394,
-                    "score": 0.704
+                    "word": "estimates",
+                    "start": 0.957,
+                    "end": 1.359,
+                    "score": 0.767
                 },
                 {
-                    "word": "is",
-                    "start": 4.555,
-                    "end": 4.635,
-                    "score": 0.678
+                    "word": "suggest",
+                    "start": 1.4,
+                    "end": 1.843,
+                    "score": 0.779
                 },
                 {
-                    "word": "extremely",
-                    "start": 4.675,
-                    "end": 5.198,
-                    "score": 0.83
+                    "word": "the",
+                    "start": 1.883,
+                    "end": 1.963,
+                    "score": 0.911
                 },
                 {
-                    "word": "rare",
-                    "start": 5.278,
-                    "end": 5.52,
-                    "score": 0.744
+                    "word": "number",
+                    "start": 2.004,
+                    "end": 2.245,
+                    "score": 0.816
                 },
                 {
-                    "word": "or",
-                    "start": 5.64,
-                    "end": 5.701,
-                    "score": 0.768
+                    "word": "of",
+                    "start": 2.265,
+                    "end": 2.326,
+                    "score": 0.75
                 },
                 {
-                    "word": "impossible.",
-                    "start": 5.761,
-                    "end": 6.304,
+                    "word": "civilizations",
+                    "start": 2.386,
+                    "end": 3.151,
+                    "score": 0.886
+                },
+                {
+                    "word": "could",
+                    "start": 3.211,
+                    "end": 3.372,
+                    "score": 0.801
+                },
+                {
+                    "word": "range",
+                    "start": 3.453,
+                    "end": 3.715,
+                    "score": 0.812
+                },
+                {
+                    "word": "from",
+                    "start": 3.755,
+                    "end": 3.896,
                     "score": 0.894
+                },
+                {
+                    "word": "1",
+                    "start": 3.996,
+                    "end": 4.117,
+                    "score": 0.403
+                },
+                {
+                    "word": "to",
+                    "start": 4.157,
+                    "end": 4.238,
+                    "score": 0.966
+                },
+                {
+                    "word": "millions.",
+                    "start": 4.298,
+                    "end": 4.721,
+                    "score": 0.798
                 }
             ]
         },
         "visual": {
             "template": "KEY_LINE",
-            "text": "The Great Filter"
-        }
-    },
-    {
-        "scene_id": 10,
-        "type": "NONE",
-        "duration": 8.47,
-        "audio": {
-            "path": "/audio/10.wav",
-            "words": [
-                {
-                    "word": "This",
-                    "start": 0.211,
-                    "end": 0.372,
-                    "score": 0.848
-                },
-                {
-                    "word": "filter",
-                    "start": 0.432,
-                    "end": 0.772,
-                    "score": 0.725
-                },
-                {
-                    "word": "could",
-                    "start": 0.833,
-                    "end": 0.953,
-                    "score": 0.901
-                },
-                {
-                    "word": "have",
-                    "start": 0.993,
-                    "end": 1.073,
-                    "score": 1.0
-                },
-                {
-                    "word": "occurred",
-                    "start": 1.113,
-                    "end": 1.414,
-                    "score": 0.835
-                },
-                {
-                    "word": "in",
-                    "start": 1.434,
-                    "end": 1.494,
-                    "score": 0.759
-                },
-                {
-                    "word": "the",
-                    "start": 1.534,
-                    "end": 1.594,
-                    "score": 1.0
-                },
-                {
-                    "word": "past,",
-                    "start": 1.634,
-                    "end": 2.035,
-                    "score": 0.742
-                },
-                {
-                    "word": "preventing",
-                    "start": 2.195,
-                    "end": 2.636,
-                    "score": 0.821
-                },
-                {
-                    "word": "life",
-                    "start": 2.676,
-                    "end": 2.877,
-                    "score": 0.964
-                },
-                {
-                    "word": "from",
-                    "start": 2.917,
-                    "end": 3.057,
-                    "score": 0.914
-                },
-                {
-                    "word": "emerging",
-                    "start": 3.097,
-                    "end": 3.558,
-                    "score": 0.733
-                },
-                {
-                    "word": "or",
-                    "start": 3.819,
-                    "end": 3.899,
-                    "score": 0.738
-                },
-                {
-                    "word": "in",
-                    "start": 3.939,
-                    "end": 3.999,
-                    "score": 0.857
-                },
-                {
-                    "word": "the",
-                    "start": 4.039,
-                    "end": 4.099,
-                    "score": 0.991
-                },
-                {
-                    "word": "future,",
-                    "start": 4.139,
-                    "end": 4.52,
-                    "score": 0.779
-                },
-                {
-                    "word": "causing",
-                    "start": 4.841,
-                    "end": 5.141,
-                    "score": 0.94
-                },
-                {
-                    "word": "civilizations",
-                    "start": 5.201,
-                    "end": 5.943,
-                    "score": 0.864
-                },
-                {
-                    "word": "to",
-                    "start": 5.983,
-                    "end": 6.103,
-                    "score": 0.9
-                },
-                {
-                    "word": "self-destruct",
-                    "start": 6.163,
-                    "end": 6.905,
-                    "score": 0.855
-                },
-                {
-                    "word": "before",
-                    "start": 7.005,
-                    "end": 7.306,
-                    "score": 0.833
-                },
-                {
-                    "word": "making",
-                    "start": 7.366,
-                    "end": 7.626,
-                    "score": 0.91
-                },
-                {
-                    "word": "contact.",
-                    "start": 7.686,
-                    "end": 8.207,
-                    "score": 0.974
-                }
-            ]
-        },
-        "visual": {
-            "template": "word_by_word"
+            "text": "Number could range from one to millions"
         }
     },
     {
         "scene_id": 11,
         "type": "TYPOGRAPHY",
-        "duration": 6.93,
+        "duration": 1.91,
         "audio": {
             "path": "/audio/11.wav",
             "words": [
                 {
-                    "word": "Another",
-                    "start": 0.514,
-                    "end": 0.795,
-                    "score": 0.808
+                    "word": "but",
+                    "start": 0.195,
+                    "end": 0.316,
+                    "score": 0.845
                 },
                 {
-                    "word": "hypothesis,",
-                    "start": 0.836,
-                    "end": 1.56,
-                    "score": 0.748
+                    "word": "key",
+                    "start": 0.376,
+                    "end": 0.577,
+                    "score": 0.917
+                },
+                {
+                    "word": "uncertainties",
+                    "start": 0.617,
+                    "end": 1.22,
+                    "score": 0.887
+                },
+                {
+                    "word": "remain.",
+                    "start": 1.281,
+                    "end": 1.542,
+                    "score": 0.944
+                }
+            ]
+        },
+        "visual": {
+            "template": "NORMAL",
+            "text": "Key uncertainties remain"
+        }
+    },
+    {
+        "scene_id": 12,
+        "type": "TYPOGRAPHY",
+        "duration": 5.02,
+        "audio": {
+            "path": "/audio/12.wav",
+            "words": [
+                {
+                    "word": "One",
+                    "start": 0.432,
+                    "end": 0.533,
+                    "score": 0.741
+                },
+                {
+                    "word": "theory,",
+                    "start": 0.593,
+                    "end": 0.934,
+                    "score": 0.79
                 },
                 {
                     "word": "the",
-                    "start": 1.58,
-                    "end": 1.68,
-                    "score": 0.82
-                },
-                {
-                    "word": "Zoo",
-                    "start": 1.721,
-                    "end": 1.942,
-                    "score": 0.909
-                },
-                {
-                    "word": "hypothesis,",
-                    "start": 1.982,
-                    "end": 2.646,
-                    "score": 0.781
-                },
-                {
-                    "word": "proposes",
-                    "start": 2.706,
-                    "end": 3.169,
-                    "score": 0.886
-                },
-                {
-                    "word": "that",
-                    "start": 3.209,
-                    "end": 3.37,
-                    "score": 0.794
-                },
-                {
-                    "word": "advanced",
-                    "start": 3.41,
-                    "end": 3.792,
+                    "start": 0.994,
+                    "end": 1.094,
                     "score": 0.896
                 },
                 {
+                    "word": "Great",
+                    "start": 1.134,
+                    "end": 1.335,
+                    "score": 0.848
+                },
+                {
+                    "word": "Filter,",
+                    "start": 1.395,
+                    "end": 1.776,
+                    "score": 0.786
+                },
+                {
+                    "word": "proposes",
+                    "start": 1.877,
+                    "end": 2.338,
+                    "score": 0.878
+                },
+                {
+                    "word": "a",
+                    "start": 2.378,
+                    "end": 2.418,
+                    "score": 0.547
+                },
+                {
+                    "word": "barrier",
+                    "start": 2.458,
+                    "end": 2.779,
+                    "score": 0.858
+                },
+                {
+                    "word": "that",
+                    "start": 2.819,
+                    "end": 2.94,
+                    "score": 0.754
+                },
+                {
+                    "word": "makes",
+                    "start": 2.96,
+                    "end": 3.16,
+                    "score": 0.745
+                },
+                {
+                    "word": "advanced",
+                    "start": 3.221,
+                    "end": 3.582,
+                    "score": 0.893
+                },
+                {
                     "word": "civilizations",
-                    "start": 3.832,
-                    "end": 4.557,
-                    "score": 0.886
+                    "start": 3.642,
+                    "end": 4.404,
+                    "score": 0.893
                 },
                 {
-                    "word": "intentionally",
-                    "start": 4.637,
-                    "end": 5.16,
-                    "score": 0.909
-                },
-                {
-                    "word": "avoid",
-                    "start": 5.2,
-                    "end": 5.482,
-                    "score": 0.837
-                },
-                {
-                    "word": "contact",
-                    "start": 5.522,
-                    "end": 6.005,
-                    "score": 0.793
-                },
-                {
-                    "word": "with",
-                    "start": 6.025,
-                    "end": 6.145,
-                    "score": 0.759
-                },
-                {
-                    "word": "humanity.",
-                    "start": 6.186,
-                    "end": 6.689,
-                    "score": 0.912
+                    "word": "rare.",
+                    "start": 4.484,
+                    "end": 4.725,
+                    "score": 0.861
                 }
             ]
         },
         "visual": {
             "template": "KEY_LINE",
-            "text": "The Zoo Hypothesis"
-        }
-    },
-    {
-        "scene_id": 12,
-        "type": "IMAGE",
-        "duration": 4.6,
-        "audio": {
-            "path": "/audio/12.wav",
-            "words": [
-                {
-                    "word": "They",
-                    "start": 0.588,
-                    "end": 0.709,
-                    "score": 0.883
-                },
-                {
-                    "word": "might",
-                    "start": 0.749,
-                    "end": 0.931,
-                    "score": 0.734
-                },
-                {
-                    "word": "observe",
-                    "start": 0.991,
-                    "end": 1.314,
-                    "score": 0.867
-                },
-                {
-                    "word": "us",
-                    "start": 1.374,
-                    "end": 1.455,
-                    "score": 0.674
-                },
-                {
-                    "word": "without",
-                    "start": 1.495,
-                    "end": 1.778,
-                    "score": 0.805
-                },
-                {
-                    "word": "interfering,",
-                    "start": 1.838,
-                    "end": 2.403,
-                    "score": 0.932
-                },
-                {
-                    "word": "treating",
-                    "start": 2.484,
-                    "end": 2.766,
-                    "score": 0.809
-                },
-                {
-                    "word": "Earth",
-                    "start": 2.867,
-                    "end": 3.048,
-                    "score": 0.76
-                },
-                {
-                    "word": "as",
-                    "start": 3.189,
-                    "end": 3.27,
-                    "score": 0.68
-                },
-                {
-                    "word": "a",
-                    "start": 3.33,
-                    "end": 3.351,
-                    "score": 0.999
-                },
-                {
-                    "word": "protected",
-                    "start": 3.391,
-                    "end": 3.855,
-                    "score": 0.768
-                },
-                {
-                    "word": "reserve.",
-                    "start": 3.895,
-                    "end": 4.339,
-                    "score": 0.867
-                }
-            ]
-        },
-        "visual": {
-            "template": "default",
-            "image": [
-                "Extraterrestrials observing Earth"
-            ]
+            "text": "Great Filter theory: barrier makes civilizations rare"
         }
     },
     {
         "scene_id": 13,
-        "type": "NONE",
-        "duration": 5.83,
+        "type": "TYPOGRAPHY",
+        "duration": 5.04,
         "audio": {
             "path": "/audio/13.wav",
             "words": [
                 {
-                    "word": "Other",
-                    "start": 0.263,
-                    "end": 0.424,
-                    "score": 0.79
+                    "word": "This",
+                    "start": 0.192,
+                    "end": 0.333,
+                    "score": 0.887
                 },
                 {
-                    "word": "explanations",
-                    "start": 0.485,
-                    "end": 1.108,
-                    "score": 0.82
+                    "word": "filter",
+                    "start": 0.393,
+                    "end": 0.715,
+                    "score": 0.762
                 },
                 {
-                    "word": "include",
-                    "start": 1.168,
-                    "end": 1.43,
-                    "score": 0.957
+                    "word": "could",
+                    "start": 0.755,
+                    "end": 0.896,
+                    "score": 0.829
+                },
+                {
+                    "word": "be",
+                    "start": 0.936,
+                    "end": 1.037,
+                    "score": 0.813
+                },
+                {
+                    "word": "in",
+                    "start": 1.077,
+                    "end": 1.137,
+                    "score": 0.75
                 },
                 {
                     "word": "the",
-                    "start": 1.45,
-                    "end": 1.53,
-                    "score": 0.928
+                    "start": 1.178,
+                    "end": 1.238,
+                    "score": 1.0
                 },
                 {
-                    "word": "possibility",
-                    "start": 1.57,
-                    "end": 2.194,
-                    "score": 0.905
+                    "word": "past,",
+                    "start": 1.278,
+                    "end": 1.66,
+                    "score": 0.931
                 },
                 {
-                    "word": "that",
-                    "start": 2.234,
-                    "end": 2.375,
-                    "score": 0.733
+                    "word": "such",
+                    "start": 1.982,
+                    "end": 2.183,
+                    "score": 0.877
                 },
                 {
-                    "word": "intelligent",
-                    "start": 2.415,
-                    "end": 2.938,
-                    "score": 0.819
+                    "word": "as",
+                    "start": 2.224,
+                    "end": 2.304,
+                    "score": 0.531
+                },
+                {
+                    "word": "the",
+                    "start": 2.364,
+                    "end": 2.445,
+                    "score": 0.834
+                },
+                {
+                    "word": "difficulty",
+                    "start": 2.485,
+                    "end": 3.048,
+                    "score": 0.862
+                },
+                {
+                    "word": "of",
+                    "start": 3.089,
+                    "end": 3.149,
+                    "score": 0.75
                 },
                 {
                     "word": "life",
-                    "start": 2.958,
-                    "end": 3.159,
-                    "score": 0.708
+                    "start": 3.229,
+                    "end": 3.451,
+                    "score": 0.863
                 },
                 {
-                    "word": "is",
-                    "start": 3.219,
-                    "end": 3.299,
-                    "score": 0.728
-                },
-                {
-                    "word": "rare",
-                    "start": 3.38,
-                    "end": 3.682,
-                    "score": 0.674
+                    "word": "emerging",
+                    "start": 3.511,
+                    "end": 3.954,
+                    "score": 0.786
                 },
                 {
                     "word": "or",
-                    "start": 3.822,
-                    "end": 3.903,
-                    "score": 0.661
+                    "start": 4.094,
+                    "end": 4.175,
+                    "score": 0.774
                 },
                 {
-                    "word": "that",
-                    "start": 3.923,
-                    "end": 4.064,
-                    "score": 0.68
+                    "word": "in",
+                    "start": 4.235,
+                    "end": 4.316,
+                    "score": 0.692
                 },
                 {
-                    "word": "civilizations",
-                    "start": 4.104,
-                    "end": 4.828,
-                    "score": 0.893
+                    "word": "the",
+                    "start": 4.336,
+                    "end": 4.416,
+                    "score": 0.823
                 },
                 {
-                    "word": "are",
-                    "start": 4.888,
-                    "end": 4.968,
-                    "score": 0.971
-                },
-                {
-                    "word": "short-lived.",
-                    "start": 5.009,
-                    "end": 5.592,
-                    "score": 0.897
+                    "word": "future.",
+                    "start": 4.457,
+                    "end": 4.798,
+                    "score": 0.969
                 }
             ]
         },
         "visual": {
-            "template": "word_by_word"
+            "template": "KEY_LINE",
+            "text": "Filter could be in past or future"
         }
     },
     {
         "scene_id": 14,
-        "type": "NONE",
-        "duration": 5.77,
+        "type": "TYPOGRAPHY",
+        "duration": 3.57,
         "audio": {
             "path": "/audio/14.wav",
             "words": [
                 {
-                    "word": "Alternatively,",
-                    "start": 0.252,
-                    "end": 0.956,
-                    "score": 0.85
+                    "word": "like",
+                    "start": 0.452,
+                    "end": 0.612,
+                    "score": 0.998
                 },
                 {
-                    "word": "they",
-                    "start": 0.997,
-                    "end": 1.117,
-                    "score": 0.879
+                    "word": "self-destruction",
+                    "start": 0.692,
+                    "end": 1.554,
+                    "score": 0.885
                 },
                 {
-                    "word": "may",
-                    "start": 1.158,
-                    "end": 1.298,
-                    "score": 0.678
+                    "word": "before",
+                    "start": 1.614,
+                    "end": 1.895,
+                    "score": 0.807
                 },
                 {
-                    "word": "exist",
-                    "start": 1.379,
-                    "end": 1.681,
-                    "score": 0.858
+                    "word": "achieving",
+                    "start": 1.955,
+                    "end": 2.336,
+                    "score": 0.897
                 },
                 {
-                    "word": "but",
-                    "start": 1.721,
-                    "end": 1.842,
-                    "score": 0.912
+                    "word": "interstellar",
+                    "start": 2.396,
+                    "end": 2.937,
+                    "score": 0.909
                 },
                 {
-                    "word": "remain",
-                    "start": 1.902,
-                    "end": 2.164,
-                    "score": 0.822
-                },
-                {
-                    "word": "undetectable",
-                    "start": 2.224,
-                    "end": 2.888,
-                    "score": 0.926
-                },
-                {
-                    "word": "due",
-                    "start": 2.948,
-                    "end": 3.089,
-                    "score": 0.762
-                },
-                {
-                    "word": "to",
-                    "start": 3.109,
-                    "end": 3.19,
-                    "score": 0.555
-                },
-                {
-                    "word": "technological",
-                    "start": 3.23,
-                    "end": 3.994,
-                    "score": 0.836
-                },
-                {
-                    "word": "or",
-                    "start": 4.095,
-                    "end": 4.175,
-                    "score": 0.591
-                },
-                {
-                    "word": "sociological",
-                    "start": 4.236,
-                    "end": 5.02,
-                    "score": 0.856
-                },
-                {
-                    "word": "reasons.",
-                    "start": 5.081,
-                    "end": 5.463,
-                    "score": 0.86
+                    "word": "travel.",
+                    "start": 2.977,
+                    "end": 3.318,
+                    "score": 0.892
                 }
             ]
         },
         "visual": {
-            "template": "word_by_word"
+            "template": "KEY_LINE",
+            "text": "Self-destruction before interstellar travel"
         }
     },
     {
         "scene_id": 15,
-        "type": "IMAGE",
-        "duration": 5.73,
+        "type": "TYPOGRAPHY",
+        "duration": 6.53,
         "audio": {
             "path": "/audio/15.wav",
             "words": [
                 {
-                    "word": "Recent",
-                    "start": 0.232,
-                    "end": 0.575,
-                    "score": 0.81
+                    "word": "Another",
+                    "start": 0.252,
+                    "end": 0.514,
+                    "score": 0.789
                 },
                 {
-                    "word": "discoveries",
-                    "start": 0.615,
-                    "end": 1.22,
-                    "score": 0.77
-                },
-                {
-                    "word": "such",
-                    "start": 1.28,
-                    "end": 1.481,
-                    "score": 0.849
-                },
-                {
-                    "word": "as",
-                    "start": 1.522,
-                    "end": 1.602,
-                    "score": 0.828
-                },
-                {
-                    "word": "exoplanets'",
-                    "start": 1.703,
-                    "end": 2.327,
-                    "score": 0.867
-                },
-                {
-                    "word": "inhabitable",
-                    "start": 2.388,
-                    "end": 2.892,
-                    "score": 0.761
-                },
-                {
-                    "word": "zones",
-                    "start": 2.952,
-                    "end": 3.274,
-                    "score": 0.793
-                },
-                {
-                    "word": "have",
-                    "start": 3.536,
-                    "end": 3.657,
-                    "score": 0.887
-                },
-                {
-                    "word": "expanded",
-                    "start": 3.697,
-                    "end": 4.14,
-                    "score": 0.815
+                    "word": "idea,",
+                    "start": 0.614,
+                    "end": 0.936,
+                    "score": 0.83
                 },
                 {
                     "word": "the",
-                    "start": 4.181,
-                    "end": 4.261,
-                    "score": 0.96
+                    "start": 0.956,
+                    "end": 1.137,
+                    "score": 0.727
                 },
                 {
-                    "word": "search",
-                    "start": 4.302,
-                    "end": 4.563,
-                    "score": 0.797
+                    "word": "Zoo",
+                    "start": 1.177,
+                    "end": 1.378,
+                    "score": 0.923
                 },
                 {
-                    "word": "for",
-                    "start": 4.604,
-                    "end": 4.704,
-                    "score": 0.993
+                    "word": "Hypothesis,",
+                    "start": 1.398,
+                    "end": 2.122,
+                    "score": 0.763
                 },
                 {
-                    "word": "signs",
-                    "start": 4.765,
-                    "end": 5.027,
-                    "score": 0.858
+                    "word": "suggests",
+                    "start": 2.343,
+                    "end": 2.765,
+                    "score": 0.901
                 },
                 {
-                    "word": "of",
-                    "start": 5.067,
-                    "end": 5.128,
-                    "score": 0.75
+                    "word": "advanced",
+                    "start": 2.846,
+                    "end": 3.228,
+                    "score": 0.8
                 },
                 {
-                    "word": "life.",
-                    "start": 5.188,
-                    "end": 5.43,
-                    "score": 0.971
+                    "word": "civilizations",
+                    "start": 3.268,
+                    "end": 4.032,
+                    "score": 0.885
+                },
+                {
+                    "word": "might",
+                    "start": 4.112,
+                    "end": 4.293,
+                    "score": 0.85
+                },
+                {
+                    "word": "avoid",
+                    "start": 4.333,
+                    "end": 4.595,
+                    "score": 0.937
+                },
+                {
+                    "word": "contact",
+                    "start": 4.655,
+                    "end": 5.037,
+                    "score": 0.856
+                },
+                {
+                    "word": "to",
+                    "start": 5.057,
+                    "end": 5.118,
+                    "score": 0.995
+                },
+                {
+                    "word": "let",
+                    "start": 5.158,
+                    "end": 5.278,
+                    "score": 0.945
+                },
+                {
+                    "word": "us",
+                    "start": 5.319,
+                    "end": 5.379,
+                    "score": 0.869
+                },
+                {
+                    "word": "develop",
+                    "start": 5.419,
+                    "end": 5.761,
+                    "score": 0.863
+                },
+                {
+                    "word": "naturally.",
+                    "start": 5.821,
+                    "end": 6.284,
+                    "score": 0.936
+                }
+            ]
+        },
+        "visual": {
+            "template": "KEY_LINE",
+            "text": "Zoo Hypothesis: avoid contact to let us develop naturally"
+        }
+    },
+    {
+        "scene_id": 16,
+        "type": "TYPOGRAPHY",
+        "duration": 4.12,
+        "audio": {
+            "path": "/audio/16.wav",
+            "words": [
+                {
+                    "word": "Critics",
+                    "start": 0.532,
+                    "end": 0.853,
+                    "score": 0.809
+                },
+                {
+                    "word": "argue",
+                    "start": 0.933,
+                    "end": 1.174,
+                    "score": 0.912
+                },
+                {
+                    "word": "that",
+                    "start": 1.194,
+                    "end": 1.314,
+                    "score": 0.882
+                },
+                {
+                    "word": "even",
+                    "start": 1.414,
+                    "end": 1.575,
+                    "score": 0.87
+                },
+                {
+                    "word": "a",
+                    "start": 1.615,
+                    "end": 1.655,
+                    "score": 0.5
+                },
+                {
+                    "word": "single",
+                    "start": 1.715,
+                    "end": 2.016,
+                    "score": 0.811
+                },
+                {
+                    "word": "dissident",
+                    "start": 2.056,
+                    "end": 2.437,
+                    "score": 0.812
+                },
+                {
+                    "word": "group",
+                    "start": 2.477,
+                    "end": 2.718,
+                    "score": 0.679
+                },
+                {
+                    "word": "could",
+                    "start": 2.778,
+                    "end": 2.918,
+                    "score": 0.801
+                },
+                {
+                    "word": "break",
+                    "start": 2.938,
+                    "end": 3.159,
+                    "score": 0.983
+                },
+                {
+                    "word": "such",
+                    "start": 3.239,
+                    "end": 3.459,
+                    "score": 0.906
+                },
+                {
+                    "word": "a",
+                    "start": 3.48,
+                    "end": 3.5,
+                    "score": 0.999
+                },
+                {
+                    "word": "pact.",
+                    "start": 3.56,
+                    "end": 3.901,
+                    "score": 0.905
+                }
+            ]
+        },
+        "visual": {
+            "template": "NORMAL",
+            "text": "Single dissident group could break pact"
+        }
+    },
+    {
+        "scene_id": 17,
+        "type": "TYPOGRAPHY",
+        "duration": 4.06,
+        "audio": {
+            "path": "/audio/17.wav",
+            "words": [
+                {
+                    "word": "But",
+                    "start": 0.492,
+                    "end": 0.613,
+                    "score": 0.832
+                },
+                {
+                    "word": "proponents",
+                    "start": 0.653,
+                    "end": 1.134,
+                    "score": 0.729
+                },
+                {
+                    "word": "believe",
+                    "start": 1.174,
+                    "end": 1.516,
+                    "score": 0.817
+                },
+                {
+                    "word": "ethical",
+                    "start": 1.596,
+                    "end": 1.937,
+                    "score": 0.867
+                },
+                {
+                    "word": "standards",
+                    "start": 1.977,
+                    "end": 2.398,
+                    "score": 0.864
+                },
+                {
+                    "word": "might",
+                    "start": 2.458,
+                    "end": 2.659,
+                    "score": 0.755
+                },
+                {
+                    "word": "prevent",
+                    "start": 2.719,
+                    "end": 3.08,
+                    "score": 0.901
+                },
+                {
+                    "word": "interference.",
+                    "start": 3.14,
+                    "end": 3.762,
+                    "score": 0.928
+                }
+            ]
+        },
+        "visual": {
+            "template": "NORMAL",
+            "text": "Ethical standards might prevent interference"
+        }
+    },
+    {
+        "scene_id": 18,
+        "type": "IMAGE",
+        "duration": 7.84,
+        "audio": {
+            "path": "/audio/18.wav",
+            "words": [
+                {
+                    "word": "The",
+                    "start": 0.212,
+                    "end": 0.312,
+                    "score": 0.994
+                },
+                {
+                    "word": "self-destructive",
+                    "start": 0.372,
+                    "end": 1.115,
+                    "score": 0.862
+                },
+                {
+                    "word": "civilization",
+                    "start": 1.155,
+                    "end": 1.818,
+                    "score": 0.883
+                },
+                {
+                    "word": "hypothesis",
+                    "start": 1.858,
+                    "end": 2.521,
+                    "score": 0.809
+                },
+                {
+                    "word": "points",
+                    "start": 2.621,
+                    "end": 2.862,
+                    "score": 0.778
+                },
+                {
+                    "word": "to",
+                    "start": 2.902,
+                    "end": 3.002,
+                    "score": 0.582
+                },
+                {
+                    "word": "Earth's",
+                    "start": 3.063,
+                    "end": 3.304,
+                    "score": 0.632
+                },
+                {
+                    "word": "own",
+                    "start": 3.384,
+                    "end": 3.504,
+                    "score": 0.804
+                },
+                {
+                    "word": "risks,",
+                    "start": 3.585,
+                    "end": 3.946,
+                    "score": 0.921
+                },
+                {
+                    "word": "nuclear",
+                    "start": 4.408,
+                    "end": 4.829,
+                    "score": 0.738
+                },
+                {
+                    "word": "weapons,",
+                    "start": 4.89,
+                    "end": 5.291,
+                    "score": 0.824
+                },
+                {
+                    "word": "environmental",
+                    "start": 5.351,
+                    "end": 5.994,
+                    "score": 0.857
+                },
+                {
+                    "word": "damage",
+                    "start": 6.014,
+                    "end": 6.355,
+                    "score": 0.915
+                },
+                {
+                    "word": "and",
+                    "start": 6.415,
+                    "end": 6.496,
+                    "score": 0.829
+                },
+                {
+                    "word": "political",
+                    "start": 6.516,
+                    "end": 6.937,
+                    "score": 0.903
+                },
+                {
+                    "word": "instability.",
+                    "start": 6.978,
+                    "end": 7.6,
+                    "score": 0.895
                 }
             ]
         },
         "visual": {
             "template": "default",
             "image": [
-                "Exoplanet in habitable zone"
+                "Nuclear weapon test"
             ]
         }
     },
     {
-        "scene_id": 16,
-        "type": "IMAGE",
-        "duration": 7.04,
+        "scene_id": 19,
+        "type": "TYPOGRAPHY",
+        "duration": 4.44,
         "audio": {
-            "path": "/audio/16.wav",
+            "path": "/audio/19.wav",
             "words": [
                 {
-                    "word": "Telescopes",
-                    "start": 0.132,
-                    "end": 0.715,
-                    "score": 0.835
+                    "word": "as",
+                    "start": 0.555,
+                    "end": 0.636,
+                    "score": 0.734
                 },
                 {
-                    "word": "like",
-                    "start": 0.775,
-                    "end": 0.956,
-                    "score": 0.893
+                    "word": "potential",
+                    "start": 0.697,
+                    "end": 1.12,
+                    "score": 0.843
+                },
+                {
+                    "word": "reason",
+                    "start": 1.181,
+                    "end": 1.504,
+                    "score": 0.748
+                },
+                {
+                    "word": "civilizations",
+                    "start": 1.544,
+                    "end": 2.331,
+                    "score": 0.841
+                },
+                {
+                    "word": "might",
+                    "start": 2.512,
+                    "end": 2.674,
+                    "score": 0.861
+                },
+                {
+                    "word": "not",
+                    "start": 2.694,
+                    "end": 2.835,
+                    "score": 0.73
+                },
+                {
+                    "word": "survive",
+                    "start": 2.896,
+                    "end": 3.259,
+                    "score": 0.897
+                },
+                {
+                    "word": "long",
+                    "start": 3.319,
+                    "end": 3.481,
+                    "score": 0.818
+                },
+                {
+                    "word": "enough",
+                    "start": 3.521,
+                    "end": 3.702,
+                    "score": 0.827
+                },
+                {
+                    "word": "to",
+                    "start": 3.743,
+                    "end": 3.844,
+                    "score": 0.826
+                },
+                {
+                    "word": "expand.",
+                    "start": 3.884,
+                    "end": 4.328,
+                    "score": 0.87
+                }
+            ]
+        },
+        "visual": {
+            "template": "NORMAL",
+            "text": "Reasons civilizations might not survive to expand"
+        }
+    },
+    {
+        "scene_id": 20,
+        "type": "TYPOGRAPHY",
+        "duration": 4.03,
+        "audio": {
+            "path": "/audio/20.wav",
+            "words": [
+                {
+                    "word": "Panspermia",
+                    "start": 0.212,
+                    "end": 0.916,
+                    "score": 0.884
+                },
+                {
+                    "word": "theory",
+                    "start": 0.956,
+                    "end": 1.298,
+                    "score": 0.83
+                },
+                {
+                    "word": "suggests",
+                    "start": 1.338,
+                    "end": 1.801,
+                    "score": 0.762
+                },
+                {
+                    "word": "life",
+                    "start": 1.881,
+                    "end": 2.122,
+                    "score": 0.887
+                },
+                {
+                    "word": "could",
+                    "start": 2.203,
+                    "end": 2.344,
+                    "score": 0.862
+                },
+                {
+                    "word": "spread",
+                    "start": 2.364,
+                    "end": 2.625,
+                    "score": 0.764
+                },
+                {
+                    "word": "naturally",
+                    "start": 2.665,
+                    "end": 3.088,
+                    "score": 0.919
+                },
+                {
+                    "word": "through",
+                    "start": 3.128,
+                    "end": 3.369,
+                    "score": 0.755
+                },
+                {
+                    "word": "space.",
+                    "start": 3.389,
+                    "end": 3.751,
+                    "score": 0.973
+                }
+            ]
+        },
+        "visual": {
+            "template": "KEY_LINE",
+            "text": "Panspermia theory: life could spread naturally"
+        }
+    },
+    {
+        "scene_id": 21,
+        "type": "TYPOGRAPHY",
+        "duration": 4.23,
+        "audio": {
+            "path": "/audio/21.wav",
+            "words": [
+                {
+                    "word": "But",
+                    "start": 0.455,
+                    "end": 0.556,
+                    "score": 0.979
+                },
+                {
+                    "word": "it",
+                    "start": 0.596,
+                    "end": 0.657,
+                    "score": 0.75
+                },
+                {
+                    "word": "doesn't",
+                    "start": 0.697,
+                    "end": 0.939,
+                    "score": 0.763
+                },
+                {
+                    "word": "resolve",
+                    "start": 0.98,
+                    "end": 1.384,
+                    "score": 0.754
+                },
+                {
+                    "word": "why",
+                    "start": 1.444,
+                    "end": 1.585,
+                    "score": 0.888
+                },
+                {
+                    "word": "we",
+                    "start": 1.626,
+                    "end": 1.706,
+                    "score": 1.0
+                },
+                {
+                    "word": "haven't",
+                    "start": 1.747,
+                    "end": 1.989,
+                    "score": 0.767
+                },
+                {
+                    "word": "detected",
+                    "start": 2.029,
+                    "end": 2.453,
+                    "score": 0.818
+                },
+                {
+                    "word": "intelligent",
+                    "start": 2.514,
+                    "end": 3.059,
+                    "score": 0.894
+                },
+                {
+                    "word": "civilizations.",
+                    "start": 3.079,
+                    "end": 3.947,
+                    "score": 0.91
+                }
+            ]
+        },
+        "visual": {
+            "template": "NORMAL",
+            "text": "Does not resolve why we haven't detected intelligent civilizations"
+        }
+    },
+    {
+        "scene_id": 22,
+        "type": "IMAGE",
+        "duration": 9.91,
+        "audio": {
+            "path": "/audio/22.wav",
+            "words": [
+                {
+                    "word": "Since",
+                    "start": 0.393,
+                    "end": 0.614,
+                    "score": 0.858
                 },
                 {
                     "word": "the",
-                    "start": 0.976,
-                    "end": 1.036,
-                    "score": 0.973
+                    "start": 0.634,
+                    "end": 0.714,
+                    "score": 0.801
                 },
                 {
-                    "word": "James",
-                    "start": 1.097,
-                    "end": 1.398,
-                    "score": 0.787
+                    "word": "1960s,",
+                    "start": 0.815,
+                    "end": 1.618,
+                    "score": 0.659
                 },
                 {
-                    "word": "Webb",
-                    "start": 1.438,
-                    "end": 1.639,
-                    "score": 0.903
+                    "word": "projects",
+                    "start": 1.859,
+                    "end": 2.261,
+                    "score": 0.817
                 },
                 {
-                    "word": "Space",
-                    "start": 1.68,
-                    "end": 1.961,
-                    "score": 0.93
+                    "word": "like",
+                    "start": 2.302,
+                    "end": 2.462,
+                    "score": 0.746
                 },
                 {
-                    "word": "Telescope",
-                    "start": 1.981,
-                    "end": 2.504,
+                    "word": "Search",
+                    "start": 2.543,
+                    "end": 2.824,
                     "score": 0.837
                 },
                 {
-                    "word": "now",
-                    "start": 2.705,
-                    "end": 2.886,
-                    "score": 0.93
+                    "word": "for",
+                    "start": 2.884,
+                    "end": 3.005,
+                    "score": 0.681
                 },
                 {
-                    "word": "analyze",
-                    "start": 3.007,
-                    "end": 3.429,
-                    "score": 0.88
+                    "word": "Extraterrestrial",
+                    "start": 3.145,
+                    "end": 3.969,
+                    "score": 0.886
                 },
                 {
-                    "word": "exoplanet",
-                    "start": 3.529,
-                    "end": 4.112,
-                    "score": 0.896
+                    "word": "Intelligence",
+                    "start": 4.009,
+                    "end": 4.592,
+                    "score": 0.837
                 },
                 {
-                    "word": "atmospheres",
-                    "start": 4.193,
-                    "end": 4.696,
-                    "score": 0.794
+                    "word": "have",
+                    "start": 4.813,
+                    "end": 4.934,
+                    "score": 0.883
+                },
+                {
+                    "word": "searched",
+                    "start": 4.994,
+                    "end": 5.295,
+                    "score": 0.928
                 },
                 {
                     "word": "for",
-                    "start": 4.736,
-                    "end": 4.856,
-                    "score": 0.813
+                    "start": 5.336,
+                    "end": 5.456,
+                    "score": 0.755
                 },
                 {
-                    "word": "biosignatures",
-                    "start": 4.897,
-                    "end": 5.681,
-                    "score": 0.815
+                    "word": "signs",
+                    "start": 5.516,
+                    "end": 5.778,
+                    "score": 0.739
                 },
                 {
-                    "word": "or",
-                    "start": 5.721,
-                    "end": 5.801,
-                    "score": 0.772
+                    "word": "of",
+                    "start": 5.818,
+                    "end": 5.878,
+                    "score": 0.75
                 },
                 {
-                    "word": "technosignatures.",
-                    "start": 5.842,
-                    "end": 6.746,
-                    "score": 0.937
+                    "word": "intelligent",
+                    "start": 5.938,
+                    "end": 6.441,
+                    "score": 0.839
+                },
+                {
+                    "word": "life",
+                    "start": 6.481,
+                    "end": 6.702,
+                    "score": 0.887
+                },
+                {
+                    "word": "using",
+                    "start": 7.124,
+                    "end": 7.325,
+                    "score": 0.901
+                },
+                {
+                    "word": "radio",
+                    "start": 7.385,
+                    "end": 7.707,
+                    "score": 0.933
+                },
+                {
+                    "word": "telescopes",
+                    "start": 7.767,
+                    "end": 8.33,
+                    "score": 0.774
+                },
+                {
+                    "word": "and",
+                    "start": 8.47,
+                    "end": 8.571,
+                    "score": 0.844
+                },
+                {
+                    "word": "advanced",
+                    "start": 8.611,
+                    "end": 9.013,
+                    "score": 0.916
+                },
+                {
+                    "word": "satellites.",
+                    "start": 9.093,
+                    "end": 9.636,
+                    "score": 0.864
+                }
+            ]
+        },
+        "visual": {
+            "template": "default",
+            "image": [
+                "Radio telescope"
+            ]
+        }
+    },
+    {
+        "scene_id": 23,
+        "type": "IMAGE",
+        "duration": 8.15,
+        "audio": {
+            "path": "/audio/23.wav",
+            "words": [
+                {
+                    "word": "Over",
+                    "start": 0.272,
+                    "end": 0.453,
+                    "score": 0.802
+                },
+                {
+                    "word": "3,900",
+                    "start": 0.513,
+                    "end": 1.176,
+                    "score": 0.683
+                },
+                {
+                    "word": "exoplanets",
+                    "start": 1.638,
+                    "end": 2.361,
+                    "score": 0.801
+                },
+                {
+                    "word": "have",
+                    "start": 2.401,
+                    "end": 2.501,
+                    "score": 0.879
+                },
+                {
+                    "word": "been",
+                    "start": 2.521,
+                    "end": 2.662,
+                    "score": 0.89
+                },
+                {
+                    "word": "confirmed,",
+                    "start": 2.682,
+                    "end": 3.204,
+                    "score": 0.9
+                },
+                {
+                    "word": "showing",
+                    "start": 3.566,
+                    "end": 3.827,
+                    "score": 0.824
+                },
+                {
+                    "word": "planets",
+                    "start": 3.867,
+                    "end": 4.148,
+                    "score": 0.889
+                },
+                {
+                    "word": "are",
+                    "start": 4.208,
+                    "end": 4.289,
+                    "score": 0.834
+                },
+                {
+                    "word": "common,",
+                    "start": 4.309,
+                    "end": 4.69,
+                    "score": 0.904
+                },
+                {
+                    "word": "but",
+                    "start": 5.032,
+                    "end": 5.152,
+                    "score": 0.833
+                },
+                {
+                    "word": "Earth-like",
+                    "start": 5.233,
+                    "end": 5.695,
+                    "score": 0.853
+                },
+                {
+                    "word": "worlds",
+                    "start": 5.755,
+                    "end": 6.096,
+                    "score": 0.855
+                },
+                {
+                    "word": "with",
+                    "start": 6.137,
+                    "end": 6.277,
+                    "score": 0.836
+                },
+                {
+                    "word": "the",
+                    "start": 6.297,
+                    "end": 6.357,
+                    "score": 0.997
+                },
+                {
+                    "word": "right",
+                    "start": 6.418,
+                    "end": 6.598,
+                    "score": 0.909
+                },
+                {
+                    "word": "conditions",
+                    "start": 6.639,
+                    "end": 7.141,
+                    "score": 0.9
+                },
+                {
+                    "word": "remain",
+                    "start": 7.201,
+                    "end": 7.522,
+                    "score": 0.734
+                },
+                {
+                    "word": "rare.",
+                    "start": 7.583,
+                    "end": 7.844,
+                    "score": 0.909
+                }
+            ]
+        },
+        "visual": {
+            "template": "default",
+            "image": [
+                "Exoplanet illustration"
+            ]
+        }
+    },
+    {
+        "scene_id": 24,
+        "type": "IMAGE",
+        "duration": 7.16,
+        "audio": {
+            "path": "/audio/24.wav",
+            "words": [
+                {
+                    "word": "Telescopes",
+                    "start": 0.131,
+                    "end": 0.654,
+                    "score": 0.767
+                },
+                {
+                    "word": "like",
+                    "start": 0.674,
+                    "end": 0.835,
+                    "score": 0.884
+                },
+                {
+                    "word": "the",
+                    "start": 0.855,
+                    "end": 0.935,
+                    "score": 0.822
+                },
+                {
+                    "word": "James",
+                    "start": 0.976,
+                    "end": 1.257,
+                    "score": 0.762
+                },
+                {
+                    "word": "Webb",
+                    "start": 1.297,
+                    "end": 1.518,
+                    "score": 0.914
+                },
+                {
+                    "word": "Space",
+                    "start": 1.538,
+                    "end": 1.84,
+                    "score": 0.876
+                },
+                {
+                    "word": "Telescope",
+                    "start": 1.88,
+                    "end": 2.403,
+                    "score": 0.717
+                },
+                {
+                    "word": "now",
+                    "start": 2.443,
+                    "end": 2.604,
+                    "score": 0.907
+                },
+                {
+                    "word": "analyze",
+                    "start": 2.724,
+                    "end": 3.106,
+                    "score": 0.912
+                },
+                {
+                    "word": "exoplanet",
+                    "start": 3.186,
+                    "end": 3.789,
+                    "score": 0.941
+                },
+                {
+                    "word": "atmospheres",
+                    "start": 3.87,
+                    "end": 4.332,
+                    "score": 0.78
+                },
+                {
+                    "word": "for",
+                    "start": 4.352,
+                    "end": 4.473,
+                    "score": 0.869
+                },
+                {
+                    "word": "biosignatures,",
+                    "start": 4.493,
+                    "end": 5.377,
+                    "score": 0.837
+                },
+                {
+                    "word": "such",
+                    "start": 5.719,
+                    "end": 5.9,
+                    "score": 0.94
+                },
+                {
+                    "word": "as",
+                    "start": 5.96,
+                    "end": 6.04,
+                    "score": 0.73
+                },
+                {
+                    "word": "water",
+                    "start": 6.101,
+                    "end": 6.382,
+                    "score": 0.919
+                },
+                {
+                    "word": "and",
+                    "start": 6.442,
+                    "end": 6.523,
+                    "score": 0.889
+                },
+                {
+                    "word": "ozone.",
+                    "start": 6.623,
+                    "end": 6.985,
+                    "score": 0.929
                 }
             ]
         },
@@ -1889,466 +2254,157 @@
         }
     },
     {
-        "scene_id": 17,
-        "type": "IMAGE",
-        "duration": 7.12,
+        "scene_id": 25,
+        "type": "TYPOGRAPHY",
+        "duration": 5.08,
         "audio": {
-            "path": "/audio/17.wav",
-            "words": [
-                {
-                    "word": "Searches",
-                    "start": 0.653,
-                    "end": 1.014,
-                    "score": 0.81
-                },
-                {
-                    "word": "for",
-                    "start": 1.054,
-                    "end": 1.175,
-                    "score": 0.83
-                },
-                {
-                    "word": "large-scale",
-                    "start": 1.235,
-                    "end": 1.837,
-                    "score": 0.765
-                },
-                {
-                    "word": "extraterrestrial",
-                    "start": 1.937,
-                    "end": 2.66,
-                    "score": 0.876
-                },
-                {
-                    "word": "projects",
-                    "start": 2.72,
-                    "end": 3.202,
-                    "score": 0.883
-                },
-                {
-                    "word": "like",
-                    "start": 3.262,
-                    "end": 3.422,
-                    "score": 0.844
-                },
-                {
-                    "word": "Dyson",
-                    "start": 3.463,
-                    "end": 3.844,
-                    "score": 0.651
-                },
-                {
-                    "word": "Spheres",
-                    "start": 3.864,
-                    "end": 4.205,
-                    "score": 0.79
-                },
-                {
-                    "word": "and",
-                    "start": 4.566,
-                    "end": 4.667,
-                    "score": 0.758
-                },
-                {
-                    "word": "for",
-                    "start": 4.707,
-                    "end": 4.807,
-                    "score": 0.958
-                },
-                {
-                    "word": "artifacts",
-                    "start": 4.887,
-                    "end": 5.329,
-                    "score": 0.88
-                },
-                {
-                    "word": "within",
-                    "start": 5.369,
-                    "end": 5.59,
-                    "score": 0.982
-                },
-                {
-                    "word": "our",
-                    "start": 5.65,
-                    "end": 5.73,
-                    "score": 0.841
-                },
-                {
-                    "word": "solar",
-                    "start": 5.77,
-                    "end": 6.071,
-                    "score": 0.772
-                },
-                {
-                    "word": "system",
-                    "start": 6.112,
-                    "end": 6.413,
-                    "score": 0.791
-                },
-                {
-                    "word": "continue.",
-                    "start": 6.453,
-                    "end": 6.894,
-                    "score": 0.948
-                }
-            ]
-        },
-        "visual": {
-            "template": "default",
-            "image": [
-                "Dyson sphere"
-            ]
-        }
-    },
-    {
-        "scene_id": 18,
-        "type": "NONE",
-        "duration": 6.22,
-        "audio": {
-            "path": "/audio/18.wav",
+            "path": "/audio/25.wav",
             "words": [
                 {
                     "word": "Despite",
-                    "start": 0.614,
-                    "end": 0.976,
-                    "score": 0.871
+                    "start": 0.374,
+                    "end": 0.736,
+                    "score": 0.853
                 },
                 {
-                    "word": "ongoing",
-                    "start": 1.036,
-                    "end": 1.337,
-                    "score": 0.729
-                },
-                {
-                    "word": "research,",
-                    "start": 1.378,
-                    "end": 1.8,
-                    "score": 0.849
-                },
-                {
-                    "word": "the",
-                    "start": 1.84,
-                    "end": 1.92,
-                    "score": 0.874
-                },
-                {
-                    "word": "scientific",
-                    "start": 1.96,
-                    "end": 2.443,
+                    "word": "these",
+                    "start": 0.777,
+                    "end": 0.938,
                     "score": 0.817
                 },
                 {
-                    "word": "community",
-                    "start": 2.463,
-                    "end": 2.965,
-                    "score": 0.872
-                },
-                {
-                    "word": "remains",
-                    "start": 3.086,
-                    "end": 3.407,
-                    "score": 0.824
-                },
-                {
-                    "word": "divided",
-                    "start": 3.448,
-                    "end": 3.87,
-                    "score": 0.92
-                },
-                {
-                    "word": "on",
-                    "start": 3.97,
-                    "end": 4.03,
-                    "score": 0.999
+                    "word": "efforts,",
+                    "start": 1.019,
+                    "end": 1.361,
+                    "score": 0.782
                 },
                 {
                     "word": "the",
-                    "start": 4.071,
-                    "end": 4.131,
-                    "score": 1.0
+                    "start": 1.422,
+                    "end": 1.522,
+                    "score": 0.795
                 },
                 {
-                    "word": "best",
-                    "start": 4.171,
-                    "end": 4.392,
-                    "score": 0.803
+                    "word": "Fermi",
+                    "start": 1.543,
+                    "end": 1.825,
+                    "score": 0.596
                 },
                 {
-                    "word": "explanation",
-                    "start": 4.472,
-                    "end": 5.055,
-                    "score": 0.958
+                    "word": "Paradox",
+                    "start": 1.865,
+                    "end": 2.409,
+                    "score": 0.925
                 },
                 {
-                    "word": "for",
-                    "start": 5.095,
-                    "end": 5.216,
-                    "score": 0.887
+                    "word": "endures.",
+                    "start": 2.49,
+                    "end": 2.913,
+                    "score": 0.896
                 },
                 {
-                    "word": "the",
-                    "start": 5.236,
-                    "end": 5.317,
-                    "score": 0.833
+                    "word": "The",
+                    "start": 3.155,
+                    "end": 3.236,
+                    "score": 0.983
                 },
                 {
-                    "word": "paradox.",
-                    "start": 5.337,
-                    "end": 5.819,
-                    "score": 0.894
-                }
-            ]
-        },
-        "visual": {
-            "template": "word_by_word"
-        }
-    },
-    {
-        "scene_id": 19,
-        "type": "NONE",
-        "duration": 7.3,
-        "audio": {
-            "path": "/audio/19.wav",
-            "words": [
-                {
-                    "word": "Some",
-                    "start": 0.473,
-                    "end": 0.674,
-                    "score": 0.883
+                    "word": "galaxy",
+                    "start": 3.256,
+                    "end": 3.719,
+                    "score": 0.941
                 },
                 {
-                    "word": "argue",
-                    "start": 0.794,
-                    "end": 1.035,
-                    "score": 0.806
+                    "word": "should",
+                    "start": 3.76,
+                    "end": 3.921,
+                    "score": 0.877
                 },
                 {
-                    "word": "that",
-                    "start": 1.055,
-                    "end": 1.156,
-                    "score": 1.0
+                    "word": "be",
+                    "start": 3.961,
+                    "end": 4.042,
+                    "score": 0.735
                 },
                 {
-                    "word": "the",
-                    "start": 1.196,
-                    "end": 1.276,
-                    "score": 0.847
+                    "word": "teaming",
+                    "start": 4.062,
+                    "end": 4.364,
+                    "score": 0.849
                 },
                 {
-                    "word": "rarity",
-                    "start": 1.316,
-                    "end": 1.678,
-                    "score": 0.903
-                },
-                {
-                    "word": "of",
-                    "start": 1.718,
-                    "end": 1.778,
-                    "score": 0.75
-                },
-                {
-                    "word": "intelligent",
-                    "start": 1.838,
-                    "end": 2.361,
-                    "score": 0.819
-                },
-                {
-                    "word": "life",
-                    "start": 2.401,
-                    "end": 2.642,
-                    "score": 0.937
-                },
-                {
-                    "word": "or",
-                    "start": 2.742,
-                    "end": 2.822,
-                    "score": 0.82
-                },
-                {
-                    "word": "the",
-                    "start": 2.843,
-                    "end": 2.923,
-                    "score": 0.834
-                },
-                {
-                    "word": "brevity",
-                    "start": 2.963,
-                    "end": 3.385,
-                    "score": 0.936
-                },
-                {
-                    "word": "of",
-                    "start": 3.445,
-                    "end": 3.505,
-                    "score": 0.75
-                },
-                {
-                    "word": "civilization's",
-                    "start": 3.586,
-                    "end": 4.309,
-                    "score": 0.85
-                },
-                {
-                    "word": "life",
-                    "start": 4.369,
-                    "end": 4.57,
-                    "score": 0.814
-                },
-                {
-                    "word": "spans",
-                    "start": 4.59,
-                    "end": 4.991,
-                    "score": 0.758
-                },
-                {
-                    "word": "best",
-                    "start": 5.152,
-                    "end": 5.393,
-                    "score": 0.899
-                },
-                {
-                    "word": "explains",
-                    "start": 5.453,
-                    "end": 5.835,
-                    "score": 0.899
-                },
-                {
-                    "word": "the",
-                    "start": 5.875,
-                    "end": 5.955,
-                    "score": 0.834
-                },
-                {
-                    "word": "absence",
-                    "start": 6.076,
-                    "end": 6.437,
-                    "score": 0.731
-                },
-                {
-                    "word": "of",
-                    "start": 6.478,
-                    "end": 6.538,
-                    "score": 0.75
-                },
-                {
-                    "word": "evidence.",
-                    "start": 6.618,
-                    "end": 7.02,
-                    "score": 0.873
-                }
-            ]
-        },
-        "visual": {
-            "template": "word_by_word"
-        }
-    },
-    {
-        "scene_id": 20,
-        "type": "NONE",
-        "duration": 5.86,
-        "audio": {
-            "path": "/audio/20.wav",
-            "words": [
-                {
-                    "word": "Others",
-                    "start": 0.272,
-                    "end": 0.514,
-                    "score": 0.725
-                },
-                {
-                    "word": "emphasize",
-                    "start": 0.574,
-                    "end": 1.077,
-                    "score": 0.854
-                },
-                {
-                    "word": "the",
-                    "start": 1.098,
-                    "end": 1.178,
-                    "score": 0.84
-                },
-                {
-                    "word": "need",
-                    "start": 1.218,
-                    "end": 1.379,
-                    "score": 0.802
-                },
-                {
-                    "word": "for",
-                    "start": 1.42,
-                    "end": 1.54,
-                    "score": 0.839
-                },
-                {
-                    "word": "more",
-                    "start": 1.601,
-                    "end": 1.762,
-                    "score": 0.852
-                },
-                {
-                    "word": "evidence",
-                    "start": 1.842,
-                    "end": 2.204,
-                    "score": 0.955
-                },
-                {
-                    "word": "before",
-                    "start": 2.305,
-                    "end": 2.607,
-                    "score": 0.778
-                },
-                {
-                    "word": "concluding",
-                    "start": 2.647,
-                    "end": 3.09,
-                    "score": 0.881
-                },
-                {
-                    "word": "why",
-                    "start": 3.13,
-                    "end": 3.311,
-                    "score": 0.884
-                },
-                {
-                    "word": "we",
-                    "start": 3.351,
-                    "end": 3.432,
-                    "score": 0.871
-                },
-                {
-                    "word": "have",
-                    "start": 3.472,
-                    "end": 3.573,
-                    "score": 0.994
-                },
-                {
-                    "word": "not",
-                    "start": 3.633,
-                    "end": 3.794,
-                    "score": 0.988
-                },
-                {
-                    "word": "detected",
-                    "start": 3.834,
-                    "end": 4.277,
-                    "score": 0.821
-                },
-                {
-                    "word": "extraterrestrial",
-                    "start": 4.438,
-                    "end": 5.243,
-                    "score": 0.814
+                    "word": "with",
+                    "start": 4.405,
+                    "end": 4.526,
+                    "score": 0.752
                 },
                 {
                     "word": "life.",
-                    "start": 5.303,
-                    "end": 5.565,
-                    "score": 0.96
+                    "start": 4.606,
+                    "end": 4.848,
+                    "score": 0.991
                 }
             ]
         },
         "visual": {
-            "template": "word_by_word"
+            "template": "KEY_LINE",
+            "text": "Fermi Paradox: galaxy should be teeming with life"
+        }
+    },
+    {
+        "scene_id": 26,
+        "type": "TYPOGRAPHY",
+        "duration": 1.77,
+        "audio": {
+            "path": "/audio/26.wav",
+            "words": [
+                {
+                    "word": "Yet",
+                    "start": 0.192,
+                    "end": 0.332,
+                    "score": 0.993
+                },
+                {
+                    "word": "we",
+                    "start": 0.372,
+                    "end": 0.473,
+                    "score": 0.998
+                },
+                {
+                    "word": "see",
+                    "start": 0.533,
+                    "end": 0.673,
+                    "score": 0.813
+                },
+                {
+                    "word": "no",
+                    "start": 0.714,
+                    "end": 0.814,
+                    "score": 0.986
+                },
+                {
+                    "word": "evidence",
+                    "start": 0.894,
+                    "end": 1.236,
+                    "score": 0.834
+                },
+                {
+                    "word": "of",
+                    "start": 1.316,
+                    "end": 1.376,
+                    "score": 0.876
+                },
+                {
+                    "word": "it.",
+                    "start": 1.436,
+                    "end": 1.497,
+                    "score": 0.995
+                }
+            ]
+        },
+        "visual": {
+            "template": "KEY_LINE",
+            "text": "Yet we see no evidence of it"
         }
     }
 ]
